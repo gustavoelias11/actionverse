@@ -1,0 +1,30 @@
+@charset "UTF-8"; /* Permite que o site use caracteres do nosso teclado brasileiro */
+
+:root { /* Variável CSS. Caso seja alterada, todos os elementos com esses valores são alterados */
+    --white: #ffffff;
+    --black: #000000;
+    --light-blue: #023469;
+    --dark-blue: #001945;
+    --light-red: #8A0000;
+    --dark-red: #7D0302;
+}
+/* Fontes */
+@font-face {
+    font-family: 'Bangers';
+    src: url('../font/Bangers/Bangers-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter/static/Inter_18pt-Medium.ttf');
+}
+
+* { /* Estilos gerais */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none; 
+    text-decoration: none; 
+    border: none;
+    line-height: 1.5;
+}
