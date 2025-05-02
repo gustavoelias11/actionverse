@@ -1,12 +1,14 @@
-# actionverse
-trabalho para faculdade
+# Actionverse
 
-                                                 N A T Ã  -  O B S
-1.
-Utilizem os valores de root, que está em style.css, por padronização, por exemplo:
+## Observação
 
+__Utilizem os valores das variáveis de `:root`, que está em `style.css`, por padronização.__
+
+_Exemplo:_
+
+```css
 header {
     background-color: var(--dark-red);
 }
-
-Isso faz com que todos os elementos sejam afetados, caso desejemos mudar alguma cor do site.
+```
+Isso garante que, caso seja necessário alterarmos um valor (como uma cor) em todo o site, só vamos precisar modificá-lo em um único lugar (no `:root` em `style.css`), e todas as partes do site que usam essa variável serão atualizadas automaticamente.
