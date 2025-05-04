@@ -1,18 +1,17 @@
 html {
     display: flex;
-    width: 775px;
-    height: 721px;
-    padding: 16px;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background: var(--beige);
+
 }
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-self: stretch;
+    justify-content: center;
+    margin: 16px;
+    background: var(--beige);
     border: 2px solid var(--black);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -27,48 +26,257 @@ header {
     background: var(--light-red);
 }
 
-.titulo_principal {
+h1 {
     display: flex;
     padding: 10px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-}
-
-h1 {
     color: var(--white);
     text-shadow: 1px 2px 0px var(--black);
-    font-family: 'Bangers';
-    font-size: 58px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font: 400 58px/normal 'Bangers';
 }
 
 h1 span {
     color: var(--yellow);
-    font-family: 'Bangers';
-    font-size: 58px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font: 400 58px/normal 'Bangers';
 }
 
-.titulo_secundario {
+h2 {
     display: flex;
     height: 38px;
     padding: 10px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-}
-
-h2 {
     color: var(--white);
     text-shadow: 1px 2px 0px var(--black);
-    font-family: 'Bangers';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font: 400 20px/normal 'Bangers';
+}
+
+main {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+section {
+    width: 376.4px;
+    height: 542px;
+    background: var(--beige);
+}
+
+#sign_buttons {
+    display: flex;
+    margin: auto;
+    margin-bottom: 17.88px;
+    margin-top: 25.62px;
+    width: 321px;
+    height: 32.52px;
+    border-radius: 6px;
+    background: var(--white);
+}
+
+#sign_in {
+    display: flex;
+    width: 159px;
+    height: 32.52px;
+    margin-top: 2.96px;
+    margin-left: 2.96px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: var(--beige);
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    color: var(--black);
+    font: 400 20px/normal 'Bangers';
+    cursor: pointer;
+}
+
+#sign_up {
+    display: flex;
+    width: 159px;
+    height: 32.52px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: var(--white);
+    color: var(--black);
+    font: 400 20px/normal 'Bangers';
+    cursor: pointer;
+}
+
+#name_field {
+    margin: auto;
+    width: 318px;
+    height: 72.924px;
+}
+
+#name_field label {
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-blue);
+    font: 400 20px/normal 'Bangers';
+}
+
+#name {
+    width: 318px;
+    height: 32.52px;
+    border-radius: 4px;
+    border: 2px solid var(--black);
+    background: var(--white);
+}
+
+#password_field {
+    margin: auto;
+    width: 318px;
+    height: 72.924px;
+}
+
+#password_field label {
+    display: inline-flex;
+    margin-top: 11.83px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-blue);
+    font: 400 20px/normal 'Bangers';
+}
+
+#password {
+    width: 318px;
+    height: 32.52px;
+    border-radius: 4px;
+    border: 2px solid var(--black);
+    background: var(--white);
+}
+
+#check_password_field {
+    display: none;
+    margin: auto;
+    width: 318px;
+    height: 72.924px;
+}
+
+#check_password_field label {
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-blue);
+    font: 400 20px/normal 'Bangers';
+}
+
+#check_password {
+    width: 318px;
+    height: 32.52px;
+    border-radius: 4px;
+    border: 2px solid var(--black);
+    background: var(--white);
+}
+
+form button {
+    margin-top: 40.4px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25.62px;
+    padding-left: 9.5px;
+    padding-right: 9.5px;
+    width: 376.4px;
+    height: 542px;
+    background: var(--light-blue);
+}
+
+#circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 154px;
+    height: 154px;
+    background: var(--light-red);
+    border-radius: 50%;
+    border: 2px var(--black) solid
+}
+
+#circle span {
+    color: var(--white);
+    text-shadow: 1px 2px 0px var(--black);
+    font:400 20px/normal 'Bangers';
+}
+
+h3 {
+    margin-top: 32.3px;
+    margin-bottom: 20.21px;
+    color: var(--yellow);
+    text-shadow: 1px 2px 0px var(--black);
+    font: 400 28px/normal 'Bangers';
+}
+
+aside p {
+    margin-bottom: 18.08px;
+    color: var(--white);
+    text-align: center;
+    font: 500 18px/normal 'Inter';
+}
+
+ul {
+    display: block;
+    margin-bottom: 18.08px;
+    height: 106.429px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    color: var(--white);
+    font: 500 18px/normal 'Inter';
+}
+
+li::before {
+    content: "\2714";
+    color: #00b400;
+    font-weight: bold;
+}
+
+a {
+    display: flex;
+    width: 230px;
+    height: 47.302px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+    border: 3px solid var(--black);
+    background: var(--white);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: var(--black);
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    font: 400 20px/normal 'Bangers';
+}
+
+footer {
+    display: flex;
+    height: 27px;
+    padding: 0px 159px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background: var(--light-blue);
+}
+
+footer p {
+    color: var(--white);
+    text-shadow: 1px 2px 0px var(--black);
+    font: 400 20px/normal 'Bangers';
 }
