@@ -2,7 +2,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    width: 100vw;
+    height: 100vh;
 }
 
 body {
@@ -10,9 +11,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 16px;
-    background: var(--beige);
-    border: 2px solid var(--black);
+    background: var(--background);
+    border: 2px solid var(--detail-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -23,7 +23,7 @@ header {
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    background: var(--light-red);
+    background: var(--secondary-color-light);
 }
 
 h1 {
@@ -31,13 +31,13 @@ h1 {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    color: var(--white);
-    text-shadow: 1px 2px 0px var(--black);
+    color: var(--base-color);
+    text-shadow: 1px 2px 0px var(--detail-color);
     font: 400 58px/normal 'Bangers';
 }
 
 h1 span {
-    color: var(--yellow);
+    color: var(--tertiary-color);
     font: 400 58px/normal 'Bangers';
 }
 
@@ -47,8 +47,8 @@ h2 {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    color: var(--white);
-    text-shadow: 1px 2px 0px var(--black);
+    color: var(--base-color);
+    text-shadow: 1px 2px 0px var(--detail-color);
     font: 400 20px/normal 'Bangers';
 }
 
@@ -63,7 +63,7 @@ main {
 section {
     width: 376.4px;
     height: 542px;
-    background: var(--beige);
+    background: var(--background);
 }
 
 #sign_buttons {
@@ -74,24 +74,27 @@ section {
     width: 321px;
     height: 32.52px;
     border-radius: 6px;
-    background: var(--white);
+    background: var(--base-color);
 }
 
 #sign_in {
     display: flex;
     width: 159px;
     height: 32.52px;
-    margin-top: 2.96px;
-    margin-left: 2.96px;
     padding: 10px;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
-    background: var(--beige);
-    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
-    color: var(--black);
+    color: var(--detail-color);
     font: 400 20px/normal 'Bangers';
     cursor: pointer;
+}
+
+.active_button {
+    margin-top: 2.96px;
+    margin-left: 2.96px;
+    background: var(--background);
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 #sign_up {
@@ -102,8 +105,7 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 6px;
-    background: var(--white);
-    color: var(--black);
+    color: var(--detail-color);
     font: 400 20px/normal 'Bangers';
     cursor: pointer;
 }
@@ -119,7 +121,7 @@ section {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    color: var(--dark-blue);
+    color: var(--primary-color-dark);
     font: 400 20px/normal 'Bangers';
 }
 
@@ -127,23 +129,23 @@ section {
     width: 318px;
     height: 32.52px;
     border-radius: 4px;
-    border: 2px solid var(--black);
-    background: var(--white);
+    border: 2px solid var(--detail-color);
+    background: var(--base-color);
 }
 
 #password_field {
     margin: auto;
+    margin-top: 11.83px;
     width: 318px;
     height: 72.924px;
 }
 
 #password_field label {
     display: inline-flex;
-    margin-top: 11.83px;
     padding: 10px;
     justify-content: center;
     align-items: center;
-    color: var(--dark-blue);
+    color: var(--primary-color-dark);
     font: 400 20px/normal 'Bangers';
 }
 
@@ -151,13 +153,14 @@ section {
     width: 318px;
     height: 32.52px;
     border-radius: 4px;
-    border: 2px solid var(--black);
-    background: var(--white);
+    border: 2px solid var(--detail-color);
+    background: var(--base-color);
 }
 
 #check_password_field {
     display: none;
     margin: auto;
+    margin-top: 11.83px;
     width: 318px;
     height: 72.924px;
 }
@@ -167,7 +170,7 @@ section {
     padding: 10px;
     justify-content: center;
     align-items: center;
-    color: var(--dark-blue);
+    color: var(--primary-color-dark);
     font: 400 20px/normal 'Bangers';
 }
 
@@ -175,8 +178,8 @@ section {
     width: 318px;
     height: 32.52px;
     border-radius: 4px;
-    border: 2px solid var(--black);
-    background: var(--white);
+    border: 2px solid var(--detail-color);
+    background: var(--base-color);
 }
 
 form button {
@@ -192,7 +195,7 @@ aside {
     padding-right: 9.5px;
     width: 376.4px;
     height: 542px;
-    background: var(--light-blue);
+    background: var(--primary-color-light);
 }
 
 #circle {
@@ -202,28 +205,28 @@ aside {
     margin: 0 auto;
     width: 154px;
     height: 154px;
-    background: var(--light-red);
+    background: var(--secondary-color-light);
     border-radius: 50%;
-    border: 2px var(--black) solid
+    border: 2px var(--detail-color) solid
 }
 
 #circle span {
-    color: var(--white);
-    text-shadow: 1px 2px 0px var(--black);
+    color: var(--base-color);
+    text-shadow: 1px 2px 0px var(--detail-color);
     font:400 20px/normal 'Bangers';
 }
 
 h3 {
     margin-top: 32.3px;
     margin-bottom: 20.21px;
-    color: var(--yellow);
-    text-shadow: 1px 2px 0px var(--black);
+    color: var(--tertiary-color);
+    text-shadow: 1px 2px 0px var(--detail-color);
     font: 400 28px/normal 'Bangers';
 }
 
 aside p {
     margin-bottom: 18.08px;
-    color: var(--white);
+    color: var(--base-color);
     text-align: center;
     font: 500 18px/normal 'Inter';
 }
@@ -238,7 +241,7 @@ ul {
 }
 
 li {
-    color: var(--white);
+    color: var(--base-color);
     font: 500 18px/normal 'Inter';
 }
 
@@ -256,10 +259,10 @@ a {
     justify-content: center;
     align-items: center;
     border-radius: 19px;
-    border: 3px solid var(--black);
-    background: var(--white);
+    border: 3px solid var(--detail-color);
+    background: var(--base-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: var(--black);
+    color: var(--detail-color);
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     font: 400 20px/normal 'Bangers';
 }
@@ -272,11 +275,11 @@ footer {
     justify-content: center;
     align-items: center;
     align-self: stretch;
-    background: var(--light-blue);
+    background: var(--primary-color-light);
 }
 
 footer p {
-    color: var(--white);
-    text-shadow: 1px 2px 0px var(--black);
+    color: var(--base-color);
+    text-shadow: 1px 2px 0px var(--detail-color);
     font: 400 20px/normal 'Bangers';
 }
