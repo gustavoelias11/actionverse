@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: var(--light-blue);
+    color: var(--white);
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.informações {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer h1 {
+    font: 400 25px/normal 'Bangers';
+    text-shadow: 1px 2px 0px black;
+}
+
+footer span {
+    font: 400 25px/normal 'Bangers';
+    color: var(--yellow);
+    text-shadow: 1px 2px 0px black;
+}
+
+footer ul,p {
+    font: 400 15px/lighter 'Inter';
+    margin-top: 15px;
+}
+
+.footer1 {
+    justify-content: space-around;
+    display: flex;
+    margin-right: 200px; /* Tá uma merda isso */
+}
+
+.copy {
+    justify-content: space-around;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    font: 400 15px/normal 'Bangers';
+}
