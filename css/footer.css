@@ -4,8 +4,8 @@ body {
 }
 
 footer {
-    background-color: var(--light-blue);
-    color: var(--white);
+    background-color: var(--primary-color-light);
+    color: var(--base-color);
     flex-direction: column;
     justify-content: space-around;
     display: flex;
@@ -45,7 +45,7 @@ footer h1 {
 
 footer span {
     font: 400 25px/normal 'Bangers';
-    color: var(--yellow);
+    color: var(--tertiary-color);
     text-shadow: 1px 2px 0px black;
 }
 

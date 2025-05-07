@@ -1,5 +1,5 @@
 nav {
-    background-color: var(--light-blue);
+    background-color: var(--primary-color-light);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,19 +9,19 @@ nav {
 
 nav h1 {
     margin-left: 15px;
-    color: var(--white);
+    color: var(--base-color);
     font: 400 42px/normal 'Bangers';
     text-shadow: 1px 2px 0px black;
 }
 
 .logo {
     font-family: 'Bangers';
-    color: var(--yellow);
+    color: var(--tertiary-color);
 }
 
 nav button {
     font: 400 28px/normal 'Bangers';
-    color: var(--white);
+    color: var(--base-color);
     text-shadow: 1px 2px 0px black;
     border-left: 2px solid white;
     border-right: 2px solid white;
@@ -34,10 +34,10 @@ nav button {
 }
 
 nav button:hover {
-    background-color: var(--dark-red);
+    background-color: var(--secondary-color-dark);
     transition: 0.4s;
-    border-color: var(--yellow);
-    color: var(--yellow);
+    border-color: var(--tertiary-color);
+    color: var(--tertiary-color);
 }
 
 i {
@@ -50,7 +50,7 @@ i {
 
 i:hover {
     transition: 0.4s;
-    color: var(--yellow);
+    color: var(--tertiary-color);
 }
 
 .cart {
@@ -60,7 +60,7 @@ i:hover {
 }
 
 section {
-    background-color: var(--dark-blue);
+    background-color: var(--primary-color-dark);
     padding: 20px;
     position: relative;
     height: 300px;
@@ -68,7 +68,7 @@ section {
 
 .boom {
     font: 400 42px/normal 'Bangers';
-    color: var(--yellow);
+    color: var(--tertiary-color);
     text-shadow: 1px 2px 0px black;
     position: absolute;
     top: 20px;
@@ -77,7 +77,7 @@ section {
 
 .wow {
     font: 400 42px/normal 'Bangers';
-    color: var(--white);
+    color: var(--base-color);
     text-shadow: 1px 2px 0px black;
     position: absolute;
     bottom: 20px;
@@ -90,20 +90,20 @@ section {
 }
 
 .p1 {
-    color: var(--white);
+    color: var(--base-color);
     text-shadow: 1px 2px 0px black;
     text-align: center;
 }
 
 .p2 {
-    color: var(--yellow);
+    color: var(--tertiary-color);
     text-shadow: 1px 2px 0px black;
     text-align: center;
 }
 
 .s-principal {
     font: 400 25px/normal 'Bangers';
-    color: var(--white);
+    color: var(--base-color);
     text-shadow: 1px 2px 0px black;
     text-align: center;
     margin-top: 5px;
