@@ -1,14 +1,14 @@
 @charset "UTF-8"; /* Permite que o site use caracteres do nosso teclado brasileiro */
 
 :root { /* Variável CSS. Caso seja alterada, todos os elementos com esses valores são alterados */
-    --white: #ffffff;
-    --black: #000000;
-    --light-blue: #023469;
-    --dark-blue: #001945;
-    --light-red: #8A0000;
-    --dark-red: #7D0302;
-    --yellow: #F1B40E;
-    --beige: #F2E7D5;
+    --base-color: #FFFFFF;
+    --detail-color: #000000;
+    --primary-color-light: #023469;
+    --primary-color-dark: #001945;
+    --secondary-color-light: #8A0000;
+    --secondary-color-dark: #7D0302;
+    --tertiary-color: #F1B40E;
+    --background: #F2E7D5;
 }
 /* Fontes */
 @font-face {
