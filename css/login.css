@@ -6,6 +6,16 @@ html {
     height: 100vh;
 }
 
+/* #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+    border: 2px solid var(--detail-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+} */
+
 body {
     display: flex;
     flex-direction: column;
@@ -66,7 +76,7 @@ section {
     background: var(--background);
 }
 
-#sign_buttons {
+#sign-buttons {
     display: flex;
     margin: auto;
     margin-bottom: 17.88px;
@@ -77,7 +87,7 @@ section {
     background: var(--base-color);
 }
 
-#sign_in {
+#sign-in {
     display: flex;
     width: 159px;
     height: 32.52px;
@@ -90,14 +100,14 @@ section {
     cursor: pointer;
 }
 
-.active_button {
+.active-button {
     margin-top: 2.96px;
     margin-left: 2.96px;
     background: var(--background);
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
-#sign_up {
+#sign-up {
     display: flex;
     width: 159px;
     height: 32.52px;
@@ -110,13 +120,13 @@ section {
     cursor: pointer;
 }
 
-#name_field {
+#name-field {
     margin: auto;
     width: 318px;
     height: 72.924px;
 }
 
-#name_field label {
+#name-field label {
     display: inline-flex;
     padding: 10px;
     justify-content: center;
@@ -128,19 +138,21 @@ section {
 #name {
     width: 318px;
     height: 32.52px;
+    padding: 4px;
     border-radius: 4px;
     border: 2px solid var(--detail-color);
+    color: var(--primary-color-dark);
     background: var(--base-color);
 }
 
-#password_field {
+#password-field {
     margin: auto;
     margin-top: 11.83px;
     width: 318px;
     height: 72.924px;
 }
 
-#password_field label {
+#password-field label {
     display: inline-flex;
     padding: 10px;
     justify-content: center;
@@ -152,12 +164,14 @@ section {
 #password {
     width: 318px;
     height: 32.52px;
+    padding: 4px;
     border-radius: 4px;
     border: 2px solid var(--detail-color);
+    color: var(--primary-color-dark);
     background: var(--base-color);
 }
 
-#check_password_field {
+#check-password-field {
     display: none;
     margin: auto;
     margin-top: 11.83px;
@@ -165,7 +179,7 @@ section {
     height: 72.924px;
 }
 
-#check_password_field label {
+#check-password-field label {
     display: inline-flex;
     padding: 10px;
     justify-content: center;
@@ -174,16 +188,19 @@ section {
     font: 400 20px/normal 'Bangers';
 }
 
-#check_password {
+#check-password {
     width: 318px;
     height: 32.52px;
+    padding: 4px;
     border-radius: 4px;
     border: 2px solid var(--detail-color);
+    color: var(--primary-color-dark);
     background: var(--base-color);
 }
 
 form button {
     margin-top: 40.4px;
+    cursor: pointer;
 }
 
 aside {

@@ -19,7 +19,7 @@ nav h1 {
     color: var(--tertiary-color);
 }
 
-nav button {
+nav a {
     font: 400 28px/normal 'Bangers';
     color: var(--base-color);
     text-shadow: 1px 2px 0px black;
@@ -33,7 +33,7 @@ nav button {
     cursor: pointer;
 }
 
-nav button:hover {
+nav a:hover {
     background-color: var(--secondary-color-dark);
     transition: 0.4s;
     border-color: var(--tertiary-color);
@@ -46,6 +46,10 @@ i {
     margin-left: 20px;
     font-size: 25px;
     cursor: pointer;
+}
+
+.fa-solid, .fa-userstyle {
+    margin-right: 15px;
 }
 
 i:hover {
