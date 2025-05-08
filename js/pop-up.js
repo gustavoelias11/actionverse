@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cadastro</title>
-        <link rel="shortcut icon" href="#" type="image/x-icon">
-        <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/login.css">
-    </head>
-    <body>
+let login_icon = document.querySelector('button#login-icon');
+let login_content = document.querySelector('aside#login-pop-up');
+
+const popUp = () => {
+    login_content.innerHTML = `<div id="content">
         <header>
                 <h1>Action<span>verse</span></h1>
                 <h2>Área de Identificação do Herói</h2>
@@ -36,7 +30,7 @@
                     </div>
 
                     <button type="submit" title="Enviar formulário">
-                        <img src="../img/botao-registrar.svg" alt="Enviar formulário">
+                        <img src="../img/botao_registrar.svg" alt="Enviar formulário">
                     </button>
                 </form>
             </section>
@@ -58,6 +52,7 @@
         <footer>
             <p>&copy Actionverse - Todos os direitos reservados</p>
         </footer>
-        <script src="../js/login.js"></script>
-    </body>
-</html>
+    </div>`;
+}
+
+login_icon.addEventListener('click', popUp);
