@@ -1,23 +1,31 @@
-html {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#login-pop-up {
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#login-pop-up.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+.active {
+    position: fixed;
+    z-index: 3;
     width: 100vw;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* #content {
+#content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--background);
-    border: 2px solid var(--detail-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-} */
-
-body {
-    display: flex;
+    width: 756.78px;
+    height: 692px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -26,7 +34,7 @@ body {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-header {
+#content header {
     display: flex;
     padding: 0px 237px;
     flex-direction: column;
@@ -36,7 +44,7 @@ header {
     background: var(--secondary-color-light);
 }
 
-h1 {
+#content h1 {
     display: flex;
     padding: 10px;
     justify-content: center;
@@ -46,12 +54,12 @@ h1 {
     font: 400 58px/normal 'Bangers';
 }
 
-h1 span {
+#content h1 span {
     color: var(--tertiary-color);
     font: 400 58px/normal 'Bangers';
 }
 
-h2 {
+#content h2 {
     display: flex;
     height: 38px;
     padding: 10px;
@@ -62,7 +70,7 @@ h2 {
     font: 400 20px/normal 'Bangers';
 }
 
-main {
+#content main {
     display: flex;
     width: fit-content;
     justify-content: center;
@@ -70,7 +78,7 @@ main {
     align-self: stretch;
 }
 
-section {
+#content section {
     width: 376.4px;
     height: 542px;
     background: var(--background);
@@ -198,12 +206,12 @@ section {
     background: var(--base-color);
 }
 
-form button {
+#content form button {
     margin-top: 40.4px;
     cursor: pointer;
 }
 
-aside {
+#content aside {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,7 +241,7 @@ aside {
     font:400 20px/normal 'Bangers';
 }
 
-h3 {
+#content h3 {
     margin-top: 32.3px;
     margin-bottom: 20.21px;
     color: var(--tertiary-color);
@@ -241,14 +249,14 @@ h3 {
     font: 400 28px/normal 'Bangers';
 }
 
-aside p {
+#content aside p {
     margin-bottom: 18.08px;
     color: var(--base-color);
     text-align: center;
     font: 500 18px/normal 'Inter';
 }
 
-ul {
+#content ul {
     display: block;
     margin-bottom: 18.08px;
     height: 106.429px;
@@ -257,18 +265,18 @@ ul {
     align-items: center;
 }
 
-li {
+#content li {
     color: var(--base-color);
     font: 500 18px/normal 'Inter';
 }
 
-li::before {
+#content li::before {
     content: "\2714";
     color: #00b400;
     font-weight: bold;
 }
 
-a {
+#content a {
     display: flex;
     width: 230px;
     height: 47.302px;
@@ -284,7 +292,7 @@ a {
     font: 400 20px/normal 'Bangers';
 }
 
-footer {
+#content footer {
     display: flex;
     height: 27px;
     padding: 0px 159px;
@@ -295,7 +303,7 @@ footer {
     background: var(--primary-color-light);
 }
 
-footer p {
+#content footer p {
     color: var(--base-color);
     text-shadow: 1px 2px 0px var(--detail-color);
     font: 400 20px/normal 'Bangers';

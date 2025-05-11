@@ -1,5 +1,5 @@
-let login_icon = document.querySelector('button#login-icon');
-let login_content = document.querySelector('aside#login-pop-up');
+const login_icon = document.querySelector('button#login-icon');
+const login_content = document.querySelector('aside#login-pop-up');
 
 const popUp = () => {
     login_content.innerHTML = `<div id="content">
@@ -30,7 +30,7 @@ const popUp = () => {
                     </div>
 
                     <button type="submit" title="Enviar formulário">
-                        <img src="../img/botao_registrar.svg" alt="Enviar formulário">
+                        <img src="../img/botao-registrar.svg" alt="Enviar formulário">
                     </button>
                 </form>
             </section>
@@ -53,6 +53,44 @@ const popUp = () => {
             <p>&copy Actionverse - Todos os direitos reservados</p>
         </footer>
     </div>`;
-}
+
+
+    login_content.classList.add('active')
+
+    const sign_in_button = document.querySelector('button#sign-in');
+    const sign_up_button = document.querySelector('button#sign-up');
+    const name_label = document.querySelector('label#name-label');
+    const password_label = document.querySelector('label#password-label');
+    const check_password_field = document.querySelector('div#check-password-field');
+
+    const switchScreen = evt => {
+        if (evt.target.id === 'sign-in') {
+            sign_in_button.classList.add('active-button');
+            sign_in_button.style.marginLeft = '2.96px';
+
+            sign_up_button.classList.remove('active-button');
+            sign_up_button.style.marginRight = 'auto';
+
+            name_label.innerText = 'Nome do Herói';
+            password_label.innerText = 'Senha Secreta';
+
+            check_password_field.style.display = 'none';
+        } else {
+            sign_up_button.classList.add('active-button');
+            sign_up_button.style.marginRight = '2.96px';
+
+            sign_in_button.classList.remove('active-button');
+            sign_in_button.style.marginLeft = 'auto';
+
+            name_label.innerText = 'Escolha seu Codinome';
+            password_label.innerText = 'Crie sua Senha';
+
+            check_password_field.style.display = 'block';
+        }
+    };
+
+    sign_in_button.addEventListener('click', switchScreen);
+    sign_up_button.addEventListener('click', switchScreen);
+};
 
 login_icon.addEventListener('click', popUp);
