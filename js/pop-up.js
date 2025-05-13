@@ -1,11 +1,15 @@
-const login_icon = document.querySelector('button#login-icon');
+const login_icon = document.querySelector('i#login-icon');
+const close_pop_up_button = document.querySelector('button#close-pop-up');
 const login_content = document.querySelector('aside#login-pop-up');
 
 const popUp = () => {
-    login_content.innerHTML = `<div id="content">
+    login_content.innerHTML = `<div id="pop-up-content">
         <header>
+            <div>
                 <h1>Action<span>verse</span></h1>
                 <h2>Área de Identificação do Herói</h2>
+            </div>
+            <button type="button" title="Fechar tela de login" id="close-pop-up">Fechar</button>
         </header>
         <main>
             <section>
@@ -18,17 +22,14 @@ const popUp = () => {
                         <label for="name" id="name-label">Nome do herói</label>
                         <input type="text" name="name" id="name">
                     </div>
-
                     <div id="password-field">
                         <label for="password" id="password-label">Senha secreta</label>
                         <input type="password" name="password" id="password">
                     </div>
-
                     <div id="check-password-field">
                         <label for="check-password">Confirme sua senha</label>
                         <input type="password" name="check-password" id="check-password">
                     </div>
-
                     <button type="submit" title="Enviar formulário">
                         <img src="../img/botao-registrar.svg" alt="Enviar formulário">
                     </button>
@@ -54,8 +55,12 @@ const popUp = () => {
         </footer>
     </div>`;
 
+    login_content.classList.add('activated');
 
-    login_content.classList.add('active')
+
+    const close_pop_up_button = document.querySelector('button#close-pop-up');
+    close_pop_up_button.addEventListener('click', closePopUp);
+
 
     const sign_in_button = document.querySelector('button#sign-in');
     const sign_up_button = document.querySelector('button#sign-up');
@@ -91,6 +96,11 @@ const popUp = () => {
 
     sign_in_button.addEventListener('click', switchScreen);
     sign_up_button.addEventListener('click', switchScreen);
+};
+
+const closePopUp = () => {
+    login_content.innerHTML = '';
+    login_content.classList.remove('activated');
 };
 
 login_icon.addEventListener('click', popUp);
