@@ -86,7 +86,7 @@ nav li:hover {
   transition: 0.3s;
 }
 
-section {
+header section {
     background-color: var(--primary-color-dark);
     padding: 20px;
     min-height: 300px;
@@ -195,7 +195,7 @@ section {
 
   .nav-icon i {
   color: var(--base-color);
-  font-size: 22px;
+  font-size: 25px;
 }
 
   .mobile-menu {
