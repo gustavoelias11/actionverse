@@ -127,7 +127,7 @@
 }
 
 #sign-buttons button {
-    transition: all 0.3s ease; /* Suaviza todas as mudanças de estilo */
+    transition: all 0.3s ease;
 }
 
 #sign-in {
@@ -228,7 +228,7 @@
 }
 
 #check-password-field {
-    display: none;
+    visibility: hidden;
     margin: auto;
     margin-top: 11.83px;
     width: 318px;
@@ -338,6 +338,13 @@
     color: var(--detail-color);
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     font: 400 20px/normal 'Bangers';
+}
+
+#pop-up-content a:hover {
+    font-size: 21px;
+    border-color: var(--tertiary-color);
+    border-width: 4px;
+    transition: 0.1s;
 }
 
 #pop-up-content footer {
