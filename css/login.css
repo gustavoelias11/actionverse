@@ -29,7 +29,7 @@
     transform: translate(-50%, -50%);
     display: flex;
     width: 756.78px;
-    height: 690.9px;
+    height: 684px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -126,6 +126,10 @@
     background: var(--base-color);
 }
 
+#sign-buttons button {
+    transition: all 0.3s ease;
+}
+
 #sign-in {
     display: flex;
     width: 159px;
@@ -139,11 +143,12 @@
     cursor: pointer;
 }
 
-.active-button {
+#sign-in.active-button {
     margin-top: 2.96px;
     margin-left: 2.96px;
     background: var(--background);
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease; /* Adiciona transição suave */
 }
 
 #sign-up {
@@ -157,6 +162,18 @@
     color: var(--detail-color);
     font: 400 20px/normal 'Bangers';
     cursor: pointer;
+}
+
+#sign-up.active-button {
+    margin-top: 2.96px;
+    margin-right: 2.96px;
+    background: var(--background);
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease; /* Adiciona transição suave */
+}
+
+#sign-buttons button:hover { /* Aumenta ligeiramente o botão ao passar o mouse */
+    transition: transform 0.3s ease; /* Suaviza a transformação e a sombra */
 }
 
 #name-field {
@@ -211,7 +228,7 @@
 }
 
 #check-password-field {
-    display: none;
+    visibility: hidden;
     margin: auto;
     margin-top: 11.83px;
     width: 318px;
@@ -321,6 +338,13 @@
     color: var(--detail-color);
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
     font: 400 20px/normal 'Bangers';
+}
+
+#pop-up-content a:hover {
+    font-size: 21px;
+    border-color: var(--tertiary-color);
+    border-width: 4px;
+    transition: 0.1s;
 }
 
 #pop-up-content footer {

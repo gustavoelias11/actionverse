@@ -31,7 +31,7 @@ const popUp = () => {
                         <input type="password" name="check-password" id="check-password">
                     </div>
                     <button type="submit" title="Enviar formulário">
-                        <img src="../img/botao-registrar.svg" alt="Enviar formulário">
+                        <img src="/img/botao-registrar.svg" alt="Enviar formulário">
                     </button>
                 </form>
             </section>
@@ -79,7 +79,7 @@ const popUp = () => {
             name_label.innerText = 'Nome do Herói';
             password_label.innerText = 'Senha Secreta';
 
-            check_password_field.style.display = 'none';
+            check_password_field.style.visibility = 'hidden';
         } else {
             sign_up_button.classList.add('active-button');
             sign_up_button.style.marginRight = '2.96px';
@@ -90,7 +90,7 @@ const popUp = () => {
             name_label.innerText = 'Escolha seu Codinome';
             password_label.innerText = 'Crie sua Senha';
 
-            check_password_field.style.display = 'block';
+            check_password_field.style.visibility = 'visible';
         }
     };
 

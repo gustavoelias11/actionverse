@@ -1,3 +1,7 @@
+main {
+    height: 100vh;
+}
+
 footer {
     color: var(--base-color);
     font: 400 20px/normal 'Bangers';
