@@ -1,44 +1,63 @@
-html {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#login-pop-up {
+    opacity: 0;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#login-pop-up.activated {
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
+    opacity: 1;
+    transform: scale(1);
 }
 
-/* #content {
+
+.activated {
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#pop-up-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
+    width: 756.78px;
+    height: 684px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: var(--background);
     border: 2px solid var(--detail-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-} */
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: var(--background);
-    border: 2px solid var(--detail-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-header {
+#pop-up-content header {
     display: flex;
+    position: relative;
     padding: 0px 237px;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: stretch;
     background: var(--secondary-color-light);
 }
 
-h1 {
+#pop-up-content header div {
     display: flex;
-    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pop-up-content h1 {
+    display: flex;
+    padding: 9.5px;
     justify-content: center;
     align-items: center;
     color: var(--base-color);
@@ -46,12 +65,12 @@ h1 {
     font: 400 58px/normal 'Bangers';
 }
 
-h1 span {
+#pop-up-content h1 span {
     color: var(--tertiary-color);
     font: 400 58px/normal 'Bangers';
 }
 
-h2 {
+#pop-up-content h2 {
     display: flex;
     height: 38px;
     padding: 10px;
@@ -62,7 +81,27 @@ h2 {
     font: 400 20px/normal 'Bangers';
 }
 
-main {
+#close-pop-up {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 38px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: var(--base-color);
+    text-shadow: 1px 2px 0px var(--detail-color);
+    font: 400 28px/normal 'Bangers';
+    cursor: pointer;
+}
+
+#close-pop-up:hover {
+    color: var(--tertiary-color);
+    transition: 0.7s;
+}
+
+#pop-up-content main {
     display: flex;
     width: fit-content;
     justify-content: center;
@@ -70,7 +109,7 @@ main {
     align-self: stretch;
 }
 
-section {
+#pop-up-content section {
     width: 376.4px;
     height: 542px;
     background: var(--background);
@@ -87,6 +126,10 @@ section {
     background: var(--base-color);
 }
 
+#sign-buttons button {
+    transition: all 0.3s ease;
+}
+
 #sign-in {
     display: flex;
     width: 159px;
@@ -100,11 +143,12 @@ section {
     cursor: pointer;
 }
 
-.active-button {
+#sign-in.active-button {
     margin-top: 2.96px;
     margin-left: 2.96px;
     background: var(--background);
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease; /* Adiciona transição suave */
 }
 
 #sign-up {
@@ -118,6 +162,18 @@ section {
     color: var(--detail-color);
     font: 400 20px/normal 'Bangers';
     cursor: pointer;
+}
+
+#sign-up.active-button {
+    margin-top: 2.96px;
+    margin-right: 2.96px;
+    background: var(--background);
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease; /* Adiciona transição suave */
+}
+
+#sign-buttons button:hover { /* Aumenta ligeiramente o botão ao passar o mouse */
+    transition: transform 0.3s ease; /* Suaviza a transformação e a sombra */
 }
 
 #name-field {
@@ -172,7 +228,7 @@ section {
 }
 
 #check-password-field {
-    display: none;
+    visibility: hidden;
     margin: auto;
     margin-top: 11.83px;
     width: 318px;
@@ -198,12 +254,12 @@ section {
     background: var(--base-color);
 }
 
-form button {
+#pop-up-content form button {
     margin-top: 40.4px;
     cursor: pointer;
 }
 
-aside {
+#pop-up-content aside {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,7 +289,7 @@ aside {
     font:400 20px/normal 'Bangers';
 }
 
-h3 {
+#pop-up-content h3 {
     margin-top: 32.3px;
     margin-bottom: 20.21px;
     color: var(--tertiary-color);
@@ -241,14 +297,14 @@ h3 {
     font: 400 28px/normal 'Bangers';
 }
 
-aside p {
+#pop-up-content aside p {
     margin-bottom: 18.08px;
     color: var(--base-color);
     text-align: center;
     font: 500 18px/normal 'Inter';
 }
 
-ul {
+#pop-up-content ul {
     display: block;
     margin-bottom: 18.08px;
     height: 106.429px;
@@ -257,18 +313,18 @@ ul {
     align-items: center;
 }
 
-li {
+#pop-up-content li {
     color: var(--base-color);
     font: 500 18px/normal 'Inter';
 }
 
-li::before {
+#pop-up-content li::before {
     content: "\2714";
     color: #00b400;
     font-weight: bold;
 }
 
-a {
+#pop-up-content a {
     display: flex;
     width: 230px;
     height: 47.302px;
@@ -284,7 +340,14 @@ a {
     font: 400 20px/normal 'Bangers';
 }
 
-footer {
+#pop-up-content a:hover {
+    font-size: 21px;
+    border-color: var(--tertiary-color);
+    border-width: 4px;
+    transition: 0.1s;
+}
+
+#pop-up-content footer {
     display: flex;
     height: 27px;
     padding: 0px 159px;
@@ -295,7 +358,7 @@ footer {
     background: var(--primary-color-light);
 }
 
-footer p {
+#pop-up-content footer p {
     color: var(--base-color);
     text-shadow: 1px 2px 0px var(--detail-color);
     font: 400 20px/normal 'Bangers';
