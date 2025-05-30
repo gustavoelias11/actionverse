@@ -1,88 +1,109 @@
 const styles = `
-    @import url("/css/style.css");
     footer {
-        color: var(--base-color);
-        font: 400 20px/normal 'Bangers';
-        text-shadow: 1px 2px 0px black;
-        width: 100%;
-        background: var(--primary-color-light);
+    color: var(--base-color);
+    font: 400 20px/normal 'Bangers';
+    text-shadow: 1px 2px 0px black;
+    width: 100%;
+    background: var(--primary-color-light); /* Matches #content background, can be on footer */
     }
 
-    #content {
-        background: var(--primary-color-light);
+    .footer-main-content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 15rem;
         padding: 3rem 3.5rem;
-
-        max-width: 1200px;     /* ou o valor que achar ideal */
-    margin: 0 auto; 
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
-    #footer-contacts h1 {
+    .footer-brand-social h1 {
         font-size: 35px;
         margin-bottom: 0.75rem;
     }
 
-    #footer-contacts p {
+    .footer-brand-social p {
         font-family: 'Inter';
+        font-size: 16px;
     }
 
-    #footer-contacts span {
+    .footer-brand-social h1 span {
         color: var(--tertiary-color);
         text-shadow: 1px 2px 0px black;
     }
 
-    #social-media {
+    .footer-social-links {
         display: flex;
         gap: 2rem;
         font-size: 1.5rem;
         margin-top: 1.5rem;
     }
 
-    #social-media .footer-link {
+    .footer-social-links .footer-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         height: 2.5rem;
         width: 2.5rem;
         color: var(--base-color);
     }
 
-    #social-media .footer-link:hover {
+    .footer-social-links .footer-link:hover {
         color: var(--tertiary-color);
-        transition: 0.7s;
+        transition: color 0.7s;
     }
 
-    .footer-list h3 {
-        font-size: 35px;
-    }
-
-    .footer-list {
+    .footer-nav-list {
         display: flex;
         flex-direction: column;
         gap: 0.75rem;
     }
 
-    .footer-list li {
+    .footer-nav-list h3 {
+        font-size: 35px;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-nav-list li a {
         font-family: 'Inter';
+        font-size: 16px;
+        text-decoration: none;
+        color: var(--base-color);
     }
 
-    .footer-list li:hover {
+    .footer-nav-list li a:hover {
         color: var(--tertiary-color);
-        transition: 0.7s;
+        transition: color 0.7s;
     }
 
-    #copyright {
+    .footer-legal {
         display: flex;
         justify-content: center;
-        background-color: var(--primary-color-light);
+        align-items: center;
         font-size: 0.9rem;
         padding: 1.5rem;
         font-weight: 100;
+        font-family: 'Inter';
+        text-shadow: none;
     }
 
     @media (max-width: 999px) {
-        #content {
+        .footer-main-content {
             grid-template-columns: repeat(1, 1fr);
-            gap: 2rem;
+            gap: 3rem;
+            padding: 2rem 1.5rem;
+        }
+
+        .footer-brand-social,
+        .footer-nav-list {
+            text-align: center;
+        }
+
+        .footer-social-links {
+            justify-content: center;
+        }
+
+        .footer-nav-list h3 {
+            font-size: 28px;
         }
     }
 `;

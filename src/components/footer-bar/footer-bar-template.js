@@ -1,35 +1,37 @@
 const template = `
     <footer>
-        <div id="content">
-            <div id="footer-contacts">
+        <div class="footer-main-content">
+            <div class="footer-brand-social">
                 <h1>ACTION<span>VERSE</span></h1>
                 <p>Somos uma empresa focada em preservar e celebrar a cultura dos memes brasileiros através de edições exclusivas</p>
-                <div id="social-media">
-                    <a href="#" class="footer-link"><i class="fab fa-instagram" id="icon"></i></a>
-                    <a href="#" class="footer-link"><i class="fab fa-x-twitter" id="icon"></i></a>
-                    <a href="#" class="footer-link"><i class="fab fa-facebook-f" id="icon"></i></a>
+                <div class="footer-social-links">
+                    <a href="#" class="footer-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-link" aria-label="X Twitter"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="footer-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
-            <ul class="footer-list">
-                <h3>CATEGORIAS</h3> 
-                <li>Memes Clássicos</li>
-                <li>Virais Recentes</li>
-                <li>Edições Limitadas</li>
-                <li>Coleções Temáticas</li>
-                <li>Novos Lançamentos</li>
+
+            <ul class="footer-nav-list">
+                <h3>CATEGORIAS</h3>
+                <li><a href="#">Memes Clássicos</a></li>
+                <li><a href="#">Virais Recentes</a></li>
+                <li><a href="#">Edições Limitadas</a></li>
+                <li><a href="#">Coleções Temáticas</a></li>
+                <li><a href="#">Novos Lançamentos</a></li>
             </ul>
-            <ul class="footer-list">
-                <h3>SOBRE</h3>  
-                <li>Como Funciona</li>
-                <li>FAQ</li>
-                <li>Termos de Uso</li>
-                <li>Política de Privacidade</li>
-                <li>Contato</li>
+
+            <ul class="footer-nav-list">
+                <h3>SOBRE</h3>
+                <li><a href="#">Como Funciona</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </div>
-        <div id="copyright">
-            &copy; 
-            2025 ACTIONVERSE - TODOS OS DIREITOS E MEMES RESERVADOS
+
+        <div class="footer-legal">
+            &copy; 2025 ACTIONVERSE - TODOS OS DIREITOS E MEMES RESERVADOS
         </div>
     </footer>
 `;
