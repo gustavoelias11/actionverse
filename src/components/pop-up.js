@@ -31,7 +31,7 @@ const popUp = () => {
                         <input type="password" name="check-password" id="check-password">
                     </div>
                     <button type="submit" title="Enviar formulário">
-                        <img src="/img/botao-registrar.svg" alt="Enviar formulário">
+                        <img src="/public/img/botao-registrar.svg" alt="Enviar formulário">
                     </button>
                 </form>
             </section>
