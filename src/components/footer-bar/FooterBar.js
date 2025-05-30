@@ -1,5 +1,5 @@
-import template from './footer-bar-template.js';
-import styles from './footer-bar-styles.js';
+import template from '/src/components/footer-bar/footer-bar-template.js';
+import styles from '/src/components/footer-bar/footer-bar-styles.js';
 
 class FooterBar extends HTMLElement {
     constructor() {
