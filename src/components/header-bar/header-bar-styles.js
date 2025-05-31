@@ -10,7 +10,7 @@ const styles = `
         text-transform: uppercase;
     }
 
-    nav span {
+    nav span { /* Estilo para o 'Verse' no logo */
         font: 400 42px/normal 'Bangers';
         color: var(--tertiary-color);
         text-shadow: 1px 2px 0px black;
@@ -22,6 +22,7 @@ const styles = `
         align-items: center;
         background: var(--primary-color-light);
         height: 8vh;
+        position: relative;
     }
 
     nav li {
@@ -32,7 +33,6 @@ const styles = `
         border-right: 2px solid white;
         border-radius: 5px;
         padding: 5px;
-        cursor: pointer;
     }
 
     nav li a:hover {
@@ -60,11 +60,11 @@ const styles = `
         font-size: 28px;
         list-style: none;
         display: flex;
-        cursor: pointer;
     }
-
+    
     .nav-icon i {
         margin-left: 32px;
+        cursor: pointer;
     }
 
     .nav-icon i:hover {
@@ -75,8 +75,7 @@ const styles = `
     .mobile-menu {
         display: none;
         cursor: pointer;
-        z-index: 20;
-        position: relative;
+        z-index: 1001;
     }
 
     .mobile-menu div {
@@ -92,6 +91,11 @@ const styles = `
         padding: 20px;
         min-height: 300px;
         position: relative;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
     }
 
     .boom {
@@ -112,29 +116,29 @@ const styles = `
         right: 30px;
     }
 
-    #principal {
+    .main-title {
         font: 400 58px/normal 'Bangers';
-        margin-top: 35px;
+        text-shadow: 1px 2px 0px black; 
+        margin-top: 10px; 
     }
-
-    .p1 {
+    
+    .main-title.p1 { 
         color: var(--base-color);
-        text-shadow: 1px 2px 0px black;
-        text-align: center;
     }
-
-    .p2 {
+    
+    .main-title.p2 { 
         color: var(--tertiary-color);
-        text-shadow: 1px 2px 0px black;
-        text-align: center;
+    }
+    
+    .main-title.p2 span { 
+    
     }
 
     .s-principal {
         font: 400 25px/normal 'Bangers';
         color: var(--base-color);
         text-shadow: 1px 2px 0px black;
-        text-align: center;
-        margin-top: 5px;
+        margin-top: 15px;
     }
 
     @media (max-width: 999px) {
@@ -143,7 +147,7 @@ const styles = `
         }
 
         nav li a:hover {
-            color: var(--base-color);
+            color: var(--base-color); 
         }
 
         nav li:hover {
@@ -151,50 +155,51 @@ const styles = `
         }
 
         nav li {
-            border: none;
+            border: none; 
         }
 
         .nav-list {
-            position: absolute;
-            top: 0; 
+            position: absolute; 
+            top: 8vh; /* Abaixo do nav */
             right: 0;
             width: 50vw;
-            height: 100vh;
+            height: auto; 
+            min-height: 250px; 
             background: var(--primary-color-light);
             flex-direction: column;
             align-items: center;
-            justify-content: space-around;
+            justify-content: flex-start; 
+            padding-top: 30px; 
+            padding-bottom: 80px; 
             transform: translateX(100%);
             transition: transform 0.3s ease-in;
-            z-index: 9;
+            z-index: 1000; 
         }
         .nav-list li {
             margin-left: 0;
+            margin-bottom: 25px; 
             opacity: 0;
         }
 
-        .nav-icon {
+        .nav-icon { 
             display: flex;
             flex-direction: row;
             justify-content: center;
             gap: 32px;
             padding: 20px 0;
-            background: var(--primary-color-light);
+            background: var(--primary-color-light); 
             transform: translateX(100%);
             transition: transform 0.3s ease-in;
             position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 50vw;
-            height: auto;
-            z-index: 9;
+            
+            bottom: 0; 
+            right: 0; 
+            width: 50vw; 
+            z-index: 1000; 
+            border-top: 1px solid var(--primary-color-dark); 
         }
-
-        .fa-user {
-            margin-right: 25px;
-        }
-
-        .nav-icon i {
+        
+        .nav-icon i { 
             color: var(--base-color);
             font-size: 25px;
         }
@@ -202,17 +207,17 @@ const styles = `
         .mobile-menu {
             display: block;
         }
-        }
+    }
 
-        .nav-list.active {
-            transform: translateX(0);
-        }
+    .nav-list.active {
+        transform: translateX(0);
+    }
+    
+    .nav-icon.active { 
+        transform: translateX(0);
+    }
 
-        .nav-icon.active {
-            transform: translateX(0);
-        }
-
-        @keyframes navLinkFade {
+    @keyframes navLinkFade {
         from {
             opacity: 0;
             transform: translateX(50px);
@@ -221,46 +226,38 @@ const styles = `
             opacity: 1;
             transform: translateX(0);
         }
-        }
+    }
 
-        .mobile-menu.active .line1 {
-            transform: rotate(-45deg) translate(-8px, 8px);
-        }
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
 
-        .mobile-menu.active .line2 {
-            opacity: 0;
-        }
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
 
-        .mobile-menu.active .line3 {
-            transform: rotate(45deg) translate(-5px, -7px);
-        }
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
 
-        /* RESPONSIVIDADE SECTION */
-        @media (max-width: 999px) {
-        section  {
+    /* RESPONSIVIDADE SECTION */
+    @media (max-width: 999px) {
+        header section { 
             padding: 20px;
             min-height: 200px;
         }
 
-        .boom {
+        .boom, .wow {
             font-size: 25px;
         }
 
-        .wow {
-            font-size: 25px;
-        }
-
-        #principal {
+        .main-title { 
             font-size: 38px;
         }
 
         .s-principal {
             font-size: 15px;
-            margin-top: 5px;
-        }
-
-        .content {
-            margin-bottom: 30px;
+            margin-top: 5px; 
         }
     }
 `;
