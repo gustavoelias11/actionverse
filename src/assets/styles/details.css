@@ -4,57 +4,53 @@ body{
 
 #cabecalho{
     display: flex;
+    background-color: var(--primary-color-dark);
     justify-content: space-between;
-    padding: 5px;
     height: auto;
     border-top: 2px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-
 
 #cabecalho h2, h3 {
     color: white;
-    font-family: 'Bangers';
-    font-size: 42px;
+    font: 400 42px/normal 'Bangers';
     background-color: var(--primary-color-dark); 
     text-align: left;
-    text-shadow: 1px 0.5px 0px black;
-    -webkit-text-stroke: 0.3px black; 
+    text-shadow: 1px 2px 0px black;
+    margin-left: 25px; 
 }
+
 #cabecalho h3{
     font-size: 28px;
 }
 
-
 #cabecalho h2 span{
-    font-family: 'Bangers';
-    font-size: 42px;
+    font: 400 42px/normal 'Bangers';
     color: var(--tertiary-color);
-    text-shadow: 1px 0.5px 0px black;
-    -webkit-text-stroke: 0.3px black;
+    text-shadow: 1px 2px 0px black;
 }
 
 #bang{
-    font-family: 'Bangers';
     background-color: var(--primary-color-dark);
-    text-align: right;
-    margin-bottom: auto;
-    padding-right: 15px;
+    padding-right: 25px;
     text-shadow: 1px 0.5px 0px black;
-    -webkit-text-stroke: 0.3px black;
     transition: 0.3s;
+    padding-top: 5px;
+    margin-right: 8px;
 }
+
 #bang:hover{
     transform: scale(1.1);
 }
 
 #bang p{
-    font-family: 'Bangers';
+    font: 400 28px/normal 'Bangers';
     color: var(--tertiary-color);
     font-size: 42px;
     height: 45px;
     padding-top: 8px;
     text-shadow: 1px 0.5px 0px black;
-    -webkit-text-stroke: 0.3px black;
     transition: 0.3s;
 }
 
@@ -98,14 +94,16 @@ body{
 
 }
 #opcao-rara p{
-    font-family: 'Bangers';
+    font: 400 28px/normal 'Bangers';
+    padding-top: 30px;
+    padding-left: 10px;
     color: white;
     text-align: center;
     transform: rotate(20deg);
     width:120px;
     height:80px;
     text-shadow: 1px 0.5px 0px black;
-    -webkit-text-stroke: 0.3px black;
+    
    
 }
 
@@ -133,28 +131,26 @@ body{
 
 
 #nome h2{
-    font-family: 'Bangers';
-    font-size: 42px;
+    font: 400 42px/normal 'Bangers';
     color: white;
     background-color: var(--secondary-color-dark);
     margin-right: -25px;
     margin-left: -25px;
     margin-top: -25px;
     padding-left: 35px;
+    padding-top: 8px;
     height: 60px;
     text-shadow: 1px 0.5px 0px black;
-    -webkit-text-stroke: 0.3px black;
 }
 
 .topicos{
-    font-family: 'Bangers';
-    font-size: 36px;
+    font: 400 36px/normal 'Bangers';
     color: var(--primary-color-light);
     margin: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
     text-shadow: 1px 0.5px 0px black;
-    -webkit-text-stroke: 0.3px black;
+    
 } 
 
 
@@ -180,11 +176,9 @@ body{
 }
 
 #preco{
-    font-family: 'Bangers';
-    font-size: 42px;
+    font: 400 42px/normal 'Bangers';
     color: var(--secondary-color-dark);
     text-shadow: 1px 0.5px 0px black;
-    -webkit-text-stroke: 0.3px black;
     margin: 5px;
     margin-bottom: 0px;
 }
@@ -196,7 +190,6 @@ body{
     text-shadow: none;
     text-decoration: line-through;
     text-decoration-color: black;
-    -webkit-text-stroke: 0.01px white;
     font-weight: bold;
     margin-left: 5px;
 }
@@ -207,14 +200,15 @@ body{
     color: green;
     font-weight: 600;
     margin: 5px;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 
 #botao-qtd-itens{
     background-color: white;
     display: flex;
-    width: 180px;
+    width: 230px;
+    height: 60px;
     margin: 5px;
     justify-content: space-between;
 }
@@ -222,7 +216,7 @@ body{
 #botao-menos{
     background-color:var(--primary-color-light);
     font-size: 25px;
-    width: 40px;
+    width: 50px;
     text-align: center;
     color: white;
     margin-top: auto;
@@ -239,7 +233,7 @@ body{
 #botao-mais{
     background-color:var(--primary-color-light);
     font-size: 25px;
-    width: 40px;
+    width: 50px;
     margin-left: auto;
     text-align: center;
     color: white;
@@ -263,17 +257,15 @@ body{
     margin-bottom: auto;
 }
 
-#botao-carrinho img {
-    width: 400px;
-    margin-top: 10px;
-    margin-left: -8px;
-    transition: 0.3s;
+#botao-carrinho img{
+transition: 0.4s;
+
 }
 
 #botao-carrinho img:hover{
-    transform: scale(1.1);
-} 
+transform: scale(1.1);
 
+}
 
 #adicionais{
     margin: 15px;
@@ -287,26 +279,25 @@ body{
 }
 
 #outros-memes{
-    font-family: 'Bangers';
-    font-size: 58px;
+    font: 400 58px/normal 'Bangers';
     color:var(--secondary-color-dark);
     text-shadow: 1px 0.5px 0px black;
-    -webkit-text-stroke: 0.3px black;
     margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 } 
 
 #linha{
     height: 5px;
     background-color: var(--primary-color-dark);
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
 #box-outros-memes{
-    background-color: white;
     width: 380px;
-    height: 430px;
+    height: 450px;
     margin-left: 40px;
     margin-bottom: 20px;
     border: 1px solid black;
@@ -314,16 +305,18 @@ body{
 }
 
 #lula{
-    height: 380px;
-    width: 330px;
+    height: 447px;
+    width: 378px;
     position: absolute;
     opacity: 0.8;
+
 }
 
 #botao-outros-memes{
     position: relative;
+    top: 330px;
+    left: 15px;
     display: flex;
-    margin-top: 300px;
     margin-left:-10px;
     transition: transform 0.3s ease;
 }
@@ -336,11 +329,3 @@ body{
 #botao-outros-memes:hover{
     transform: scale(1.1); 
 }
-
-
-    
-
-
-
-
-
