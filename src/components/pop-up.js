@@ -103,4 +103,16 @@ const closePopUp = () => {
     login_content.classList.remove('activated');
 };
 
-login_icon.addEventListener('click', popUp);
+window.addEventListener('DOMContentLoaded', () => {
+    const headerBar = document.querySelector('header-bar');
+    if (!headerBar) return;
+
+    setTimeout(() => {
+        const shadow = headerBar.shadowRoot;
+        if (!shadow) return;
+        const login_icon = shadow.querySelector('i#login-icon');
+        if (!login_icon) return;
+
+        login_icon.addEventListener('click', popUp);
+    }, 0);
+});
