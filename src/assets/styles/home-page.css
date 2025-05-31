@@ -1,1 +1,246 @@
+main.home-page  {
+    background-color: var(--background);
+    padding: 50px;
+}
+
+.week h1 {
+    color: var(--secondary-color-dark);
+    font: 400 48px/normal 'Bangers';
+    text-shadow: 2px 4px 0px black;
+    margin-bottom: 15px;
+}
+
+.week hr {
+    background-color: var(--primary-color-dark);
+    height: 4px;
+}
+
+.card-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--base-color);
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+}
+
+.card-header {
+    padding: 10px;
+    text-align: left;
+    font: 400 22px/normal 'Bangers';
+    color: var(--base-color);
+    text-shadow: 2px 4px 0px black;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #000;
+    background-color: var(--secondary-color-light);
+}
+
+.card-image {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+
+.card-content {
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.card-price {
+    font-family: 'Bangers';
+    color: var(--secondary-color-dark);
+    font: 400 22px/normal 'Bangers';
+    text-shadow: 1px 2px 0px black;
+    margin-bottom: 15px;
+}
+
+.card-price p {
+    font: 400 42px/normal 'Bangers';
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    background-color: #FFCC00; /* Amarelo */
+    color: var(--primary-color-light);
+    text-align: center;
+    padding: 12px;
+    border: 2px solid #000;
+    cursor: pointer;
+    text-decoration: none;
+    font: 400 30px/normal 'Bangers';
+    margin-left: 50px;
+    margin-right: 50px;
+    display: block; /* Faz o botão ocupar a largura total */
+    margin-top: auto; /* Empurra o botão para baixo quando há espaço extra */
+}
+
+.card-button:hover {
+    background-color: var(--primary-color-dark);
+    color: var(--tertiary-color);
+    transition: 0.3.s;
+}
+
+.badge {
+    position: absolute;
+    top: -30px;
+    right: -30px; /* Ajuste para sobrepor a borda */
+    color: var(--base-color);
+    font-weight: bold;
+    font: 400 20px/normal 'Bangers';
+    text-shadow: 1px 3px 0px black;
+    -webkit-text-stroke: 0.5px black;
+    padding: 35px 8px; /* Padding aumentado para forma mais oval */
+    border-radius: 50%; /* Faz o badge circular/oval */
+    border: 2px solid #000;
+    transform: rotate(15deg); /* Rotação do badge */
+}
+
+.badge.yellow {
+    background-color: #FFD700; /* Amarelo dourado */
+}
+
+.badge.red-badge { /* Nome da classe alterado para evitar conflito */
+    background-color: #DC143C; /* Vermelho carmesim */
+    color: #fff;
+    padding: 10px 8px; /* Padding ajustado para o texto */
+}
+
+.colection {
+    margin-top: 25px;
+    position: relative;
+    background-color: var(--primary-color-light);
+    height: 300px;
+    padding: 50px 30px 30px 30px
+}
+
+#kapow {
+    color: var(--tertiary-color);
+    font: 400 70px/normal 'Bangers';
+    text-shadow: 1px 3px 0px black;
+    position: absolute;
+    top: -45px;
+    left: -30px;
+}
+
+.colection-content {
+    text-align: center;
+    color: var(--base-color);
+    font: 400 25px/normal 'Bangers';
+    text-shadow: 2px 3px 0px black;
+    letter-spacing: 1.5px;
+}
+
+.colection-content span {
+    color: var(--tertiary-color);
+}
+
+.colection-content p {
+    font-family: 'Inter';
+    letter-spacing: 0px;
+}
+
+.colection-content img {
+    margin-top: 25px;
+}
+
+@media (max-width: 1150px) {
+    #kapow {
+        font-size: 50px;
+        top: -25px;
+    }
+
+    .colection-content {
+        font-size: 20px;
+    }
+
+    .colection-content p {
+        font-size: 16px;
+    }
+
+    .colection-content img {
+        width: 400px;
+    }
+}    
+
+@media (max-width: 900px) {
+    #kapow {
+        font-size: 40px;
+        top: -25px;
+    }
+
+    .colection-content {
+        font-size: 15px;
+    }
+
+    .colection-content p {
+        font-size: 13px;
+    }
+
+    .colection-content img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 750px) {
+    #kapow {
+        font-size: 40px;
+        top: -25px;
+    }
+
+    .colection-content {
+        font-size: 15px;
+    }
+
+    .colection-content p {
+        font-size: 12px;
+    }
+
+    .colection-content img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    #kapow {
+        font-size: 40px;
+        top: -25px;
+    }
+
+    .colection-content {
+        font-size: 13px;
+    }
+
+    .colection-content p {
+        font-size: 12px;
+    }
+
+    .colection-content img {
+        width: 250px;
+    }
+}
 
