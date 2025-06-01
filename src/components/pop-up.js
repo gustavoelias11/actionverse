@@ -1,5 +1,4 @@
 const login_icon = document.querySelector('i#login-icon');
-const close_pop_up_button = document.querySelector('button#close-pop-up');
 const login_content = document.querySelector('aside#login-pop-up');
 
 const popUp = () => {
@@ -9,7 +8,7 @@ const popUp = () => {
                 <h1>Action<span>verse</span></h1>
                 <h2>Área de Identificação do Herói</h2>
             </div>
-            <button type="button" title="Fechar tela de login" id="close-pop-up">Fechar</button>
+            <button type="button" title="Fechar tela de login" id="close-pop-up">X</button>
         </header>
         <main>
             <section>
@@ -42,10 +41,10 @@ const popUp = () => {
                 <h3>Torne-se um Colecionador</h3>
                 <p>Junte-se à Liga dos Colecionadores de bonecos e tenha acesso a conteúdos exclusivos e colecionáveis raros!</p>
                 <ul>
-                    <li> Acesso a bonecos raros e exclusivos</li>
-                    <li> Coleções temáticas especiais</li>
-                    <li> Salve seus favoritos na sua galeria</li>
-                    <li> Participe de lançamentos especiais</li>
+                    <li>Acesso a bonecos raros e exclusivos</li>
+                    <li>Coleções temáticas especiais</li>
+                    <li>Salve seus favoritos na sua galeria</li>
+                    <li>Participe de lançamentos especiais</li>
                 </ul>
                 <a href="#">Venha para o Actionverse!</a>
             </aside>
