@@ -7,13 +7,12 @@
         <link rel="stylesheet" href="../assets/styles/style.css">
         <link rel="stylesheet" href="../components/header.css">
         <link rel="stylesheet" href="../assets/styles/details.css">
+       <script src="../components/details.js" defer></script>
+
         
     </head>
 <!-- Seu conteúdo HTML -->
 
-</body>
-
-    
     <body>
         <!--NAVBAR-->
         <header>
@@ -86,10 +85,10 @@
                                 <h2 class="topicos">Quantidade</h2>
                             <div id="botao-qtd-itens">
                                 <button id="botao-menos">-</button>
-                                    <p>1</p>
+                                <p id="qtd-itens">1</p> <!-- Corrigido -->
                                 <button id="botao-mais">+</button>
                             </div>
-                            
+                            <div id="botao-qtd-itens">
                                 <a id="botao-carrinho" href="#"><img style="margin-top: 20px;" src="/public/img/botão carrinho.png" alt="Enviar formulário"></a>
                             <h2 class="topicos">Informações adicionais</h2>
                                 <ul id="adicionais">
