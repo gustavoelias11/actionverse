@@ -1,5 +1,5 @@
 const baseStyles = `
-    * { /* Estilos gerais */
+    * {
     margin: 0;
     padding: 0;
     background: none;
