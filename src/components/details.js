@@ -2,7 +2,7 @@ const botaoMais = document.getElementById('botao-mais');
 const botaoMenos = document.getElementById('botao-menos');
 const qtdItens = document.getElementById('qtd-itens');
 const precoElemento = document.getElementById('preco');
-
+// Atualizar nomes para inglês
 let quantidade = 1;
 const precoUnitario = 79.90;
 
