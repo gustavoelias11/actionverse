@@ -8,7 +8,6 @@ const precoUnitario = 79.90;
 
 function atualizarPreco() {
   const precoTotal = precoUnitario * quantidade;
-  // Atualiza o texto com formatação em reais (R$ 79,90)
   precoElemento.textContent = `R$ ${precoTotal.toFixed(2).replace('.', ',')}`;
 }
 
@@ -26,10 +25,4 @@ botaoMenos.addEventListener('click', () => {
   }
 });
 
-// Inicializa o preço na página
 atualizarPreco();
-
-
-
-
-
