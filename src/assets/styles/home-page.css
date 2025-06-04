@@ -1,5 +1,6 @@
 main.home-page  {
-    background-color: var(--background);
+    /*background-image: linear-gradient(to bottom, #f1b40e7a, var(--background), var(--background), var(--background));*/
+    background: var(--background);
     padding: 50px;
 }
 
@@ -31,12 +32,13 @@ main.home-page  {
     position: relative;
     margin-top: 50px;
     margin-bottom: 50px;
+    transition: 0.5s;
+    transform: rotate(-0.8deg);
 }
 
 .card:hover {
     transform: translateY(-20px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-    transition: 0.5s;
 }
 
 .card-header {
@@ -47,7 +49,15 @@ main.home-page  {
     text-shadow: 2px 4px 0px black;
     letter-spacing: 2px;
     border-bottom: 2px solid #000;
+    
+}
+
+.card-header.red {
     background-color: var(--secondary-color-light);
+}
+
+.card-header.blue {
+    background-color: var(--primary-color-light);
 }
 
 .card-image {
@@ -55,7 +65,11 @@ main.home-page  {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
+}
+
+.card-image img {
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.171);
 }
 
 .card-content {
@@ -85,7 +99,7 @@ main.home-page  {
 }
 
 .card-button {
-    background-color: #FFCC00; /* Amarelo */
+    background-color: var(--tertiary-color); /* Amarelo */
     color: var(--primary-color-light);
     text-align: center;
     padding: 12px;
@@ -102,7 +116,7 @@ main.home-page  {
 .card-button:hover {
     background-color: var(--primary-color-dark);
     color: var(--tertiary-color);
-    transition: 0.3.s;
+    transition: 0.3s;
 }
 
 .badge {
@@ -121,13 +135,18 @@ main.home-page  {
 }
 
 .badge.yellow {
-    background-color: #FFD700; /* Amarelo dourado */
+    background-color: var(--tertiary-color); /* Amarelo dourado */
 }
 
-.badge.red-badge { /* Nome da classe alterado para evitar conflito */
-    background-color: #DC143C; /* Vermelho carmesim */
-    color: #fff;
-    padding: 10px 8px; /* Padding ajustado para o texto */
+.badge.red {
+    background-color: var(--secondary-color-dark);
+    padding: 25px 20px;
+}
+
+.badge.blue {
+    background-color: var(--primary-color-dark);
+    text-align: center;
+    padding: 25px 15px;
 }
 
 .colection {

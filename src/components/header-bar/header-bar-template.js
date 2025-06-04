@@ -10,7 +10,7 @@ const template = `
             <ul class="nav-list" id="navList">
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Raridade</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
             <div class="nav-icon">
