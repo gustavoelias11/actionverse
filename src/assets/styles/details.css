@@ -12,7 +12,8 @@ body{
     padding-bottom: 15px;
 }
 
-#cabecalho h2, h3 {
+#cabecalho > div h2,
+#cabecalho > div h3 {
     color: white;
     font: 400 42px/normal 'Bangers';
     background-color: var(--primary-color-dark); 
