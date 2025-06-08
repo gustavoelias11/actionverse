@@ -1,0 +1,822 @@
+#header{
+    background: linear-gradient(to bottom, var(--tertiary-color), white, white);
+    text-shadow: 1px 0.5px 0px black;
+}
+
+#header div{
+    background-color: white;
+    text-align: center;
+    width: 750px;
+    height:150px;
+    margin: 30px auto 30px auto;
+    border: 3px solid black;
+}
+
+#header h1 {
+    font: 400 48px/normal 'Bangers';
+    color: var(--secondary-color-dark);
+    padding-top: 30px;
+    text-shadow: 2px 1px 0px black;
+}
+
+#header span{
+    color: var(--primary-color-dark);
+    font: 400 38px/normal 'Bangers';
+    text-shadow: 1px 1px 0px black;
+}
+
+#header p{
+    color: var(--primary-color-light);
+    font: 400 22px/normal 'Bangers';
+    text-shadow: 1px 0.5px 0px black;
+    letter-spacing: 1px;
+}
+
+#epic{
+    font: 400 42px/normal 'Bangers';
+    color: var(--secondary-color-dark);
+    text-shadow: 2px 1px 0px black;
+    letter-spacing: 1px;
+    padding-left: 25px;
+}
+
+#heroic{
+    font: 400 42px/normal 'Bangers';
+    text-align: right;
+    color: var(--primary-color-dark);
+    text-shadow: 2px 1px 0px black;
+    letter-spacing: 1px;
+    padding-right: 25px;
+}
+
+/* -------------------------------------------------------------- */
+
+#origem-hall{
+    display: flex;
+    background-color:white;
+    height: 530px;
+}
+
+#origem{
+    background-color: white;
+    width: 620px;
+    height: 530px;
+    margin: 45px auto 45px auto;
+    border: 3px solid black;
+    transform: rotate(-1deg);
+    transition: 0.4s;
+}
+
+#origem:hover{
+    transform: rotate(0deg);
+    transform: scale(1.03);
+    box-shadow: 8px 3px 10px rgba(0, 0, 0, 0.275);
+}
+
+#origem h2{
+    font: 400 42px/normal 'Bangers';
+    color: white;
+    background-color: var(--secondary-color-dark);
+    padding: 15px 0px 15px 35px ;
+    text-shadow: 2px 1px 0px black;
+}
+
+#origem h3{
+    font: 400 32px/normal 'Bangers';
+    color:var(--primary-color-dark);
+    padding-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#origem p{
+    padding-left: 35px;
+    padding-top: 5px;
+    font: 400 18px/normal 'inter';
+    line-height: 22px;
+    width: 350px;
+    height: 160px;
+}
+
+#origem div{
+    background-color: white;
+    color: var(--primary-color-light);
+    font: 400 22px/normal 'Bangers';
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45px;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+    text-shadow: 1px 0.5px 0px black;
+    letter-spacing: 1px;
+}
+
+#hall{
+    background-color: var(--background);
+    width: 500px;
+    margin: 45px auto 45px auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding: 20px;  
+    height: 430px;
+    border: 3px solid black;
+}
+
+#hall h2{
+    font: 400 42px/normal 'Bangers';
+    color: var(--secondary-color-dark);
+    text-shadow: 2px 1px 0px black;
+    margin-bottom: 20px;
+}
+
+
+#hall div {
+    display: flex;
+    flex-wrap: wrap;           
+    justify-content: center; 
+    gap: 20px;
+    max-width: 400px;
+}
+
+.nome-hall{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    width: 120px;   
+}
+
+.nome-hall img {
+    width: 90px;         
+    height: 90px;        
+    border-radius: 50%; 
+    object-fit: cover;    
+    margin-bottom: 10px;
+    border: 4px solid black;
+}
+
+.nome-hall p {
+    font: 400 28px/normal 'Bangers';
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+/* -------------------------------------------------------------- */
+#pilares{
+    background-color: var(--primary-color-dark);
+    margin-top: 90px
+}
+
+#pilares h1 {
+    font: 400 42px/normal 'Bangers';
+    color: var(--tertiary-color);
+    text-align: center;
+    text-shadow: 2px 1px 0px black;
+    padding-top: 30px;
+    
+}
+
+#pilares > h2 {
+    font: 400 18px/normal 'inter';
+    color: white;
+    text-shadow: 2px 1px 0px black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#pilares p{
+    font: 400 18px/normal 'inter';
+    color: black;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.pilar{
+    font: 400 32px/normal 'Bangers';
+    color: var(--secondary-color-dark);
+    text-shadow: 1.5px 1px 0px black;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.icon{
+    background-color:var(--tertiary-color);
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: 3px solid black;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 38px;
+    margin:15px auto 25px auto ;
+    text-shadow: 1px 1px 0px black;
+}
+
+.box-unitario{
+    background-color: white;
+    width: 380px;
+    height: 250px;
+    margin: 50px auto 50px auto;
+    border-radius: 15px;
+    padding-left: 10px;
+    transition: 0.3s;
+    transform: rotate(-1.5deg);
+}
+
+.box-unitario:hover{
+    transform: rotate(0deg);
+    transform: scale(1.03);
+    box-shadow: 8px 3px 10px rgba(0, 0, 0, 0.275);
+}
+
+#container-pilares{
+    display: flex;
+}
+/* -------------------------------------------------------------- */
+ #valores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--background) 94%, white 100%);
+    padding-bottom: 55px;
+ }
+
+#box-valores{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 40px;
+    margin-top: 40px;
+ }
+
+ #box-valores h2{
+    font: 400 28px/normal 'Bangers';
+    color: var(--primary-color-dark);
+    text-shadow: 1px 0.5px 0px black;
+    padding-left: 20px;
+    letter-spacing: 0.6px
+ }
+  
+
+#cod-honra{
+    font: 400 42px/normal 'Bangers';
+    color: var(--secondary-color-dark);
+    text-shadow: 2px 1px 0px black;
+    margin: 50px auto 0px auto;
+    text-align: center;
+}
+
+#cod-honra-subtitulo{
+    font: 400 32px/normal 'Bangers';
+    background-color: white;
+    text-shadow: 1.5px 1px 0px black;
+    color: var(--primary-color-light);
+    width: 1000px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 60px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0px auto 35px auto;
+    letter-spacing: 0.8px
+}
+
+#autenticidade{
+    width: 550px;
+    border: 3px solid black;
+    background-color: white;
+    transition: 0.3s;
+    transform: rotate(-1deg);
+}
+#autenticidade:hover{
+    transform: rotate(0);
+    scale: 1.03;
+    box-shadow: 8px 3px 10px rgba(0, 0, 0, 0.275);
+}
+
+ #autenticidade h1{
+    background-color:#16A34A ;
+    font: 400 32px/normal 'Bangers';
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    padding: 8px 8px;
+    margin: 10px;
+
+ }
+
+ #inovacao{
+    width: 550px;
+    border: 3px solid black;
+    background-color: white;
+    transform: rotate(-1deg);
+    transition: 0.3s;
+ }
+
+ #inovacao:hover{
+    transform: rotate(0);
+    scale: 1.03;
+    box-shadow: 8px 3px 10px rgba(0, 0, 0, 0.275);
+ }
+
+ #inovacao h1{
+    background-color:#9333EA;
+    font: 400 32px/normal 'Bangers';
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    padding: 8px 8px;
+    margin: 10px;
+ }
+
+ #comunidade {
+    width: 550px;
+    border: 3px solid black;
+    background-color: white;
+    transform: rotate(-1deg);
+    transition: 0.3s;
+ }
+
+ #comunidade:hover{
+    transform: rotate(0);
+    scale: 1.03;
+    box-shadow: 8px 3px 10px rgba(0, 0, 0, 0.275);
+ }
+
+ #comunidade h1{
+    background-color:#2563EB ;
+    font: 400 32px/normal 'Bangers';
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    padding: 8px 8px;
+    margin: 10px;
+ }
+
+ #diversao{
+    width: 550px;
+    border: 3px solid black;
+    background-color: white;
+    transform: rotate(-1deg);
+    transition: 0.3s;
+ }
+
+ #diversao:hover{
+    transform: rotate(0);
+    scale: 1.03;
+    box-shadow: 8px 3px 10px rgba(0, 0, 0, 0.275);
+ }
+
+ #diversao h1{
+    background-color: #EAB308;
+    font: 400 32px/normal 'Bangers';
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    padding: 8px 8px;
+    margin: 10px;
+ }
+
+ .frase{
+    font: 400 22px/normal 'Bangers';
+    color: var(--primary-color-dark);
+    border: 3px solid black;
+    margin: 10px auto 15px 25px;
+    width: 500px;
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 10px;
+ }
+
+ 
+ .p{
+    font: 400 18px/normal 'Inter';
+    padding: 8px 0px 8px 25px;
+ }
+/* -------------------------------------------------------------- */
+#linha-tempo{
+    margin-bottom: 60px;
+}
+#linha-tempo h1{
+    font: 400 42px/normal 'Bangers';
+    color: var(--secondary-color-dark);
+    text-shadow: 1px 0.5px 0px black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#subtitulo-linha-tempo {
+    text-align: center;
+    font: 100 20px/normal 'inter';
+}
+
+#box-ano-2023{
+    background-color:var(--secondary-color-dark);
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    margin:42px 40px auto auto;
+    font: 400 28px/normal 'Bangers';
+    color: white;
+    text-shadow: 2px 1px 0px black;
+    border: 3px solid black;
+}
+
+#box-texto-2023{
+    background-color:white;
+    width: 850px;
+    margin-left: auto;
+    margin-top: 25px;
+    border: 3px solid black; 
+    transform: rotate(-1deg);
+    transition: 0.3s;
+}
+#box-texto-2023:hover{
+    transform: rotate(0);
+    scale: 1.03;
+    box-shadow: 8px 3px 10px rgba(0, 0, 0, 0.275);
+}
+
+#linha-tempo h2{
+    font: 400 32px/normal 'Bangers';
+    color: var(--primary-color-dark);
+    text-shadow: 0.5px 0.5px 0px black;
+    margin:auto 40px auto auto;
+    letter-spacing: 0.8px;
+    margin: 15px 0px 10px 20px;
+}
+
+#linha-tempo p{
+    font: 400 18px/normal 'inter';
+    margin-bottom: 15px;   
+    margin-left: 25px;
+}
+
+#ano-texto-2023{
+    display: flex;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ano-texto-2024{
+    display: flex;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box-texto-2024{
+    background-color:white;
+    width: 850px;
+    margin-left: auto;
+    margin-top: 25px;
+    border: 3px solid black;
+    transform: rotate(-1deg);
+    transition: 0.3s;
+}
+
+#box-texto-2024:hover{
+    transform: rotate(0);
+    scale: 1.03;
+    box-shadow: 8px 3px 10px rgba(0, 0, 0, 0.275);
+}
+
+
+#box-ano-2024{
+    background-color:var(--primary-color-dark);
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    margin:35px auto auto 40px;
+    font: 400 28px/normal 'Bangers';
+    color: white;
+
+    border: 3px solid black;
+}
+
+#ano-texto-2025{
+    display: flex;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box-texto-2025{
+    background-color:white;
+    width: 850px;
+    margin-left: auto;
+    margin-top: 25px;
+    border: 3px solid black; 
+    transform: rotate(-1deg);
+    transition: 0.3s; 
+}
+
+#box-texto-2025:hover{
+    transform: rotate(0);
+    scale: 1.03;
+    box-shadow: 8px 3px 10px rgba(0, 0, 0, 0.275);
+}
+
+#box-ano-2025{
+    background-color:var(--tertiary-color);
+     width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    margin:42px 40px auto auto;
+    font: 400 28px/normal 'Bangers';
+    color: black;
+    border: 3px solid black;
+}
+/* -------------------------------------------------------------- */
+#liga-dos-herois{
+    background-color: #2563EB;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    background: linear-gradient(to left,var(--primary-color-dark ), var(--secondary-color-dark));
+}
+#liga-dos-herois h1{
+    font: 400 42px/normal 'Bangers';
+    color: var(--tertiary-color);
+    text-shadow: 2px 1px 0px black;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#join{
+    font: 400 32px/normal 'Bangers';
+    color: var(--tertiary-color);
+    text-shadow: 2px 1px 0px black;
+    text-align: right;
+    padding-right: 30px;
+}
+
+#liga-dos-herois p{
+    font: 400 18px/normal 'inter';
+    color: white;
+    text-align: center;
+    width: 650px;
+    margin: 5px auto 25px auto;
+}
+
+#colecao {
+    background-color:var(--tertiary-color);
+    font: 400 28px/normal 'Bangers';
+    margin: 15px;
+    padding: 10px;
+    color: var(--primary-color-dark);
+    text-shadow: 1px 1px 0px black;
+    border: 3px solid black;
+    transition: 0.4s;
+}
+
+#colecao:hover{
+    background-color: #FDE047;
+    transform: scale(1.1);
+}
+
+#botao{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#saiba-mais{
+    font: 400 28px/normal 'Bangers';
+    margin: 10px;
+    padding: 9px 25px 9px 25px;
+    color:white;
+    text-shadow: 1px 1px 0px black;
+    border: 3px solid white;
+    transition: 0.4s;   
+}
+
+#saiba-mais:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: var(--primary-color-dark);
+    text-shadow: 1px 1px 0px black;
+}
+
+/*-------------------------------------------------------------*/
+@media (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #header div {
+    width: 90%;
+    height: auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  #header h1 {
+    font-size: 28px;
+  }
+
+  #header span {
+    font-size: 20px;
+  }
+
+  #header p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  #epic,
+  #heroic {
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  #origem-hall {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  #origem, #hall {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  #origem p {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #hall div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nome-hall {
+    width: 90px;
+  }
+
+  .nome-hall img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nome-hall p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #container-pilares {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .box-unitario {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  #pilares h1,
+  #pilares > h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #box-valores {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  #box-valores > div {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  #box-valores h1 {
+    font-size: 22px;
+  }
+
+  #box-valores h2 {
+    font-size: 18px;
+  }
+
+  .p {
+    font-size: 14px;
+  }
+
+  .frase {
+    font: 400 18px/normal 'Bangers';
+    color: var(--primary-color-dark);
+    border: 3px solid black;
+    margin: 10px auto;
+    width: 90%;
+    padding: 10px;
+    height: auto;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  #cod-honra-subtitulo {
+    width: 90%;
+    font-size: 24px;
+    height: auto;
+    padding: 10px;
+  }
+
+  #ano-texto-2023,
+  #ano-texto-2024,
+  #ano-texto-2025 {
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  #box-ano-2023,
+  #box-ano-2024,
+  #box-ano-2025 {
+    margin: 20px auto 10px auto;
+    width: 80px;
+    height: 80px;
+    font-size: 22px;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  #box-texto-2023,
+  #box-texto-2024,
+  #box-texto-2025 {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  #liga-dos-herois {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  #botao {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #colecao, #saiba-mais {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #colecao a, #saiba-mais a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .frase {
+    font-size: 16px;
+  }
+
+  #cod-honra {
+    font-size: 28px;
+  }
+
+  #box-valores h2,
+  #linha-tempo h2 {
+    font-size: 22px;
+  }
+
+  .p,
+  #linha-tempo p {
+    font-size: 16px;
+    padding-left: 15px;
+    margin-left: 15px;
+  }
+}
+
+
