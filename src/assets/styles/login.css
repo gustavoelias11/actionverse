@@ -5,7 +5,7 @@
 }
 
 #login-pop-up.activated {
-    position: fixed; /* Para o overlay */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -20,31 +20,28 @@
 }
 
 #pop-up-content {
-    position: relative; /* Mudado de fixed para ser posicionado pelo #login-pop-up.activated */
-    /* top: 50%; */    /* Removido */
-    /* left: 50%; */   /* Removido */
-    /* transform: translate(-50%, -50%); */ /* Removido */
+    position: relative;
     display: flex;
     width: 756.78px;
-    max-width: 95vw; /* Para melhor responsividade em telas menores */
+    max-width: 95vw;
     height: 684px;
-    max-height: 95vh; /* Para melhor responsividade */
+    max-height: 95vh;
     flex-direction: column;
-    align-items: stretch; /* Garante que header, main, footer estiquem horizontalmente */
+    align-items: stretch;
     background: var(--background);
     border: 2px solid var(--detail-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    overflow: hidden; /* IMPORTANTE: Para cortar conteúdo que transborda */
+    overflow: hidden;
 }
 
 #pop-up-content header {
     display: flex;
-    padding: 0 20px; /* Padding horizontal mais flexível */
+    padding: 0 20px;
     justify-content: center;
     align-items: center;
     align-self: stretch;
     background: var(--secondary-color-light);
-    flex-shrink: 0; /* Para o header não encolher */
+    flex-shrink: 0;
 }
 
 #pop-up-content header div {
@@ -83,9 +80,7 @@
 #close-pop-up {
     position: absolute;
     right: 10px;
-    top: 10px; /* Ajustado para o canto superior direito */
-    /* transform: translateY(-50%); -- Removido */
-    /* height: 38px; -- Deixar altura automática */
+    top: 10px;
     padding: 10px;
     color: var(--base-color);
     text-shadow: 1px 2px 0px var(--detail-color);
@@ -100,77 +95,66 @@
 
 #pop-up-content main {
     display: flex;
-    flex-grow: 1; /* IMPORTANTE: Faz o main ocupar o espaço vertical disponível */
-    align-items: stretch; /* IMPORTANTE: Faz section e aside terem a mesma altura */
-    /* align-self: stretch; -- Já é o padrão */
-    /* overflow: hidden; -- Pode ser útil se o conteúdo interno do main transbordar */
+    flex-grow: 1;
+    align-items: stretch;
 }
 
 #pop-up-content section {
-    flex: 1; /* IMPORTANTE: Para dividir a largura com o aside */
+    flex: 1;
     display: flex;
-    flex-direction: column; /* Para organizar os elementos do formulário */
+    flex-direction: column;
     background: var(--background);
-    padding: 18px 6px; /* Espaçamento interno */
-    overflow-y: auto; /* Adiciona scroll se o conteúdo do formulário for muito grande */
+    padding: 18px 6px;
+    overflow-y: auto;
 }
 
 #sign-buttons {
     display: flex;
-    margin-bottom: 20px; /* Ajuste de margem */
-    /* margin-top: 25.62px; -- Removido, padding da section cuida do topo */
-    width: 100%; /* Para ocupar a largura disponível */
-    max-width: 321px; /* Mantém a largura máxima original */
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 321px;
     height: 32.52px;
     border-radius: 6px;
     background: var(--base-color);
-    align-self: center; /* Centraliza os botões */
+    align-self: center;
     flex-shrink: 0;
 }
 
 #sign-buttons button {
     transition: all 0.3s ease;
-    flex-grow: 1; /* Para os botões dividirem o espaço */
-    border-radius: 6px; /* Aplicar aqui para consistência */
+    flex-grow: 1;
+    border-radius: 6px;
 }
 
 #sign-in {
-    /* width: 159px; -- Removido, flex-grow cuida */
-    height: 100%; /* Para ocupar a altura do container pai */
-    padding: 0 10px; /* Ajuste de padding */
+    height: 100%;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-radius: 6px; -- Movido para #sign-buttons button */
     color: var(--detail-color);
     font: 400 20px/normal 'Bangers';
     cursor: pointer;
 }
 
 #sign-in.active-button {
-    /* margin-top: 2.96px; -- Removido, causa desalinhamento */
-    /* margin-left: 2.96px; -- Removido */
-    margin: 2.96px; /* Adiciona margem em todos os lados quando ativo para efeito de "dentro" */
+    margin: 2.96px;
     background: var(--background);
-    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15); /* Efeito inset */
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 #sign-up {
-    /* width: 159px; -- Removido */
     height: 100%;
     padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border-radius: 6px; -- Movido para #sign-buttons button */
     color: var(--detail-color);
     font: 400 20px/normal 'Bangers';
     cursor: pointer;
 }
 
 #sign-up.active-button {
-    /* margin-top: 2.96px; -- Removido */
-    /* margin-right: 2.96px; -- Removido */
     margin: 2.96px;
     background: var(--background);
     box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.15);
@@ -179,27 +163,26 @@
 #pop-up-content form {
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Permite que o formulário cresça e empurre o botão para baixo */
+    flex-grow: 1;
     width: 100%;
-    max-width: 318px; /* Mantém a largura dos campos */
-    align-self: center; /* Centraliza o formulário na section */
-    margin-top: 10px; /* Espaço acima do formulário */
+    max-width: 318px;
+    align-self: center;
+    margin-top: 10px;
 }
 
 #name-field,
 #password-field,
 #check-password-field {
-    width: 100%; /* Ocupa a largura do form */
-    /* height: 72.924px; -- Deixar altura automática */
-    margin-bottom: 15px; /* Espaço entre os campos */
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 #name-field label,
 #password-field label,
 #check-password-field label {
-    display: inline-flex; /* Ou block */
-    padding: 0 0 5px 10px; /* Ajuste de padding */
-    justify-content: flex-start; /* Alinha à esquerda */
+    display: inline-flex;
+    padding: 0 0 5px 10px;
+    justify-content: flex-start;
     align-items: center;
     color: var(--primary-color-dark);
     font: 400 20px/normal 'Bangers';
@@ -208,44 +191,41 @@
 #name,
 #password,
 #check-password {
-    width: 100%; /* Ocupa a largura do field */
+    width: 100%;
     height: 32.52px;
     padding: 4px;
     border-radius: 4px;
     border: 2px solid var(--detail-color);
     color: var(--primary-color-dark);
     background: var(--base-color);
-    box-sizing: border-box; /* Garantir que padding e borda não aumentem a largura */
+    box-sizing: border-box;
 }
 
 #check-password-field {
     visibility: hidden;
-    /* margin-top: 11.83px; -- Removido, margin-bottom no anterior */
 }
 
-#pop-up-content form button { /* Botão de submit do formulário */
-    margin-top: 60px; /* IMPORTANTE: Empurra o botão para o final do form */
-    margin-bottom: 10px; /* Espaço abaixo do botão, dentro do padding da section */
+#pop-up-content form button {
+    margin-top: 60px;
+    margin-bottom: 10px;
     cursor: pointer;
-    align-self: center; /* Centraliza o botão */
+    align-self: center;
     background: none;
     border: none;
 }
 
 #pop-up-content form button img {
-    display: block; /* Para evitar espaço extra abaixo da imagem */
+    display: block;
 }
 
 #pop-up-content aside {
-    flex: 1; /* IMPORTANTE: Para dividir a largura com a section */
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 18px 6px; /* Padding ajustado */
-    /* width: 376.4px; -- Removido */
-    /* height: 542px; -- Removido, será controlado pelo main */
+    padding: 18px 6px;
     background: var(--primary-color-light);
-    overflow-y: auto; /* Scroll se o conteúdo do aside for muito grande */
+    overflow-y: auto;
 }
 
 #circle {
@@ -258,7 +238,7 @@
     background: var(--secondary-color-light);
     border-radius: 50%;
     border: 2px var(--detail-color) solid;
-    flex-shrink: 0; /* Para não encolher */
+    flex-shrink: 0;
 }
 
 #circle span {
@@ -283,11 +263,9 @@
 }
 
 #pop-up-content ul {
-    /* display: block; -- Desnecessário */
-    margin-bottom: 20px; /* Ajustado */
-    /* height: 106.429px; -- Deixar altura automática */
-    padding: 0 10px; /* Ajuste de padding */
-    width: 100%; /* Para ocupar a largura do aside */
+    margin-bottom: 20px;
+    padding: 0 10px;
+    width: 100%;
 }
 
 #pop-up-content li {
@@ -298,17 +276,17 @@
 
 #pop-up-content li::before {
     content: "\2714";
-    color: #00b400; /* Mantido, mas considere usar uma variável CSS se esta cor for usada em outros lugares */
+    color: #00b400;
     font-weight: bold;
-    margin-right: 8px; /* Espaço entre o checkmark e o texto */
+    margin-right: 8px;
 }
 
-#pop-up-content aside a { /* Botão "Venha para o Actionverse!" */
+#pop-up-content aside a {
     display: flex;
-    width: 100%; /* Ocupa a largura disponível */
-    max-width: 230px; /* Mantém a largura máxima original */
+    width: 100%;
+    max-width: 230px;
     height: 47.302px;
-    padding: 12px 10px; /* Padding ajustado */
+    padding: 12px 10px;
     justify-content: center;
     align-items: center;
     border-radius: 19px;
