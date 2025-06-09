@@ -755,6 +755,10 @@
     padding: 15px 0;
   }
 
+  #ano-texto-2024 {
+    flex-direction: column-reverse;
+  }
+
   #box-ano-2023,
   #box-ano-2024,
   #box-ano-2025 {
