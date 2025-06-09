@@ -45,6 +45,8 @@ class MobileNavbar {
         }
         this.mobileMenu.classList.toggle(this.activeClass);
         
+        document.body.classList.toggle('body-no-scroll');
+
         this.mobileMenu.setAttribute('aria-expanded', !isCurrentlyActive);
 
         this.animateLinks();
