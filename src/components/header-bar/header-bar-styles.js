@@ -63,6 +63,7 @@ const styles = `
     }
     
     .nav-icon i {
+        opacity: 0;
         margin-left: 32px;
         cursor: pointer;
     }
