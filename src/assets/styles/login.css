@@ -11,7 +11,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1000;
+    z-index: 1002;
     opacity: 1;
     transform: scale(1);
     display: flex;
