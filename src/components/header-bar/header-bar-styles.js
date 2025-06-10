@@ -63,7 +63,6 @@ const styles = `
     }
     
     .nav-icon i {
-        opacity: 0;
         margin-left: 32px;
         cursor: pointer;
     }
@@ -231,7 +230,8 @@ const styles = `
             transform: translateX(0);
         }
         
-        .nav-icon i { 
+        .nav-icon i {
+            opacity: 0;
             color: var(--base-color);
             font-size: 25px;
             margin-left: 0;
