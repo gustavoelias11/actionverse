@@ -7,7 +7,7 @@ class HeaderBar extends HTMLElement {
         super();
         this.attachShadow(({mode: 'open'}));
         this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
             <style>
                 ${baseStyles}
                 ${styles}
@@ -45,6 +45,8 @@ class MobileNavbar {
         }
         this.mobileMenu.classList.toggle(this.activeClass);
         
+        document.body.classList.toggle('body-no-scroll');
+
         this.mobileMenu.setAttribute('aria-expanded', !isCurrentlyActive);
 
         this.animateLinks();
