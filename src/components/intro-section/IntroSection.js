@@ -1,20 +1,19 @@
-import styles from './header-bar-styles.js';
+import template from './intro-section-template.js';
+import styles from './intro-section-styles.js';
 import baseStyles from '../base-styles.js';
 
-class HeaderBar extends HTMLElement {
+class IntroSection extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
-        // O template agora é bem simples e definido aqui mesmo.
         this.shadowRoot.innerHTML = `
             <style>
                 ${baseStyles}
                 ${styles}
             </style>
-            <header>
-                <slot></slot> </header>
+            ${template}
         `;
     }
 }
 
-customElements.define('header-bar', HeaderBar);
+customElements.define('intro-section', IntroSection);
