@@ -50,7 +50,7 @@ const styles = `
     .nav-list {
         list-style: none;
         display: flex;
-        position: fixed;
+        position: absolute;
     }
 
     .nav-list li {

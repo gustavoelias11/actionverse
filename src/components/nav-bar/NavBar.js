@@ -16,8 +16,6 @@ class NavBar extends HTMLElement {
         `;
     }
 
-    // O connectedCallback é executado quando o componente é inserido no DOM.
-    // É o lugar perfeito para adicionar eventos e manipular o DOM interno.
     connectedCallback() {
         this.initializeMobileMenu();
     }
@@ -29,7 +27,6 @@ class NavBar extends HTMLElement {
         const navIconsContainerEl = this.shadowRoot.querySelector(".nav-icon");
         
         if (mobileMenuEl && navListEl) {
-            // A classe MobileNavbar agora faz parte da lógica interna do NavBar
             const mobileNavbarInstance = new MobileNavbar(
                 mobileMenuEl,
                 navListEl,
@@ -41,8 +38,6 @@ class NavBar extends HTMLElement {
     }
 }
 
-// A classe MobileNavbar agora vive dentro do escopo do módulo NavBar.js
-// Ela não polui mais o escopo global e trabalha diretamente com os elementos do componente.
 class MobileNavbar {
     constructor(mobileMenuElement, navListElement, navLinksNodeList, navIconsContainerElement) {
         this.mobileMenu = mobileMenuElement;

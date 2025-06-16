@@ -5,7 +5,6 @@ class HeaderBar extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
-        // O template agora é bem simples e definido aqui mesmo.
         this.shadowRoot.innerHTML = `
             <style>
                 ${baseStyles}
