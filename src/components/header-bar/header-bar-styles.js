@@ -5,6 +5,7 @@ const styles = `
     }
 
     .logo {
+        margin-left: -30%;
         font: 400 42px/normal 'Bangers';
         text-shadow: 1px 2px 0px black;
         text-transform: uppercase;
@@ -49,6 +50,7 @@ const styles = `
     .nav-list {
         list-style: none;
         display: flex;
+        position: fixed;
     }
 
     .nav-list li {
@@ -56,6 +58,7 @@ const styles = `
     }
 
     .nav-icon {
+        margin-right: -30%;
         color: var(--base-color);
         font-size: 28px;
         list-style: none;
@@ -215,6 +218,7 @@ const styles = `
             bottom: 0;
             right: 0;
             width: 60vw;
+            margin: 0;
             padding: 20px 0;
             border-top: 1px solid var(--primary-color-dark);
             background: var(--primary-color-light);
