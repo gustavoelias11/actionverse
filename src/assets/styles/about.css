@@ -1,4 +1,5 @@
 #header{
+    overflow: hidden;
     background: linear-gradient(to bottom, var(--tertiary-color), white, white);
     text-shadow: 1px 0.5px 0px black;
 }
@@ -12,7 +13,7 @@
     border: 3px solid black;
 }
 
-#header h1{
+#header h1 {
     font: 400 48px/normal 'Bangers';
     color: var(--secondary-color-dark);
     padding-top: 30px;
@@ -39,7 +40,6 @@
     letter-spacing: 1px;
     padding-left: 130px;
     padding-top: 15px;
-  
 }
 
 #heroic{
@@ -564,7 +564,6 @@
     font: 400 18px/normal 'inter';
     color: white;
     text-align: center;
-    width: 650px;
     margin: 5px auto 25px auto;
 }
 
@@ -651,6 +650,7 @@
   }
 
   #origem, #hall {
+    overflow: hidden;
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -660,6 +660,11 @@
   #origem p {
     padding: 10px;
     font-size: 14px;
+  }
+
+  #origem div {
+    width: 90%;
+    height: auto;
   }
 
   #hall div {
@@ -824,7 +829,7 @@
     margin-left: 15px;
   }
 }
-/*
+
 @keyframes central{
   0% {
     transform: scale(0) rotate(1deg);
@@ -900,7 +905,7 @@ to{
 
 from{
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-2000px);
 }
 to{
     opacity: 1;
@@ -916,7 +921,7 @@ to{
 
 from{
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(2000px);
 }
 to{
     opacity: 1;
@@ -927,4 +932,9 @@ to{
 .animation_hall{
     animation: animation_hall 1.5s ease-out forwards;
 }
-*/
+
+
+
+
+
+
