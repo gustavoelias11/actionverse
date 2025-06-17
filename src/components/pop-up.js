@@ -103,11 +103,11 @@ const closePopUp = () => {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-    const headerBar = document.querySelector('header-bar');
-    if (!headerBar) return;
+    const navBar = document.querySelector('nav-bar');
+    if (!navBar) return;
 
     setTimeout(() => {
-        const shadow = headerBar.shadowRoot;
+        const shadow = navBar.shadowRoot;
         if (!shadow) return;
         const login_icon = shadow.querySelector('i#login-icon');
         if (!login_icon) return;

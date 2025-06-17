@@ -347,3 +347,39 @@ transform: scale(1.1);
 .info-adicional ul#adicionais {
     margin-left: 20px;
 }
+
+/*---------------area animação----------------*/
+
+@keyframes animation_info{
+
+from{
+    opacity: 0;
+    transform: translateX(2000px);
+}
+to{
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+.animation_info{
+    animation: animation_info 1.5s ease-out forwards;
+}
+
+@keyframes animation_foto{
+
+from{
+    opacity: 0;
+    transform: translateX(-1000px);
+}
+to{
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+.animation_foto{
+    animation: animation_foto 1.5s ease-out forwards;
+}
+
+

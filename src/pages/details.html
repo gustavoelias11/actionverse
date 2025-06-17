@@ -12,7 +12,10 @@
 </head>
 <body>
     <!--NAVBAR-->
-    <header-bar></header-bar>
+    <header-bar>
+        <nav-bar></nav-bar>
+        <intro-section></intro-section>
+    </header-bar>
     <!--NAVBAR-->
 
     <!--CONTEÚDO-->
@@ -26,7 +29,7 @@
             <p>BANG!</p>
         </div>
     </section>
-    <div id="foto-info">
+    <div class="animation_foto delay" id="foto-info">
         <section id="imagem-item">
             <div style="width: 597px;">
                 <div>
@@ -37,7 +40,7 @@
                 <img src="/public/img/kratosnaro.jpeg" alt="">
             </div>
         </section>
-        <section id="info">
+        <section class="animation_info delay" id="info">
             <div id="nome">
                 <h2>KRATOSNARO</h2>
             </div>
@@ -82,7 +85,9 @@
     <!--FOOTER-->
     <footer-bar></footer-bar>
     <!--FOOTER-->
+    <script type="module" src="../components/nav-bar/NavBar.js"></script>
     <script type="module" src="../components/header-bar/HeaderBar.js"></script>
+    <script type="module" src="../components/intro-section/IntroSection.js"></script>
     <script src="../components/pop-up.js"></script>
     <script type="module" src="../components/footer-bar/FooterBar.js"></script>
 </body>
