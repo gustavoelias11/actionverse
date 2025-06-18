@@ -564,6 +564,7 @@
     font: 400 18px/normal 'inter';
     color: white;
     text-align: center;
+    width: 650px;
     margin: 5px auto 25px auto;
 }
 
@@ -665,12 +666,6 @@
   #origem div {
     width: 90%;
     height: auto;
-  }
-
-  #hall div {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
   }
 
   .nome-hall {
