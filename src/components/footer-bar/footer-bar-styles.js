@@ -18,7 +18,7 @@ const styles = `
 
     .footer-brand-social h1 {
         font-size: 35px;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0;
     }
 
     .footer-brand-social p {
