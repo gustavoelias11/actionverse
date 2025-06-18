@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/styles/style.css">
     <link rel="stylesheet" href="../assets/styles/about.css">
-
+    <link rel="stylesheet" href="../assets/styles/login.css">
     <title>Document</title>
 </head>
 <body>
+    <header-bar>
+        <nav-bar></nav-bar>
+    </header-bar>
+    <aside id="login-pop-up"></aside>
 <section id="header">
     <h2 class="animation_epic delay_epic" id="epic">EPIC!</h2>
     <div class="central">
@@ -19,16 +24,16 @@
 </section>
 <!-------------------------------------------------------------------------------->
 <div id="origem-hall">
-    <section class="animation_origin" id="origem">
-        <h2>Nossa origem</h2>
-        <h3>Era uma vez na internet brasileira</h3>
-        <p>Em 2023, um grupo de verdadeiros aficionados por memes percebeu que os tesouros humoristivos
-        do Brasil estava se perdendo nas profundezas da web. Era hora de agir como verdadeiros heróis!
-        </p>
-        <p>Assim nasceu o ActionVerse: uma plataforma dedicada a preservar, catalogar e celebrar os memes
-        mais icônicos da cultura brasileira, tratando cada um como uma verdadeira obra de arte colecionável.
-        </p>
-        <div>"com grandes memes, vem grandes responsabilidades!"</div>
+    <section class="animation_origin"  id="origem" >
+            <h2>Nossa origem</h2>
+            <h3>Era uma vez na internet brasileira</h3>
+            <p>Em 2023, um grupo de verdadeiros aficionados por memes percebeu que os tesouros humoristivos
+            do Brasil estava se perdendo nas profundezas da web. Era hora de agir como verdadeiros heróis!
+            </p>
+            <p>Assim nasceu o ActionVerse: uma plataforma dedicada a preservar, catalogar e celebrar os memes
+            mais icônicos da cultura brasileira, tratando cada um como uma verdadeira obra de arte colecionável.
+            </p>
+            <div>"com grandes memes, vem grandes responsabilidades!"</div>
     </section>
     <section class="animation_hall" id="hall">
         <h2>Hall dos fundadores</h2>
@@ -159,6 +164,11 @@
                 </div>
         </div>
         
-    </section>    
+    </section>
+    <script type="module" src="../components/nav-bar/NavBar.js"></script>
+    <script type="module" src="../components/header-bar/HeaderBar.js"></script>
+    <script type="module" src="../components/intro-section/IntroSection.js"></script>
+    <script src="../components/pop-up.js"></script>
+    <script type="module" src="../components/footer-bar/FooterBar.js"></script>
 </body>
 </html>

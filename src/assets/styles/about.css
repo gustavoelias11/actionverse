@@ -1,4 +1,5 @@
 #header{
+    overflow: hidden;
     background: linear-gradient(to bottom, var(--tertiary-color), white, white);
     text-shadow: 1px 0.5px 0px black;
 }
@@ -650,10 +651,11 @@
   }
 
   #origem, #hall {
+    overflow: hidden;
     width: 100%;
     max-width: 600px;
     height: auto;
-    padding: 10px 0;
+    padding-bottom: 10px;
   }
 
   #origem p {
@@ -661,10 +663,9 @@
     font-size: 14px;
   }
 
-  #hall div {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+  #origem div {
+    width: 90%;
+    height: auto;
   }
 
   .nome-hall {
