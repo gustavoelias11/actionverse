@@ -2,6 +2,10 @@ body{
     background-color: var(--background);  
 }
 
+body.body-no-scroll {
+  overflow: hidden;
+}
+
 #cabecalho{
     display: flex;
     background-color: var(--primary-color-dark);

@@ -1,3 +1,7 @@
+body.body-no-scroll {
+  overflow: hidden;
+}
+
 #header{
     overflow: hidden;
     background: linear-gradient(to bottom, var(--tertiary-color), white, white);
@@ -785,6 +789,10 @@
     text-align: center;
     padding: 20px 10px;
     gap: 20px;
+  }
+
+  #liga-dos-herois p {
+    width: auto;
   }
 
   #botao {
