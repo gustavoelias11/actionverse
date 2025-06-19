@@ -11,80 +11,77 @@
     <script src="../components/details.js" defer></script>
 </head>
 <body>
-    <!--NAVBAR-->
     <header-bar>
         <nav-bar></nav-bar>
-        <intro-section></intro-section>
     </header-bar>
-    <!--NAVBAR-->
 
-    <!--CONTEÚDO-->
-    <section id="cabecalho">
+    <section id="page-header">
         <aside id="login-pop-up"></aside>
-        <div>
+        <div class="header-title">
             <h2><span>MEME</span> DETALHES</h2>
             <h3>Conheça todos os superpoderes desse meme!</h3>
         </div>
-        <div id="bang">
+        <div id="bang-effect">
             <p>BANG!</p>
         </div>
     </section>
-    <div class="animation_foto delay" id="foto-info">
-        <section id="imagem-item">
-            <div style="width: 597px;">
-                <div>
-                    <div id="opcao-rara">
-                        <p>opção <br>rara</p>
-                    </div>
-                </div>
-                <img src="/public/img/kratosnaro.jpeg" alt="">
+
+    <main class="product-details-container animate-slide-in-left">
+        <section class="product-image-wrapper">
+            <div class="rare-option-badge">
+                <p>opção <br>rara</p>
             </div>
+            <img src="/public/img/kratosnaro.jpeg" alt="Meme do Kratosnaro">
         </section>
-        <section class="animation_info delay" id="info">
-            <div id="nome">
+
+        <section class="product-info animate-slide-in-right">
+            <div class="product-name">
                 <h2>KRATOSNARO</h2>
             </div>
-            <h2 class="topicos">Descrição da missão</h2>
-            <p id="a">O meme brasileiro mais icônico de todos os tempos agora em formato exclusivo!</p>
-            <p id="b">Este meme faz parte da coleção <strong>UNIVERSO MEMÉTICO BRASILEIRO</strong>, uma serie exclusiva que celebra os memes mais iconicos do Brasil.</p>
-            <h2 class="topicos">Valor do artefatos</h2>
-            <p id="preco">R$ 79,90 <span style="font-weight: lighter;">R$ 95,00</span></p>
-            <p id="c">Em até 3x sem juros</p>
-            <h2 class="topicos">Quantidade</h2>
-            <div id="botao-qtd-itens">
-                <button id="botao-menos">-</button>
-                <p id="qtd-itens">1</p>
-                <button id="botao-mais">+</button>
+
+            <h2 class="info-heading">Descrição da missão</h2>
+            <p class="product-description">O meme brasileiro mais icônico de todos os tempos agora em formato exclusivo!</p>
+            <p class="product-description">Este meme faz parte da coleção <strong>UNIVERSO MEMÉTICO BRASILEIRO</strong>, uma serie exclusiva que celebra os memes mais iconicos do Brasil.</p>
+
+            <h2 class="info-heading">Valor do artefatos</h2>
+            <p class="product-price" data-unit-price="22222.22" data-unit-discount-price="23000.00">
+                <span class="current-price"></span>
+                <span class="original-price"></span>
+            </p>
+            <p class="installments-info">Em até 3x sem juros</p>
+
+            <h2 class="info-heading">Quantidade</h2>
+            <div class="quantity-selector">
+                <button id="quantity-decrease">-</button>
+                <p id="quantity-value">1</p>
+                <button id="quantity-increase">+</button>
             </div>
-            <div class="info-adicional">
-                <a id="botao-carrinho" href="#">
-                    <img style="margin-top: 20px;" src="/public/img/botão carrinho.png" alt="Enviar formulário">
+
+            <div class="purchase-actions">
+                <a id="add-to-cart-button" href="#">
+                    <img src="/public/img/botão carrinho.png" alt="Adicionar ao carrinho">
                 </a>
-                <h2 class="topicos">Informações adicionais</h2>
-                <ul id="adicionais">
-                    <li style="list-style-type:disc; color: black;">Formato digital para compartilhamento.</li>
-                    <li style="list-style-type:disc; color: black;">Certificado de autenticidade.</li>
-                    <li style="list-style-type:disc; color: black;">Acesso perpétuo à sua coleção.</li>
-                    <li style="list-style-type:disc; color: black;">Entrega imediata após a compra.</li>
+                <h2 class="info-heading">Informações adicionais</h2>
+                <ul class="features-list">
+                    <li>Formato digital para compartilhamento.</li>
+                    <li>Certificado de autenticidade.</li>
+                    <li>Acesso perpétuo à sua coleção.</li>
+                    <li>Entrega imediata após a compra.</li>
                 </ul>
             </div>
         </section>
-    </div>
-    <h2 id="outros-memes">Outros memes que você vai amar!</h2>
-    <hr id="linha">
-    <section id="box-outros-memes">
-        <div>
-            <img id="lula" src="/public/img/lularina.jpeg" alt="lular">
-            <a>
-                <img id="botao-outros-memes" src="/public/img/ver outro memes.png" alt="outro memes">
+    </main>
+    <section id="related-products">
+        <h2 id="related-products-heading">Outros memes que você vai amar!</h2>
+        <hr class="section-divider">
+        <div class="related-product-card">
+            <img class="related-product-image" src="/public/img/lularina.jpeg" alt="Meme Lularina">
+            <a href="#">
+                <img class="related-product-link" src="/public/img/ver outro memes.png" alt="Ver outro meme">
             </a>
         </div>
     </section>
-    <!--CONTEÚDO-->
-
-    <!--FOOTER-->
     <footer-bar></footer-bar>
-    <!--FOOTER-->
     <script type="module" src="../components/nav-bar/NavBar.js"></script>
     <script type="module" src="../components/header-bar/HeaderBar.js"></script>
     <script type="module" src="../components/intro-section/IntroSection.js"></script>

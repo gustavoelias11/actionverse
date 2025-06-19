@@ -1,389 +1,299 @@
-body{
-    background-color: var(--background);  
-}
-
-body.body-no-scroll {
-  overflow: hidden;
-}
-
-#cabecalho{
+#page-header {
     display: flex;
-    background-color: var(--primary-color-dark);
     justify-content: space-between;
-    height: auto;
-    border-top: 2px solid black;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    align-items: center;
+    background-color: var(--primary-color-dark);
+    border-top: 2px solid var(--detail-color);
+    padding: 15px 25px;
 }
 
-#cabecalho > div h2,
-#cabecalho > div h3 {
-    color: white;
+.header-title h2,
+.header-title h3 {
+    color: var(--base-color);
     font: 400 42px/normal 'Bangers';
-    background-color: var(--primary-color-dark); 
-    text-align: left;
-    text-shadow: 1px 2px 0px black;
-    margin-left: 25px; 
+    text-shadow: 1px 2px 0px var(--detail-color);
+    margin: 0;
 }
 
-#cabecalho h3{
+.header-title h3 {
     font-size: 28px;
 }
 
-#cabecalho h2 span{
-    font: 400 42px/normal 'Bangers';
+.header-title h2 span {
     color: var(--tertiary-color);
-    text-shadow: 1px 2px 0px black;
 }
 
-#bang{
-    background-color: var(--primary-color-dark);
-    padding-right: 25px;
-    text-shadow: 1px 0.5px 0px black;
-    transition: 0.3s;
-    padding-top: 5px;
-    margin-right: 8px;
+#bang-effect {
+    transition: transform 0.3s;
 }
 
-#bang:hover{
+#bang-effect:hover {
     transform: scale(1.1);
 }
 
-#bang p{
-    font: 400 28px/normal 'Bangers';
+#bang-effect p {
+    font: 400 42px/normal 'Bangers';
     color: var(--tertiary-color);
-    font-size: 42px;
-    height: 45px;
-    padding-top: 8px;
-    text-shadow: 1px 0.5px 0px black;
-    transition: 0.3s;
+    text-shadow: 1px 0.5px 0px var(--detail-color);
+    transition: transform 0.3s;
+    margin: 0;
 }
 
-#bang p:hover{
+#bang-effect p:hover {
     transform: rotate(5deg);
 }
 
-#foto-info{
-    justify-content: space-around;
+.product-details-container {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-#imagem-item{
-    background-color:#F2E7D5;
-    border: 1px solid black;
+.product-image-wrapper {
+    background-color: var(--background);
+    border: 1px solid var(--detail-color);
     height: 700px;
     width: 600px;
-    display: flex;
     margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.43);
     transform: rotate(-1deg);
-    transition: 0.3s;
+    transition: transform 0.3s;
+    position: relative;
 }
 
-#imagem-item:hover{
+.product-image-wrapper:hover {
     transform: rotate(0deg);
 }
 
-#opcao-rara {
-    margin-top: -80px;
-    font-size: 28px;
-    height: 120px;
-    width: 120px;
-    background-color:var(--secondary-color-dark);
-    border-radius: 60px;
-    display: flex;
-    margin-left: 510px; 
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.43);
-
-}
-#opcao-rara p{
-    font: 400 28px/normal 'Bangers';
-    padding-top: 30px;
-    padding-left: 10px;
-    color: white;
-    text-align: center;
-    transform: rotate(20deg);
-    width:120px;
-    height:80px;
-    text-shadow: 1px 0.5px 0px black;
-    
-   
-}
-
-#imagem-item img{
-    margin-left: 75px;
-    margin-right: auto;
+.product-image-wrapper img {
+    display: block;
     height: 600px;
+    margin: 50px auto 0;
     box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.43);
     border-radius: 10px;
 }
 
-#info{
-    background-color: white;
-    height: auto;
-    width: 620px;
-    margin-top: 35px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 35px;
-    padding: 25px;
-    padding-bottom: 2px;
-    border: 1.5px solid black;
+.rare-option-badge {
+    position: absolute;
+    top: -60px;
+    right: -30px;
+    height: 120px;
+    width: 120px;
+    background-color: var(--secondary-color-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.43);
 }
 
-
-#nome h2{
-    font: 400 42px/normal 'Bangers';
-    color: white;
-    background-color: var(--secondary-color-dark);
-    margin-right: -25px;
-    margin-left: -25px;
-    margin-top: -25px;
-    padding-left: 35px;
-    padding-top: 8px;
-    height: 60px;
-    text-shadow: 1px 0.5px 0px black;
+.rare-option-badge p {
+    font: 400 28px/normal 'Bangers';
+    color: var(--base-color);
+    text-align: center;
+    transform: rotate(20deg);
+    text-shadow: 1px 0.5px 0px var(--detail-color);
+    margin: 0;
+    padding-top: 10px;
 }
 
-.topicos{
+.product-info {
+    background-color: var(--base-color);
+    width: 620px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 25px;
+    border: 1.5px solid var(--detail-color);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.43);
+}
+
+.product-name h2 {
+    font: 400 42px/normal 'Bangers';
+    color: var(--base-color);
+    background-color: var(--secondary-color-dark);
+    text-shadow: 1px 0.5px 0px var(--detail-color);
+    margin: -25px -25px 20px -25px;
+    padding: 8px 35px;
+    height: 60px;
+}
+
+.info-heading {
     font: 400 36px/normal 'Bangers';
     color: var(--primary-color-light);
-    margin: 5px;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    text-shadow: 1px 0.5px 0px black;
-    
-} 
-
-
-#a {
-    font-family: 'inter';
-    font-size: 18px;
-    width: 300px;
-    margin-top: 10px;
-    margin: 5px;
+    text-shadow: 1px 0.5px 0px var(--detail-color);
+    margin: 25px 0 15px 0;
 }
 
-#b{
-    font-family: 'inter';
+.product-description {
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
-    width: 490px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin: 5px;
+    line-height: 1.5;
+    max-width: 490px;
+    margin: 10px 0;
 }
 
-#b strong{
+.product-description strong {
     font-weight: bold;
 }
 
-#preco{
+.product-price {
     font: 400 42px/normal 'Bangers';
     color: var(--secondary-color-dark);
-    text-shadow: 1px 0.5px 0px black;
-    margin: 5px;
-    margin-bottom: 0px;
+    text-shadow: 1px 0.5px 0px var(--detail-color);
+    margin: 5px 0 0 0;
 }
 
-#preco span{
-    font-family: 'Inter';
+.product-price .original-price {
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
-    color: black;
+    color: var(--detail-color);
     text-shadow: none;
     text-decoration: line-through;
-    text-decoration-color: black;
     font-weight: bold;
     margin-left: 5px;
 }
 
-#c{
-    font-family: 'Inter';
+.installments-info {
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
-    color: green;
+    color: var(--special-color);
     font-weight: 600;
-    margin: 5px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin: 10px 0 15px 0;
 }
 
-#botao-qtd-itens{
-    background-color: white;
+.quantity-selector {
     display: flex;
-    width: 230px;
-    height: 60px;
-    margin: 5px;
+    align-items: center;
+    width: 150px;
     justify-content: space-between;
 }
 
-#botao-menos{
-    background-color:var(--primary-color-light);
+.quantity-selector button {
+    background-color: var(--primary-color-light);
     font-size: 25px;
     width: 50px;
+    height: 40px;
     text-align: center;
-    color: white;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 1px solid black;
-    margin: 5px;
-    transition: 0.3s;
+    color: var(--base-color);
+    border: 1px solid var(--detail-color);
+    cursor: pointer;
+    transition: all 0.3s;
 }
-#botao-menos:hover{
+
+.quantity-selector button:hover {
     transform: scale(1.1);
     background-color: var(--primary-color-dark);
 }
 
-#botao-mais{
-    background-color:var(--primary-color-light);
-    font-size: 25px;
-    width: 50px;
-    margin-left: auto;
-    text-align: center;
-    color: white;
-    margin-top: auto;
-    margin-bottom: auto;
-    border: 1px solid black;
-    margin: 5px;
-    transition: 0.3s;
-}
-#botao-mais:hover{
-    transform: scale(1.1);
-    background-color: var(--primary-color-dark);
-}
-
-#botao-qtd-itens p{
-    text-align: center;
+#quantity-value {
+    font-family: 'Bangers', cursive;
     font-size: 28px;
-    width: 40px;
-    font-family: 'Bangers';
-    margin-top: auto;
-    margin-bottom: auto;
+    text-align: center;
 }
 
-#botao-carrinho img{
-transition: 0.4s;
-
+.purchase-actions {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding-top: 10px;
 }
 
-#botao-carrinho img:hover{
-transform: scale(1.1);
-
+#add-to-cart-button img {
+    transition: transform 0.4s;
+    margin-top: 20px;
 }
 
-#adicionais{
-    margin: 15px;
+#add-to-cart-button img:hover {
+    transform: scale(1.1);
 }
 
-#adicionais li {
-    font-family: 'Inter';
+.features-list {
+    margin: 15px 0 0 20px;
+    padding: 0;
+}
+
+.features-list li {
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
-    color: black;
-    padding: 3px;
+    list-style-type: disc;
+    padding: 3px 0;
 }
 
-#outros-memes{
+#related-products-heading {
     font: 400 58px/normal 'Bangers';
-    color:var(--secondary-color-dark);
-    text-shadow: 1px 0.5px 0px black;
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-} 
+    color: var(--secondary-color-dark);
+    text-shadow: 1px 0.5px 0px var(--detail-color);
+    margin: 50px 0 10px 50px;
+}
 
-#linha{
+.section-divider {
     height: 5px;
     background-color: var(--primary-color-dark);
-    margin-bottom: 25px;
-    margin-left: 40px;
-    margin-right: 40px;
+    border: none;
+    margin: 0 40px 25px 40px;
 }
 
-#box-outros-memes{
+.related-product-card {
     width: 380px;
     height: 450px;
     margin-left: 40px;
     margin-bottom: 20px;
-    border: 1px solid black;
+    border: 1px solid var(--detail-color);
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.43);
-}
-
-#lula{
-    height: 447px;
-    width: 378px;
-    position: absolute;
-    opacity: 0.8;
-
-}
-
-#botao-outros-memes{
     position: relative;
-    top: 330px;
-    left: 15px;
-    display: flex;
-    margin-left:-10px;
+    overflow: hidden;
+}
+
+.related-product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.related-product-card:hover .related-product-image {
+    opacity: 1;
+}
+
+.related-product-link {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     transition: transform 0.3s ease;
 }
-    
-#lula:hover{
-    opacity: 1;
-    transition: 0.2s;
+
+.related-product-card:hover .related-product-link {
+    transform: translateX(-50%) scale(1.1);
 }
 
-#botao-outros-memes:hover{
-    transform: scale(1.1); 
-}
-
-.info-adicional {
-    background-color: white;
-    width: 100%;
-    margin: 5px 0;
-    padding: 10px 0 0 0;
-    border-top: 1px solid #eee;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.info-adicional .topicos {
-    margin-top: 0;
-}
-.info-adicional ul#adicionais {
-    margin-left: 20px;
-}
-
-/*---------------area animação----------------*/
-
-@keyframes animation_info{
-
-from{
-    opacity: 0;
-    transform: translateX(2000px);
-}
-to{
-    opacity: 1;
-    transform: translateX(0);
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
-.animation_info{
-    animation: animation_info 1.5s ease-out forwards;
+.animate-slide-in-right {
+    animation: slide-in-right 1.5s ease-out forwards;
 }
 
-@keyframes animation_foto{
-
-from{
-    opacity: 0;
-    transform: translateX(-1000px);
-}
-to{
-    opacity: 1;
-    transform: translateX(0);
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
-.animation_foto{
-    animation: animation_foto 1.5s ease-out forwards;
+.animate-slide-in-left {
+    animation: slide-in-left 1.5s ease-out forwards;
 }
-
-

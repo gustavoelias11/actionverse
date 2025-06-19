@@ -1,3 +1,5 @@
+'use strict';
+
 import template from './footer-bar-template.js';
 import styles from './footer-bar-styles.js';
 import baseStyles from '../base-styles.js';

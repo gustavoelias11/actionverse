@@ -8,6 +8,7 @@
     --secondary-color-light: #8A0000;
     --secondary-color-dark: #7D0302;
     --tertiary-color: #F1B40E;
+    --special-color: #00b400;
     --background: #F2E7D5;
 }
 /* Fontes */
@@ -31,4 +32,8 @@
     color: inherit;
     border: none;
     line-height: 1.5;
+}
+
+body.body-no-scroll {
+  overflow: hidden;
 }

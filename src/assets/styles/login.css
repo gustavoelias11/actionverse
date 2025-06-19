@@ -283,7 +283,7 @@
 
 #pop-up-content li::before {
     content: "\2714";
-    color: #00b400;
+    color: var(--special-color);
     font-weight: bold;
     margin-right: 8px;
 }

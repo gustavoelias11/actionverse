@@ -1,3 +1,5 @@
+'use strict';
+
 import template from './intro-section-template.js';
 import styles from './intro-section-styles.js';
 import baseStyles from '../base-styles.js';
