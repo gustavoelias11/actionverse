@@ -2,16 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color-dark);
-    border-top: 2px solid var(--detail-color);
+    background-color: var(--primary-dark);
+    border-top: 2px solid var(--detail);
     padding: 15px 25px;
 }
 
 .header-title h2,
 .header-title h3 {
-    color: var(--base-color);
+    color: var(--base);
     font: 400 42px/normal 'Bangers';
-    text-shadow: 1px 2px 0px var(--detail-color);
+    text-shadow: 1px 2px 0px var(--detail);
     margin: 0;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .header-title h2 span {
-    color: var(--tertiary-color);
+    color: var(--tertiary);
 }
 
 #bang-effect {
@@ -33,8 +33,8 @@
 
 #bang-effect p {
     font: 400 42px/normal 'Bangers';
-    color: var(--tertiary-color);
-    text-shadow: 1px 0.5px 0px var(--detail-color);
+    color: var(--tertiary);
+    text-shadow: 1px 0.5px 0px var(--detail);
     transition: transform 0.3s;
     margin: 0;
 }
@@ -52,7 +52,7 @@
 
 .product-image-wrapper {
     background-color: var(--background);
-    border: 1px solid var(--detail-color);
+    border: 1px solid var(--detail);
     height: 700px;
     width: 600px;
     margin-top: 150px;
@@ -80,7 +80,7 @@
     right: -30px;
     height: 120px;
     width: 120px;
-    background-color: var(--secondary-color-dark);
+    background-color: var(--secondary-dark);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -90,29 +90,29 @@
 
 .rare-option-badge p {
     font: 400 28px/normal 'Bangers';
-    color: var(--base-color);
+    color: var(--base);
     text-align: center;
     transform: rotate(20deg);
-    text-shadow: 1px 0.5px 0px var(--detail-color);
+    text-shadow: 1px 0.5px 0px var(--detail);
     margin: 0;
     padding-top: 10px;
 }
 
 .product-info {
-    background-color: var(--base-color);
+    background-color: var(--base);
     width: 620px;
     margin-top: 35px;
     margin-bottom: 35px;
     padding: 25px;
-    border: 1.5px solid var(--detail-color);
+    border: 1.5px solid var(--detail);
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.43);
 }
 
 .product-name h2 {
     font: 400 42px/normal 'Bangers';
-    color: var(--base-color);
-    background-color: var(--secondary-color-dark);
-    text-shadow: 1px 0.5px 0px var(--detail-color);
+    color: var(--base);
+    background-color: var(--secondary-dark);
+    text-shadow: 1px 0.5px 0px var(--detail);
     margin: -25px -25px 20px -25px;
     padding: 8px 35px;
     height: 60px;
@@ -120,8 +120,8 @@
 
 .info-heading {
     font: 400 36px/normal 'Bangers';
-    color: var(--primary-color-light);
-    text-shadow: 1px 0.5px 0px var(--detail-color);
+    color: var(--primary-light);
+    text-shadow: 1px 0.5px 0px var(--detail);
     margin: 25px 0 15px 0;
 }
 
@@ -139,15 +139,15 @@
 
 .product-price {
     font: 400 42px/normal 'Bangers';
-    color: var(--secondary-color-dark);
-    text-shadow: 1px 0.5px 0px var(--detail-color);
+    color: var(--secondary-dark);
+    text-shadow: 1px 0.5px 0px var(--detail);
     margin: 5px 0 0 0;
 }
 
 .product-price .original-price {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
-    color: var(--detail-color);
+    color: var(--detail);
     text-shadow: none;
     text-decoration: line-through;
     font-weight: bold;
@@ -157,7 +157,7 @@
 .installments-info {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
-    color: var(--special-color);
+    color: var(--special);
     font-weight: 600;
     margin: 10px 0 15px 0;
 }
@@ -170,20 +170,20 @@
 }
 
 .quantity-selector button {
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-light);
     font-size: 25px;
     width: 50px;
     height: 40px;
     text-align: center;
-    color: var(--base-color);
-    border: 1px solid var(--detail-color);
+    color: var(--base);
+    border: 1px solid var(--detail);
     cursor: pointer;
     transition: all 0.3s;
 }
 
 .quantity-selector button:hover {
     transform: scale(1.1);
-    background-color: var(--primary-color-dark);
+    background-color: var(--primary-dark);
 }
 
 #quantity-value {
@@ -221,14 +221,14 @@
 
 #related-products-heading {
     font: 400 58px/normal 'Bangers';
-    color: var(--secondary-color-dark);
-    text-shadow: 1px 0.5px 0px var(--detail-color);
+    color: var(--secondary-dark);
+    text-shadow: 1px 0.5px 0px var(--detail);
     margin: 50px 0 10px 50px;
 }
 
 .section-divider {
     height: 5px;
-    background-color: var(--primary-color-dark);
+    background-color: var(--primary-dark);
     border: none;
     margin: 0 40px 25px 40px;
 }
@@ -238,7 +238,7 @@
     height: 450px;
     margin-left: 40px;
     margin-bottom: 20px;
-    border: 1px solid var(--detail-color);
+    border: 1px solid var(--detail);
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.43);
     position: relative;
     overflow: hidden;

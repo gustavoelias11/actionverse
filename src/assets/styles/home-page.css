@@ -5,14 +5,14 @@ main.home-page  {
 }
 
 .week h1 {
-    color: var(--secondary-color-dark);
+    color: var(--secondary-dark);
     font: 400 48px/normal 'Bangers';
-    text-shadow: 2px 4px 0px black;
+    text-shadow: 2px 4px 0px var(--detail);
     margin-bottom: 15px;
 }
 
 .week hr {
-    background-color: var(--primary-color-dark);
+    background-color: var(--primary-dark);
     height: 4px;
 }
 
@@ -25,7 +25,7 @@ main.home-page  {
 }
 
 .card {
-    background-color: var(--base-color);
+    background-color: var(--base);
     border: 2px solid #000;
     display: flex;
     flex-direction: column;
@@ -45,19 +45,19 @@ main.home-page  {
     padding: 10px;
     text-align: left;
     font: 400 22px/normal 'Bangers';
-    color: var(--base-color);
-    text-shadow: 2px 4px 0px black;
+    color: var(--base);
+    text-shadow: 2px 4px 0px var(--detail);
     letter-spacing: 2px;
     border-bottom: 2px solid #000;
     
 }
 
 .card-header.red {
-    background-color: var(--secondary-color-light);
+    background-color: var(--secondary-light);
 }
 
 .card-header.blue {
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-light);
 }
 
 .card-image {
@@ -87,9 +87,9 @@ main.home-page  {
 
 .card-price {
     font-family: 'Bangers';
-    color: var(--secondary-color-dark);
+    color: var(--secondary-dark);
     font: 400 22px/normal 'Bangers';
-    text-shadow: 1px 2px 0px black;
+    text-shadow: 1px 2px 0px var(--detail);
     margin-bottom: 15px;
 }
 
@@ -100,8 +100,8 @@ main.home-page  {
 }
 
 .card-button {
-    background-color: var(--tertiary-color); /* Amarelo */
-    color: var(--primary-color-light);
+    background-color: var(--tertiary); /* Amarelo */
+    color: var(--primary-light);
     text-align: center;
     padding: 12px;
     border: 2px solid #000;
@@ -115,8 +115,8 @@ main.home-page  {
 }
 
 .card-button:hover {
-    background-color: var(--primary-color-dark);
-    color: var(--tertiary-color);
+    background-color: var(--primary-dark);
+    color: var(--tertiary);
     transition: 0.3s;
 }
 
@@ -124,11 +124,11 @@ main.home-page  {
     position: absolute;
     top: -30px;
     right: -30px; /* Ajuste para sobrepor a borda */
-    color: var(--base-color);
+    color: var(--base);
     font-weight: bold;
     font: 400 20px/normal 'Bangers';
-    text-shadow: 1px 3px 0px black;
-    -webkit-text-stroke: 0.5px black;
+    text-shadow: 1px 3px 0px var(--detail);
+    -webkit-text-stroke: 0.5px var(--detail);
     padding: 35px 8px; /* Padding aumentado para forma mais oval */
     border-radius: 50%; /* Faz o badge circular/oval */
     border: 2px solid #000;
@@ -136,16 +136,16 @@ main.home-page  {
 }
 
 .badge.yellow {
-    background-color: var(--tertiary-color); /* Amarelo dourado */
+    background-color: var(--tertiary); /* Amarelo dourado */
 }
 
 .badge.red {
-    background-color: var(--secondary-color-dark);
+    background-color: var(--secondary-dark);
     padding: 25px 20px;
 }
 
 .badge.blue {
-    background-color: var(--primary-color-dark);
+    background-color: var(--primary-dark);
     text-align: center;
     padding: 25px 15px;
 }
@@ -153,15 +153,15 @@ main.home-page  {
 .colection {
     margin-top: 25px;
     position: relative;
-    background-color: var(--primary-color-light);
+    background-color: var(--primary-light);
     height: 300px;
     padding: 50px 30px 30px 30px
 }
 
 #kapow {
-    color: var(--tertiary-color);
+    color: var(--tertiary);
     font: 400 70px/normal 'Bangers';
-    text-shadow: 1px 3px 0px black;
+    text-shadow: 1px 3px 0px var(--detail);
     position: absolute;
     top: -45px;
     left: -30px;
@@ -169,14 +169,14 @@ main.home-page  {
 
 .colection-content {
     text-align: center;
-    color: var(--base-color);
+    color: var(--base);
     font: 400 25px/normal 'Bangers';
-    text-shadow: 2px 3px 0px black;
+    text-shadow: 2px 3px 0px var(--detail);
     letter-spacing: 1.5px;
 }
 
 .colection-content span {
-    color: var(--tertiary-color);
+    color: var(--tertiary);
 }
 
 .colection-content p {
