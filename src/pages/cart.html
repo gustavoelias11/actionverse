@@ -9,26 +9,84 @@
     <link rel="stylesheet" href="../assets/styles/style.css">
     <link rel="shortcut icon" href="../img/favicon-transparente.ico" type="image/x-icon">
 </head>
-
 <body>
+  <!--NAVBAR-->
     <header-bar></header-bar>
-
+    <!--NAVBAR-->
+    
+    <!--CONTEÚDO-->
     <main>
-        <section id="subcabecalho">
-            <div>
-                <h2>Sala de controle do <span class="destaque">herói</span></h2>
-                <h3>Seus memes selecionados para a missão!</h3>
-            </div>
-            <div id="Zap">
-                <p>ZAP!</p>
-            </div>
-        </section>
-        
+      <section class="subcabecalho">
+         <div>
+           <h2>Sala de controle do <span class="destaque">herói</span></h2>
+           <h3>Seus memes selecionados para a missão!</h3>
+         </div>
+    
+         <div class="Zap">
+          <p>ZAP!</p>
+         </div>
+      </section>
+
+      <section class="controle-heroi">
+
+          <div class="cart-container">
+          <div class="title-box">
+            <h1>PRONTO PARA A BATALHA FINAL COM SEUS MEMES?</h1>
+          </div>
+
+          <div class="product-card">
+          <div class="product-image">
+              <span>MEME #1</span>
+          </div>
+
+          <div class="product-details">
+            <p class="product-title">MEME CLÁSSICO #1</p>
+            <p class="product-subtitle">EDIÇÃO RARA - 2023</p>
+            <p class="product-price">R$ 79,90</p>
+          </div>
+
+          <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn">-</button>
+                <span class="quantity-display">1</span>
+            <button class="quantity-btn">+</button>
+          </div>
+          <button class="delete-btn">
+            🗑️
+          </button>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="resumo-missao">
+        <h1>RESUMO DA MISSÃO</h1>
+        <ul>
+            <li>Subtotal <span>R$ 75,90</span></li>
+            <li>Frete <span>R$ 12,90</span></li>
+            <li>Desconto <span>-R$ 20,00</span></li>
+            <hr class="linha-suave">
+            <li class="total">TOTAL <span>R$ 72,80</span></li>
+        </ul>
+    <div class="codigo-desconto">
+      <label for="codigo">CÓDIGO HERÓICO</label>
+      <input type="text" id="codigo" placeholder="Insira seu código" />
+      <button>OK</button>
+    </div>
+    <div>
+      <button><img src="../../public/img/completar_missao.png" alt= "botão para completar as missões"></button>
+    </div>
+    <div class="continuar-com-memes">
+      <button><p class="sublinhado">Continuar escolhendo memes</p></button>
+    </div>
+</section>
     </main>
+    <!--CONTEÚDO-->
 
-
+    <!--FOOTER-->
     <footer-bar></footer-bar>
     <script type="module" src="../components/header-bar/HeaderBar.js"></script>
     <script type="module" src="../components/footer-bar/FooterBar.js"></script>
+  
 </body>
 </html>
