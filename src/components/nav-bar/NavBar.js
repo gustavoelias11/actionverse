@@ -1,5 +1,3 @@
-'use strict';
-
 import template from './nav-bar-template.js';
 import styles from './nav-bar-styles.js';
 import baseStyles from '../base-styles.js';

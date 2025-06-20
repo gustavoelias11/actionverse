@@ -1,4 +1,3 @@
-'use strict';
 const increaseButton = document.getElementById('quantity-increase');
 const decreaseButton = document.getElementById('quantity-decrease');
 const quantityDisplay = document.getElementById('quantity-value');

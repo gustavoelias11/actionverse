@@ -1,5 +1,3 @@
-'use strict';
-
 import styles from './header-bar-styles.js';
 import baseStyles from '../base-styles.js';
 

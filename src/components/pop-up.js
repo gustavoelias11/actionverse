@@ -1,5 +1,3 @@
-'use sctric';
-
 const login_icon = document.querySelector('i#login-icon');
 const login_content = document.querySelector('aside#login-pop-up');
 
