@@ -1,6 +1,6 @@
 const styles = `
     section {
-        background-color: var(--primary-color-dark);
+        background-color: var(--primary-dark);
         padding: 20px;
         min-height: 300px;
         position: relative;
@@ -9,50 +9,45 @@ const styles = `
         justify-content: center; 
         align-items: center; 
         text-align: center;
-        overflow: hidden; /* Adicionado para conter os elementos posicionados */
+        overflow: hidden;
     }
 
     .boom {
         font: 400 42px/normal 'Bangers';
-        color: var(--tertiary-color);
+        color: var(--tertiary);
         text-shadow: 1px 2px 0px black;
         position: absolute;
-        top: 20px;
-        left: 30px;
+        top: 5px;
+        left: 20px;
     }
 
     .wow {
         font: 400 42px/normal 'Bangers';
-        color: var(--base-color);
+        color: var(--base);
         text-shadow: 1px 2px 0px black;
         position: absolute;
-        bottom: 20px;
-        right: 30px;
+        bottom: 5px;
+        right: 20px;
     }
 
     .main-title {
         font: 400 58px/normal 'Bangers';
         text-shadow: 1px 2px 0px black; 
         margin-top: 10px;
-        line-height: 1; /* Ajuste para títulos grandes */
+        line-height: 1;
     }
     
     .main-title.p1 { 
-        color: var(--base-color);
+        color: var(--base);
     }
     
     .main-title.p2 { 
-        color: var(--tertiary-color);
-    }
-    
-    .main-title.p2 span { 
-        /* Esta regra estava vazia, pode ser removida ou utilizada */
-        /* Exemplo: color: var(--base-color); */
+        color: var(--tertiary);
     }
 
     .s-principal {
         font: 400 25px/normal 'Bangers';
-        color: var(--base-color);
+        color: var(--base);
         text-shadow: 1px 2px 0px black;
         margin-top: 15px;
     }
