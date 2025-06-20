@@ -17,8 +17,8 @@ const styles = `
         color: var(--tertiary);
         text-shadow: 1px 2px 0px black;
         position: absolute;
-        top: 20px;
-        left: 30px;
+        top: 5px;
+        left: 20px;
     }
 
     .wow {
@@ -26,8 +26,8 @@ const styles = `
         color: var(--base);
         text-shadow: 1px 2px 0px black;
         position: absolute;
-        bottom: 20px;
-        right: 30px;
+        bottom: 5px;
+        right: 20px;
     }
 
     .main-title {
