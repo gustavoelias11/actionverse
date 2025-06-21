@@ -1,42 +1,42 @@
 #header{
     overflow: hidden;
-    background: linear-gradient(to bottom, var(--tertiary-color), white, white);
-    text-shadow: 1px 0.5px 0px black;
+    background: linear-gradient(to bottom, var(--tertiary), var(--base), var(--base));
+    text-shadow: 1px 0.5px 0px var(--detail);
 }
 
 #header div{
-    background-color: white;
+    background-color: var(--base);
     text-align: center;
     width: 750px;
     height:150px;
     margin: 30px auto 30px auto;
-    border: 3px solid black;
+    border: 3px solid var(--detail);
 }
 
 #header h1 {
     font: 400 48px/normal 'Bangers';
-    color: var(--secondary-color-dark);
+    color: var(--secondary-dark);
     padding-top: 30px;
-    text-shadow: 2px 1px 0px black;
+    text-shadow: 2px 1px 0px var(--detail);
 }
 
 #header span{
-    color: var(--primary-color-dark);
+    color: var(--primary-dark);
     font: 400 38px/normal 'Bangers';
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 1px 1px 0px var(--detail);
 }
 
 #header p{
-    color: var(--primary-color-light);
+    color: var(--primary-light);
     font: 400 22px/normal 'Bangers';
-    text-shadow: 1px 0.5px 0px black;
+    text-shadow: 1px 0.5px 0px var(--detail);
     letter-spacing: 1px;
 }
 
 #epic{
     font: 400 42px/normal 'Bangers';
-    color: var(--secondary-color-dark);
-    text-shadow: 2px 1px 0px black;
+    color: var(--secondary-dark);
+    text-shadow: 2px 1px 0px var(--detail);
     letter-spacing: 1px;
     padding-left: 130px;
     padding-top: 15px;
@@ -45,8 +45,8 @@
 #heroic{
     font: 400 42px/normal 'Bangers';
     text-align: right;
-    color: var(--primary-color-dark);
-    text-shadow: 2px 1px 0px black;
+    color: var(--primary-dark);
+    text-shadow: 2px 1px 0px var(--detail);
     letter-spacing: 1px;
     padding-right: 130px;
 }
@@ -55,16 +55,16 @@
 
 #origem-hall{
     display: flex;
-    background-color:white;
+    background-color:var(--base);
     height: 530px;
 }
 
 #origem{
-    background-color: white;
+    background-color: var(--base);
     width: 620px;
     height: 530px;
     margin: 45px auto 45px auto;
-    border: 3px solid black;
+    border: 3px solid var(--detail);
     transform: rotate(-1deg);
     transition: 0.4s;
 }
@@ -77,15 +77,15 @@
 
 #origem h2{
     font: 400 42px/normal 'Bangers';
-    color: white;
-    background-color: var(--secondary-color-dark);
+    color: var(--base);
+    background-color: var(--secondary-dark);
     padding: 15px 0px 15px 35px ;
-    text-shadow: 2px 1px 0px black;
+    text-shadow: 2px 1px 0px var(--detail);
 }
 
 #origem h3{
     font: 400 32px/normal 'Bangers';
-    color:var(--primary-color-dark);
+    color:var(--primary-dark);
     padding-left: 35px;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -101,18 +101,18 @@
 }
 
 #origem div{
-    background-color: white;
-    color: var(--primary-color-light);
+    background-color: var(--base);
+    color: var(--primary-light);
     font: 400 22px/normal 'Bangers';
     width: 520px;
     margin-left: auto;
     margin-right: auto;
     height: 45px;
-    border: 3px solid black;
+    border: 3px solid var(--detail);
     border-radius: 20px;
     text-align: center;
     padding-top: 10px;
-    text-shadow: 1px 0.5px 0px black;
+    text-shadow: 1px 0.5px 0px var(--detail);
     letter-spacing: 1px;
 }
 
@@ -125,13 +125,13 @@
     align-items: center;    
     padding: 20px;  
     height: 430px;
-    border: 3px solid black;
+    border: 3px solid var(--detail);
 }
 
 #hall h2{
     font: 400 42px/normal 'Bangers';
-    color: var(--secondary-color-dark);
-    text-shadow: 2px 1px 0px black;
+    color: var(--secondary-dark);
+    text-shadow: 2px 1px 0px var(--detail);
     margin-bottom: 20px;
 }
 
@@ -157,7 +157,7 @@
     border-radius: 50%; 
     object-fit: cover;    
     margin-bottom: 10px;
-    border: 4px solid black;
+    border: 4px solid var(--detail);
 }
 
 .nome-hall p {
@@ -168,58 +168,58 @@
 
 /* -------------------------------------------------------------- */
 #pilares{
-    background-color: var(--primary-color-dark);
+    background-color: var(--primary-dark);
     margin-top: 90px
 }
 
 #pilares h1 {
     font: 400 42px/normal 'Bangers';
-    color: var(--tertiary-color);
+    color: var(--tertiary);
     text-align: center;
-    text-shadow: 2px 1px 0px black;
+    text-shadow: 2px 1px 0px var(--detail);
     padding-top: 30px;
     
 }
 
 #pilares > h2 {
     font: 400 18px/normal 'inter';
-    color: white;
-    text-shadow: 2px 1px 0px black;
+    color: var(--base);
+    text-shadow: 2px 1px 0px var(--detail);
     text-align: center;
     padding-top: 10px;
 }
 
 #pilares p{
     font: 400 18px/normal 'inter';
-    color: black;
+    color: var(--detail);
     text-align: center;
     padding-right: 15px;
 }
 
 .pilar{
     font: 400 32px/normal 'Bangers';
-    color: var(--secondary-color-dark);
-    text-shadow: 1.5px 1px 0px black;
+    color: var(--secondary-dark);
+    text-shadow: 1.5px 1px 0px var(--detail);
     text-align: center;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
 .icon{
-    background-color:var(--tertiary-color);
+    background-color:var(--tertiary);
     width: 90px;
     height: 90px;
     border-radius: 50px;
-    border: 3px solid black;
+    border: 3px solid var(--detail);
     text-align: center;
     padding-top: 15px;
     font-size: 38px;
     margin:15px auto 25px auto ;
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 1px 1px 0px var(--detail);
 }
 
 .box-unitario{
-    background-color: white;
+    background-color: var(--base);
     width: 380px;
     height: 250px;
     margin: 50px auto 50px auto;
@@ -243,7 +243,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to bottom, var(--background) 94%, white 100%);
+    background: linear-gradient(to bottom, var(--background) 94%, var(--base) 100%);
     padding-bottom: 55px;
  }
 
@@ -256,8 +256,8 @@
 
  #box-valores h2{
     font: 400 28px/normal 'Bangers';
-    color: var(--primary-color-dark);
-    text-shadow: 1px 0.5px 0px black;
+    color: var(--primary-dark);
+    text-shadow: 1px 0.5px 0px var(--detail);
     padding-left: 20px;
     letter-spacing: 0.6px
  }
@@ -265,20 +265,20 @@
 
 #cod-honra{
     font: 400 42px/normal 'Bangers';
-    color: var(--secondary-color-dark);
-    text-shadow: 2px 1px 0px black;
+    color: var(--secondary-dark);
+    text-shadow: 2px 1px 0px var(--detail);
     margin: 50px auto 0px auto;
     text-align: center;
 }
 
 #cod-honra-subtitulo{
     font: 400 32px/normal 'Bangers';
-    background-color: white;
-    text-shadow: 1.5px 1px 0px black;
-    color: var(--primary-color-light);
+    background-color: var(--base);
+    text-shadow: 1.5px 1px 0px var(--detail);
+    color: var(--primary-light);
     width: 1000px;
     height: 60px;
-    border: 3px solid black;
+    border: 3px solid var(--detail);
     border-radius: 60px;
     text-align: center;
     padding-top: 10px;
@@ -288,8 +288,8 @@
 
 #autenticidade{
     width: 550px;
-    border: 3px solid black;
-    background-color: white;
+    border: 3px solid var(--detail);
+    background-color: var(--base);
     transition: 0.3s;
     transform: rotate(-1deg);
 }
@@ -300,10 +300,10 @@
 }
 
  #autenticidade h1{
-    background-color:#16A34A ;
+    background-color: var(--special);
     font: 400 32px/normal 'Bangers';
-    color: white;
-    text-shadow: 2px 2px 0px black;
+    color: var(--base);
+    text-shadow: 2px 2px 0px var(--detail);
     padding: 8px 8px;
     margin: 10px;
 
@@ -311,8 +311,8 @@
 
  #inovacao{
     width: 550px;
-    border: 3px solid black;
-    background-color: white;
+    border: 3px solid var(--detail);
+    background-color: var(--base);
     transform: rotate(-1deg);
     transition: 0.3s;
  }
@@ -326,16 +326,16 @@
  #inovacao h1{
     background-color:#9333EA;
     font: 400 32px/normal 'Bangers';
-    color: white;
-    text-shadow: 2px 2px 0px black;
+    color: var(--base);
+    text-shadow: 2px 2px 0px var(--detail);
     padding: 8px 8px;
     margin: 10px;
  }
 
  #comunidade {
     width: 550px;
-    border: 3px solid black;
-    background-color: white;
+    border: 3px solid var(--detail);
+    background-color: var(--base);
     transform: rotate(-1deg);
     transition: 0.3s;
  }
@@ -349,16 +349,16 @@
  #comunidade h1{
     background-color:#2563EB ;
     font: 400 32px/normal 'Bangers';
-    color: white;
-    text-shadow: 2px 2px 0px black;
+    color: var(--base);
+    text-shadow: 2px 2px 0px var(--detail);
     padding: 8px 8px;
     margin: 10px;
  }
 
  #diversao{
     width: 550px;
-    border: 3px solid black;
-    background-color: white;
+    border: 3px solid var(--detail);
+    background-color: var(--base);
     transform: rotate(-1deg);
     transition: 0.3s;
  }
@@ -370,18 +370,18 @@
  }
 
  #diversao h1{
-    background-color: #EAB308;
+    background-color: var(--tertiary);
     font: 400 32px/normal 'Bangers';
-    color: white;
-    text-shadow: 2px 2px 0px black;
+    color: var(--base);
+    text-shadow: 2px 2px 0px var(--detail);
     padding: 8px 8px;
     margin: 10px;
  }
 
  .frase{
     font: 400 22px/normal 'Bangers';
-    color: var(--primary-color-dark);
-    border: 3px solid black;
+    color: var(--primary-dark);
+    border: 3px solid var(--detail);
     margin: 10px auto 15px 25px;
     width: 500px;
     height: 40px;
@@ -400,8 +400,8 @@
 }
 #linha-tempo h1{
     font: 400 42px/normal 'Bangers';
-    color: var(--secondary-color-dark);
-    text-shadow: 1px 0.5px 0px black;
+    color: var(--secondary-dark);
+    text-shadow: 1px 0.5px 0px var(--detail);
     text-align: center;
     margin-top: 50px;
 }
@@ -412,7 +412,7 @@
 }
 
 #box-ano-2023{
-    background-color:var(--secondary-color-dark);
+    background-color:var(--secondary-dark);
     width: 100px;
     height: 100px;
     padding-left: 20px;
@@ -421,17 +421,17 @@
     display: flex;
     margin:42px 40px auto auto;
     font: 400 28px/normal 'Bangers';
-    color: white;
-    text-shadow: 2px 1px 0px black;
-    border: 3px solid black;
+    color: var(--base);
+    text-shadow: 2px 1px 0px var(--detail);
+    border: 3px solid var(--detail);
 }
 
 #box-texto-2023{
-    background-color:white;
+    background-color:var(--base);
     width: 850px;
     margin-left: auto;
     margin-top: 25px;
-    border: 3px solid black; 
+    border: 3px solid var(--detail); 
     transform: rotate(-1deg);
     transition: 0.3s;
 }
@@ -443,8 +443,8 @@
 
 #linha-tempo h2{
     font: 400 32px/normal 'Bangers';
-    color: var(--primary-color-dark);
-    text-shadow: 0.5px 0.5px 0px black;
+    color: var(--primary-dark);
+    text-shadow: 0.5px 0.5px 0px var(--detail);
     margin:auto 40px auto auto;
     letter-spacing: 0.8px;
     margin: 15px 0px 10px 20px;
@@ -471,11 +471,11 @@
 }
 
 #box-texto-2024{
-    background-color:white;
+    background-color:var(--base);
     width: 850px;
     margin-left: auto;
     margin-top: 25px;
-    border: 3px solid black;
+    border: 3px solid var(--detail);
     transform: rotate(-1deg);
     transition: 0.3s;
 }
@@ -488,7 +488,7 @@
 
 
 #box-ano-2024{
-    background-color:var(--primary-color-dark);
+    background-color:var(--primary-dark);
     width: 100px;
     height: 100px;
     padding-left: 20px;
@@ -497,9 +497,9 @@
     display: flex;
     margin:35px auto auto 40px;
     font: 400 28px/normal 'Bangers';
-    color: white;
+    color: var(--base);
 
-    border: 3px solid black;
+    border: 3px solid var(--detail);
 }
 
 #ano-texto-2025{
@@ -510,11 +510,11 @@
 }
 
 #box-texto-2025{
-    background-color:white;
+    background-color:var(--base);
     width: 850px;
     margin-left: auto;
     margin-top: 25px;
-    border: 3px solid black; 
+    border: 3px solid var(--detail); 
     transform: rotate(-1deg);
     transition: 0.3s; 
 }
@@ -526,7 +526,7 @@
 }
 
 #box-ano-2025{
-    background-color:var(--tertiary-color);
+    background-color:var(--tertiary);
      width: 100px;
     height: 100px;
     padding-left: 20px;
@@ -535,47 +535,46 @@
     display: flex;
     margin:42px 40px auto auto;
     font: 400 28px/normal 'Bangers';
-    color: black;
-    border: 3px solid black;
+    color: var(--detail);
+    border: 3px solid var(--detail);
 }
 /* -------------------------------------------------------------- */
 #liga-dos-herois{
-    background-color: #2563EB;
     padding-top: 20px;
     padding-bottom: 35px;
-    background: linear-gradient(to left,var(--primary-color-dark ), var(--secondary-color-dark));
+    background: linear-gradient(to left,var(--primary-dark ), var(--secondary-dark));
 }
 #liga-dos-herois h1{
     font: 400 42px/normal 'Bangers';
-    color: var(--tertiary-color);
-    text-shadow: 2px 1px 0px black;
+    color: var(--tertiary);
+    text-shadow: 2px 1px 0px var(--detail);
     text-align: center;
     margin-bottom: 15px;
 }
 #join{
     font: 400 32px/normal 'Bangers';
-    color: var(--tertiary-color);
-    text-shadow: 2px 1px 0px black;
+    color: var(--tertiary);
+    text-shadow: 2px 1px 0px var(--detail);
     text-align: right;
     padding-right: 30px;
 }
 
 #liga-dos-herois p{
     font: 400 18px/normal 'inter';
-    color: white;
+    color: var(--base);
     text-align: center;
     width: 650px;
     margin: 5px auto 25px auto;
 }
 
 #colecao {
-    background-color:var(--tertiary-color);
+    background-color:var(--tertiary);
     font: 400 28px/normal 'Bangers';
     margin: 15px;
     padding: 10px;
-    color: var(--primary-color-dark);
-    text-shadow: 1px 1px 0px black;
-    border: 3px solid black;
+    color: var(--primary-dark);
+    text-shadow: 1px 1px 0px var(--detail);
+    border: 3px solid var(--detail);
     transition: 0.4s;
 }
 
@@ -597,17 +596,17 @@
     font: 400 28px/normal 'Bangers';
     margin: 10px;
     padding: 9px 25px 9px 25px;
-    color:white;
-    text-shadow: 1px 1px 0px black;
-    border: 3px solid white;
+    color:var(--base);
+    text-shadow: 1px 1px 0px var(--detail);
+    border: 3px solid var(--base);
     transition: 0.4s;   
 }
 
 #saiba-mais:hover{
     transform: scale(1.1);
-    background-color: white;
-    color: var(--primary-color-dark);
-    text-shadow: 1px 1px 0px black;
+    background-color: var(--base);
+    color: var(--primary-dark);
+    text-shadow: 1px 1px 0px var(--detail);
 }
 
 /*-------------------------------------------------------------*/
@@ -730,8 +729,8 @@
 
   .frase {
     font: 400 18px/normal 'Bangers';
-    color: var(--primary-color-dark);
-    border: 3px solid black;
+    color: var(--primary-dark);
+    border: 3px solid var(--detail);
     margin: 10px auto;
     width: 90%;
     padding: 10px;
@@ -785,6 +784,10 @@
     text-align: center;
     padding: 20px 10px;
     gap: 20px;
+  }
+
+  #liga-dos-herois p {
+    width: auto;
   }
 
   #botao {

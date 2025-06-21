@@ -1,6 +1,6 @@
 const styles = `
     a {
-        color: var(--base-color);
+        color: var(--base);
         text-decoration: none;
     }
 
@@ -11,9 +11,9 @@ const styles = `
         text-transform: uppercase;
     }
 
-    nav span { /* Estilo para o 'Verse' no logo */
+    nav span {
         font: 400 42px/normal 'Bangers';
-        color: var(--tertiary-color);
+        color: var(--tertiary);
         text-shadow: 1px 2px 0px black;
     }
 
@@ -21,7 +21,7 @@ const styles = `
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background: var(--primary-color-light);
+        background: var(--primary-light);
         height: 8vh;
         position: relative;
     }
@@ -37,13 +37,13 @@ const styles = `
     }
 
     nav li a:hover {
-        color: var(--tertiary-color);
+        color: var(--tertiary);
         transition: 0.7s;
     }
 
     nav li:hover {
-        border-color: var(--tertiary-color);
-        background: var(--secondary-color-dark);
+        border-color: var(--tertiary);
+        background: var(--secondary-dark);
         transition: 0.7s;
     }
 
@@ -59,7 +59,7 @@ const styles = `
 
     .nav-icon {
         margin-right: -30%;
-        color: var(--base-color);
+        color: var(--base);
         font-size: 28px;
         list-style: none;
         display: flex;
@@ -71,7 +71,7 @@ const styles = `
     }
 
     .nav-icon i:hover {
-        color: var(--tertiary-color);
+        color: var(--tertiary);
         transition: 0.7s;
     }
 
@@ -102,7 +102,7 @@ const styles = `
             height: 8vh;
             width: 100%;
             position: relative;
-            background: var(--primary-color-light);
+            background: var(--primary-light);
         }
 
         .logo {
@@ -121,7 +121,7 @@ const styles = `
             right: 0;
             width: 60vw;
             height: 100vh;
-            background: var(--primary-color-light);
+            background: var(--primary-light);
             z-index: 1000;
             display: flex;
             flex-direction: column;
@@ -147,12 +147,12 @@ const styles = `
         }
 
         nav li a:hover {
-            color: var(--tertiary-color);
+            color: var(--tertiary);
             transition: 0.3s;
         }
 
         nav li:hover {
-            background-color: var(--primary-color-dark);
+            background-color: var(--primary-dark);
             border-color: transparent;
             transition: 0.3s;
         }
@@ -164,8 +164,8 @@ const styles = `
             width: 60vw;
             margin: 0;
             padding: 20px 0;
-            border-top: 1px solid var(--primary-color-dark);
-            background: var(--primary-color-light);
+            border-top: 1px solid var(--primary-dark);
+            background: var(--primary-light);
             z-index: 1000;
             display: flex;
             justify-content: center;
@@ -180,7 +180,7 @@ const styles = `
         
         .nav-icon i {
             opacity: 0;
-            color: var(--base-color);
+            color: var(--base);
             font-size: 25px;
             margin-left: 0;
         }
