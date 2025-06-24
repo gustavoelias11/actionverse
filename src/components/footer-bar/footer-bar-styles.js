@@ -1,10 +1,10 @@
 const styles = `
     footer {
-    color: var(--base-color);
+    color: var(--base);
     font: 400 20px/normal 'Bangers';
     text-shadow: 1px 2px 0px black;
     width: 100%;
-    background: var(--primary-color-light); /* Matches #content background, can be on footer */
+    background: var(--primary-light);
     }
 
     .footer-main-content {
@@ -18,7 +18,7 @@ const styles = `
 
     .footer-brand-social h1 {
         font-size: 35px;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0;
     }
 
     .footer-brand-social p {
@@ -27,7 +27,7 @@ const styles = `
     }
 
     .footer-brand-social h1 span {
-        color: var(--tertiary-color);
+        color: var(--tertiary);
         text-shadow: 1px 2px 0px black;
     }
 
@@ -44,11 +44,11 @@ const styles = `
         justify-content: center;
         height: 2.5rem;
         width: 2.5rem;
-        color: var(--base-color);
+        color: var(--base);
     }
 
     .footer-social-links .footer-link:hover {
-        color: var(--tertiary-color);
+        color: var(--tertiary);
         transition: color 0.7s;
     }
 
@@ -67,11 +67,11 @@ const styles = `
         font-family: 'Inter';
         font-size: 16px;
         text-decoration: none;
-        color: var(--base-color);
+        color: var(--base);
     }
 
     .footer-nav-list li a:hover {
-        color: var(--tertiary-color);
+        color: var(--tertiary);
         transition: color 0.7s;
     }
 
