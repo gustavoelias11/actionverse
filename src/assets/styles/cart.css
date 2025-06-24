@@ -157,12 +157,14 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 
 .product-image span {
     font-family: 'Bangers';
     font-size: 1.5rem;
     transform: rotate(-15deg); 
+  
 }
 
 .product-title {
@@ -170,8 +172,7 @@ justify-content: center;
     font-weight: 700;
     font-size: 1.1rem;
     font-family: 'Bangers';
-    text text-shadow: ;
-}
+  }
 
 .product-subtitle {
     font-size: 0.9rem;
