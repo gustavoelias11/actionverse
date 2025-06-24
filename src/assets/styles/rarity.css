@@ -1,0 +1,63 @@
+section {
+    background: linear-gradient(-45deg, var(--detail), var(--primary-dark), var(--primary-light), var(--primary-dark ), var(--secondary-dark));
+
+    padding: 20px;
+    min-height: 500px;
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    overflow: hidden;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    color: var(--base);
+    font: 400 68px/normal 'Bangers';
+    text-shadow: 2px 4px 0px var(--detail),
+    0px 0px 80px var(--tertiary),
+    0px 0px 80px var(--tertiary)
+    ;
+    
+}
+
+.title h2 {
+    color: var(--tertiary);
+    font: 400 38px/normal 'Bangers';
+    text-shadow: 2px 4px 0px var(--detail);
+    margin-top: 30px;
+}
+
+.title p {
+    color: var(--base);
+    font: 400 18px/normal 'Inter';
+    width: 50%;
+    margin-top: 10px;
+}
+
+#mystical {
+    color: var(--tertiary);
+    font: 400 42px/normal 'Bangers';
+    text-shadow: 2px 4px 0px var(--detail);
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+#legendary {
+    color: var(--base);
+    font: 400 42px/normal 'Bangers';
+    text-shadow: 2px 4px 0px var(--detail);
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+}
