@@ -7,9 +7,9 @@ const template = `
             <div class="line3"></div>
         </div>
         <ul class="nav-list" id="navList">
-            <li><a href="../index.html">Início</a></li>
-            <li><a href="../about.html">Sobre</a></li>
-            <li><a href="../rarity.html">Raridade</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="rarity.html">Raridade</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
         <div class="nav-icon">
