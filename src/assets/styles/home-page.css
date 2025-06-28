@@ -73,6 +73,7 @@ main.home-page  {
 }
 
 .card-content {
+    max-width: 533px;
     padding: 0px 20px 20px 20px;
     text-align: center;
     flex-grow: 1;
@@ -250,6 +251,10 @@ main.home-page  {
         top: -25px;
     }
 
+    .card-header {
+        font-size: 20px;
+    }
+
     .colection-content {
         font-size: 13px;
     }
@@ -260,6 +265,30 @@ main.home-page  {
 
     .colection-content img {
         width: 250px;
+    }
+
+    .badge.yellow {
+        top: -48px;
+        right: -37px;
+        font-size: 18px;
+        padding: 33px 6px;
+        border-width: 1px;
+    }
+
+    .badge.red {
+        top: -48px;
+        right: -37px;
+        font-size: 18px;
+        padding: 20px 15px;
+        border-width: 1px;
+    }
+
+    .badge.blue {
+        top: -48px;
+        right: -37px;
+        font-size: 18px;
+        padding: 20px 10px;
+        border-width: 1px;
     }
 }
 
