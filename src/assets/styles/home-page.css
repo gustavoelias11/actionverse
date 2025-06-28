@@ -74,6 +74,7 @@ main.home-page  {
 }
 
 .card-content {
+    max-width: 533px;
     padding: 0px 20px 20px 20px;
     text-align: center;
     flex-grow: 1;
@@ -269,7 +270,7 @@ main.home-page  {
 
     .badge.yellow {
         top: -48px;
-        right: -48px;
+        right: -37px;
         font-size: 18px;
         padding: 33px 6px;
         border-width: 1px;
@@ -277,7 +278,7 @@ main.home-page  {
 
     .badge.red {
         top: -48px;
-        right: -48px;
+        right: -37px;
         font-size: 18px;
         padding: 20px 15px;
         border-width: 1px;
@@ -285,7 +286,7 @@ main.home-page  {
 
     .badge.blue {
         top: -48px;
-        right: -48px;
+        right: -37px;
         font-size: 18px;
         padding: 20px 10px;
         border-width: 1px;
