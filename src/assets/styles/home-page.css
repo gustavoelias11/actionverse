@@ -1,16 +1,16 @@
-main.home-page  {
+.home-page {
     background: var(--background);
     padding: 50px;
 }
 
-.week h1 {
+.weekly-highlights h1 {
     color: var(--secondary-dark);
     font: 400 48px/normal 'Bangers';
     text-shadow: 2px 4px 0px var(--detail);
     margin-bottom: 15px;
 }
 
-.week hr {
+.weekly-highlights hr {
     background-color: var(--primary-dark);
     height: 4px;
 }
@@ -25,7 +25,7 @@ main.home-page  {
 
 .card {
     background-color: var(--base);
-    border: 2px solid #000;
+    border: 2px solid var(--detail);
     display: flex;
     flex-direction: column;
     position: relative;
@@ -35,9 +35,11 @@ main.home-page  {
     transform: rotate(-0.8deg);
 }
 
-.card:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        transform: translateY(-20px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
 }
 
 .card-header {
@@ -47,8 +49,7 @@ main.home-page  {
     color: var(--base);
     text-shadow: 2px 4px 0px var(--detail);
     letter-spacing: 2px;
-    border-bottom: 2px solid #000;
-    
+    border-bottom: 2px solid var(--detail);
 }
 
 .card-header.red {
@@ -100,18 +101,18 @@ main.home-page  {
 }
 
 .card-button {
-    background-color: var(--tertiary); /* Amarelo */
+    background-color: var(--tertiary);
     color: var(--primary-light);
     text-align: center;
     padding: 12px;
-    border: 2px solid #000;
+    border: 2px solid var(--detail);
     cursor: pointer;
     text-decoration: none;
     font: 400 30px/normal 'Bangers';
     margin-left: 50px;
     margin-right: 50px;
-    display: block; /* Faz o botão ocupar a largura total */
-    margin-top: auto; /* Empurra o botão para baixo quando há espaço extra */
+    display: block;
+    margin-top: auto;
 }
 
 .card-button:hover {
@@ -123,20 +124,20 @@ main.home-page  {
 .badge {
     position: absolute;
     top: -30px;
-    right: -30px; /* Ajuste para sobrepor a borda */
+    right: -30px;
     color: var(--base);
     font-weight: bold;
     font: 400 20px/normal 'Bangers';
     text-shadow: 1px 3px 0px var(--detail);
     -webkit-text-stroke: 0.5px var(--detail);
-    padding: 35px 8px; /* Padding aumentado para forma mais oval */
-    border-radius: 50%; /* Faz o badge circular/oval */
-    border: 2px solid #000;
-    transform: rotate(15deg); /* Rotação do badge */
+    padding: 35px 8px;
+    border-radius: 50%;
+    border: 2px solid var(--detail);
+    transform: rotate(15deg);
 }
 
 .badge.yellow {
-    background-color: var(--tertiary); /* Amarelo dourado */
+    background-color: var(--tertiary);
 }
 
 .badge.red {
@@ -150,7 +151,7 @@ main.home-page  {
     padding: 25px 15px;
 }
 
-.colection {
+.cta-banner {
     margin-top: 25px;
     position: relative;
     background-color: var(--primary-light);
@@ -158,7 +159,7 @@ main.home-page  {
     padding: 50px 30px 30px 30px
 }
 
-#kapow {
+.cta-banner__kapow-text {
     color: var(--tertiary);
     font: 400 70px/normal 'Bangers';
     text-shadow: 1px 3px 0px var(--detail);
@@ -167,7 +168,7 @@ main.home-page  {
     left: -30px;
 }
 
-.colection-content {
+.cta-banner__content {
     text-align: center;
     color: var(--base);
     font: 400 25px/normal 'Bangers';
@@ -175,78 +176,82 @@ main.home-page  {
     letter-spacing: 1.5px;
 }
 
-.colection-content span {
+.cta-banner__content span {
     color: var(--tertiary);
 }
 
-.colection-content p {
+.cta-banner__content p {
     font-family: 'Inter';
     letter-spacing: 0px;
 }
 
-.colection-content img {
+.cta-banner__content img {
     margin-top: 25px;
 }
 
 @media (max-width: 1150px) {
-    #kapow {
+    .cta-banner__kapow-text {
         font-size: 50px;
         top: -25px;
     }
 
-    .colection-content {
+    .cta-banner__content {
         font-size: 20px;
     }
 
-    .colection-content p {
+    .cta-banner__content p {
         font-size: 16px;
     }
 
-    .colection-content img {
+    .cta-banner__content img {
         width: 400px;
     }
-}    
+}
 
 @media (max-width: 900px) {
-    #kapow {
+    .cta-banner__kapow-text {
         font-size: 40px;
         top: -25px;
     }
 
-    .colection-content {
+    .cta-banner__content {
         font-size: 15px;
     }
 
-    .colection-content p {
+    .cta-banner__content p {
         font-size: 13px;
     }
 
-    .colection-content img {
+    .cta-banner__content img {
         width: 350px;
     }
 }
 
 @media (max-width: 750px) {
-    #kapow {
+    .cta-banner__kapow-text {
         font-size: 40px;
         top: -25px;
     }
 
-    .colection-content {
+    .cta-banner__content {
         font-size: 15px;
     }
 
-    .colection-content p {
+    .cta-banner__content p {
         font-size: 12px;
     }
 
-    .colection-content img {
+    .cta-banner__content img {
         width: 300px;
+    }
+
+    .card {
+        transform: rotate(0);
     }
 }
 
 @media (max-width: 450px) {
-    #kapow {
+    .cta-banner__kapow-text {
         font-size: 40px;
         top: -25px;
     }
@@ -255,40 +260,36 @@ main.home-page  {
         font-size: 20px;
     }
 
-    .colection-content {
+    .cta-banner__content {
         font-size: 13px;
     }
 
-    .colection-content p {
+    .cta-banner__content p {
         font-size: 12px;
     }
 
-    .colection-content img {
+    .cta-banner__content img {
         width: 250px;
     }
 
-    .badge.yellow {
-        top: -48px;
-        right: -37px;
-        font-size: 18px;
-        padding: 33px 6px;
-        border-width: 1px;
-    }
-
-    .badge.red {
-        top: -48px;
-        right: -37px;
-        font-size: 18px;
-        padding: 20px 15px;
-        border-width: 1px;
-    }
-
+    .badge.yellow,
+    .badge.red,
     .badge.blue {
         top: -48px;
         right: -37px;
         font-size: 18px;
-        padding: 20px 10px;
         border-width: 1px;
     }
-}
 
+    .badge.yellow {
+        padding: 33px 6px;
+    }
+
+    .badge.red {
+        padding: 20px 15px;
+    }
+
+    .badge.blue {
+        padding: 20px 10px;
+    }
+}

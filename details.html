@@ -14,77 +14,87 @@
         <nav-bar></nav-bar>
     </header-bar>
 
-    <section id="page-header">
+    <main>
         <aside id="login-pop-up"></aside>
-        <div class="header-title">
-            <h2><span>MEME</span> DETALHES</h2>
-            <h3>Conheça todos os superpoderes desse meme!</h3>
-        </div>
-        <div id="bang-effect">
-            <p>BANG!</p>
-        </div>
-    </section>
 
-    <main class="product-details-container animate-slide-in-left">
-        <section class="product-image-wrapper">
-            <div class="rare-option-badge">
-                <p>opção <br>rara</p>
+        <section class="page-header">
+            <div class="page-header__title">
+                <h2><span>MEME</span> DETALHES</h2>
+                <h3>Conheça todos os superpoderes desse meme!</h3>
             </div>
-            <img src="public/img/kratosnaro.jpeg" alt="Meme do Kratosnaro">
+            <div class="page-header__bang-effect">
+                <p>BANG!</p>
+            </div>
         </section>
 
-        <section class="product-info animate-slide-in-right">
-            <div class="product-name">
-                <h2>KRATOSNARO</h2>
+        <section class="product-details animate-slide-in-left">
+            <div class="product-details__image-wrapper">
+                <div class="product-details__badge">
+                    <p>opção <br>rara</p>
+                </div>
+                <img src="./public/img/kratosnaro.jpeg" alt="Meme do Kratosnaro">
             </div>
 
-            <h2 class="info-heading">Descrição da missão</h2>
-            <p class="product-description">O meme brasileiro mais icônico de todos os tempos agora em formato exclusivo!</p>
-            <p class="product-description">Este meme faz parte da coleção <strong>UNIVERSO MEMÉTICO BRASILEIRO</strong>, uma serie exclusiva que celebra os memes mais iconicos do Brasil.</p>
+            <div class="product-details__info animate-slide-in-right">
+                <header class="product-details__header">
+                    <h1>KRATOSNARO</h1>
+                </header>
 
-            <h2 class="info-heading">Valor do artefatos</h2>
-            <p class="product-price" data-unit-price="22222.22" data-unit-discount-price="23000.00">
-                <span class="current-price"></span>
-                <span class="original-price"></span>
-            </p>
-            <p class="installments-info">Em até 3x sem juros</p>
+                <div class="product-details__content">
+                    <h2 class="product-details__subheading">Descrição da missão</h2>
+                    <p class="product-details__description">O meme brasileiro mais icônico de todos os tempos agora em formato exclusivo!</p>
+                    <p class="product-details__description">Este meme faz parte da coleção <strong>UNIVERSO MEMÉTICO BRASILEIRO</strong>, uma serie exclusiva que celebra os memes mais iconicos do Brasil.</p>
 
-            <h2 class="info-heading">Quantidade</h2>
-            <div class="quantity-selector">
-                <button id="quantity-decrease">-</button>
-                <p id="quantity-value">1</p>
-                <button id="quantity-increase">+</button>
+                    <h2 class="product-details__subheading">Valor do artefato</h2>
+                    <div class="product-details__price" data-unit-price="22222.22" data-unit-discount-price="23000.00">
+                        <span class="current-price"></span>
+                        <span class="original-price"></span>
+                    </div>
+                    <p class="product-details__installments">Em até 3x sem juros</p>
+
+                    <h2 class="product-details__subheading">Quantidade</h2>
+                    <div class="quantity-selector">
+                        <button id="quantity-decrease" class="quantity-selector__button">-</button>
+                        <span id="quantity-value" class="quantity-selector__value">1</span>
+                        <button id="quantity-increase" class="quantity-selector__button">+</button>
+                    </div>
+
+                    <div class="purchase-actions">
+                        <a id="add-to-cart-button" class="purchase-actions__cart-button" href="#">
+                            <img src="./public/img/botão carrinho.png" alt="Adicionar ao carrinho">
+                        </a>
+                        <h2 class="product-details__subheading">Informações adicionais</h2>
+                        <ul class="features-list">
+                            <li class="features-list__item">Formato digital para compartilhamento.</li>
+                            <li class="features-list__item">Certificado de autenticidade.</li>
+                            <li class="features-list__item">Acesso perpétuo à sua coleção.</li>
+                            <li class="features-list__item">Entrega imediata após a compra.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="purchase-actions">
-                <a id="add-to-cart-button" href="#">
-                    <img src="public/img/botão carrinho.png" alt="Adicionar ao carrinho">
-                </a>
-                <h2 class="info-heading">Informações adicionais</h2>
-                <ul class="features-list">
-                    <li>Formato digital para compartilhamento.</li>
-                    <li>Certificado de autenticidade.</li>
-                    <li>Acesso perpétuo à sua coleção.</li>
-                    <li>Entrega imediata após a compra.</li>
-                </ul>
-            </div>
+        <section class="related-products">
+            <h2 class="related-products__heading">Outros memes que você vai amar!</h2>
+            <hr class="section-divider">
+            <div class="related-products__gallery">
+                <div class="related-product-card">
+                    <img class="related-product-card__image" src="./public/img/lularina.jpeg" alt="Meme Lularine">
+                    <a href="#" class="related-product-card__link-wrapper">
+                        <img class="related-product-card__link-image" src="./public/img/ver outro memes.png" alt="Ver outro meme">
+                    </a>
+                </div>
+                </div>
         </section>
     </main>
-    <section id="related-products">
-        <h2 id="related-products-heading">Outros memes que você vai amar!</h2>
-        <hr class="section-divider">
-        <div class="related-product-card">
-            <img class="related-product-image" src="public/img/lularina.jpeg" alt="Meme Lularina">
-            <a href="#">
-                <img class="related-product-link" src="public/img/ver outro memes.png" alt="Ver outro meme">
-            </a>
-        </div>
-    </section>
+
     <footer-bar></footer-bar>
-    <script type="module" src="./src/components/nav-bar/NavBar.js"></script>
+
     <script type="module" src="./src/components/header-bar/HeaderBar.js"></script>
+    <script type="module" src="./src/components/nav-bar/NavBar.js"></script>
     <script type="module" src="./src/components/pop-up.js"></script>
-    <script type="module" src="./src/components/details.js"></script>
+    <script type="module" src="./src/components/details.js" defer></script>
     <script type="module" src="./src/components/footer-bar/FooterBar.js"></script>
 </body>
 </html>

@@ -1,17 +1,17 @@
-section {
-    background: linear-gradient(-45deg, var(--detail), var(--primary-dark), var(--primary-light), var(--primary-dark ), var(--secondary-dark));
+.rarity-hero {
+    background: linear-gradient(-45deg, var(--detail), var(--primary-dark), var(--primary-light), var(--primary-dark), var(--secondary-dark));
     padding: 20px;
     min-height: 500px;
     position: relative;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     overflow: hidden;
 }
 
-.title {
+.rarity-hero__content {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -19,87 +19,82 @@ section {
     align-items: center;
 }
 
-.title h1 {
+.rarity-hero__content h1 {
     color: var(--base);
     font: 400 68px/normal 'Bangers';
     text-shadow: 2px 4px 0px var(--detail),
-    0px 0px 80px var(--tertiary),
-    0px 0px 80px var(--tertiary)
-    ;
-    
+        0px 0px 80px var(--tertiary),
+        0px 0px 80px var(--tertiary);
 }
 
-.title h2 {
+.rarity-hero__content h2 {
     color: var(--tertiary);
     font: 400 38px/normal 'Bangers';
     text-shadow: 2px 4px 0px var(--detail);
     margin-top: 30px;
 }
 
-.title p {
+.rarity-hero__content p {
     color: var(--base);
     font: 400 18px/normal 'Inter';
     width: 50%;
     margin-top: 10px;
 }
 
-#mystical {
-    color: var(--tertiary);
+.rarity-hero__decorative-text {
+    position: absolute;
     font: 400 42px/normal 'Bangers';
     text-shadow: 2px 4px 0px var(--detail);
-    position: absolute;
+}
+
+.rarity-hero__decorative-text.mystical {
+    color: var(--tertiary);
     top: 5px;
     left: 20px;
 }
 
-#legendary {
+.rarity-hero__decorative-text.legendary {
     color: var(--base);
-    font: 400 42px/normal 'Bangers';
-    text-shadow: 2px 4px 0px var(--detail);
-    position: absolute;
     bottom: 5px;
     right: 20px;
 }
 
-.cards-container {
+.rarity-info {
     display: flex;
-    flex-direction: column; 
-    align-items: center;   
-    gap: 0.5rem; 
-    padding: 3rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem 1rem;
 }
 
-.grimorio {
+.rarity-info__grimoire {
     display: flex;
     flex-direction: column;
     width: 95%;
     max-width: fit-content;
     background-color: var(--base);
-    border: 2px solid #ce0000;
+    border: 2px solid var(--rarity-red-medium);
     border-radius: 12px;
     padding: 1.25rem 2.5rem;
     text-align: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 20px #ff1111;
+    box-shadow: 0 0 20px var(--rarity-red-bright);
 }
 
-.grimorio h1 {
-    color: #990000;
+.rarity-info__grimoire h2 {
+    color: var(--rarity-red-dark);
     font: 400 30px/normal 'Bangers';
 }
 
-.grimorio p {
-    color: #990000;
+.rarity-info__grimoire p {
+    color: var(--rarity-red-dark);
     font: 400 18px/normal 'Inter';
     margin-top: 10px;
 }
 
-.misterios {
-    margin-top: 20px;
+.rarity-info__mystery-prompt {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 95%;
     max-width: 700px;
     background-color: var(--base);
@@ -107,53 +102,43 @@ section {
     border-radius: 15px;
     padding: 7px;
     text-align: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    justify-content: center;
-    align-items: center;
 }
 
-.misterios h1 {
+.rarity-info__mystery-prompt h2 {
     color: var(--primary-dark);
     font: 400 20px/normal 'Bangers';
 }
 
-/*SEÇÃO DOS CARDS*/
-.card-container {
+.card-gallery {
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    padding: 0 1rem 3rem 1rem;
 }
 
 .card {
     background-color: var(--base);
-    border: 2px solid #000;
+    border: 2px solid var(--detail);
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
     transition: 0.5s;
-    width: 75%;
+    width: 95%;
     max-width: 511px;
 }
 
-.card.yellow {
-    box-shadow: 0px 0px 30px #ffff5a;
+.card.legendary-glow {
+    box-shadow: 0px 0px 30px var(--rarity-legendary-glow);
 }
 
-.card.purple {
-    box-shadow: 0px 0px 30px #b46cff;
+.card.epic-glow {
+    box-shadow: 0px 0px 30px var(--rarity-epic-glow);
 }
 
-.card.blue {
-    box-shadow: 0px 0px 30px #86ecfa;
-}
-
-.card:hover {
-    transform: translateY(-20px);
+.card.rare-glow {
+    box-shadow: 0px 0px 30px var(--rarity-rare-glow);
 }
 
 .card-header {
@@ -164,19 +149,18 @@ section {
     color: var(--base);
     text-shadow: 2px 4px 0px var(--detail);
     letter-spacing: 2px;
-    
 }
 
-.card-header.red {
-    background: linear-gradient(to right, #ffff5a, #ffae00, #e68a00);
+.card-header.legendary-bg {
+    background: linear-gradient(to right, var(--rarity-legendary-glow), var(--rarity-legendary-medium), var(--rarity-legendary-dark));
 }
 
-.card-header.purple {
-    background: linear-gradient(to right, #b46cff, #7c1ab9, #70008f);
+.card-header.epic-bg {
+    background: linear-gradient(to right, var(--rarity-epic-glow), var(--rarity-epic-medium), var(--rarity-epic-dark));
 }
 
-.card-header.blue {
-    background: linear-gradient(to right, #86ecfa, #2962ff, #003185);
+.card-header.rare-bg {
+    background: linear-gradient(to right, var(--rarity-rare-glow), var(--rarity-rare-medium), var(--rarity-rare-dark));
 }
 
 .card-image {
@@ -192,22 +176,24 @@ section {
     height: 284px;
 }
 
-.card-content p {
-    padding: 0px 20px 20px 20px;
-    text-align: center;
-    flex-grow: 1;
+.card-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    font-family: 'Inter';
-    font-weight: bold;
-    font-size: 0.9em;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .card-content h3 {
     color: var(--primary-dark);
     font: 400 28px/normal 'Bangers';
-    text-align: center;
+}
+
+.card-content p {
+    padding: 1rem 1.25rem 1.25rem;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 0.9em;
+    flex-grow: 1;
 }
 
 .card-price {
@@ -225,66 +211,43 @@ section {
 }
 
 .card-button {
-    background: linear-gradient(to right, #ff1111, #ce0000, #990000); /* Amarelo */
+    background: linear-gradient(to right, var(--rarity-red-bright), var(--rarity-red-medium), var(--rarity-red-dark));
     color: var(--base);
     text-align: center;
     padding: 12px;
-    border: 2px solid #000;
+    border: 2px solid var(--detail);
     cursor: pointer;
     text-decoration: none;
     font: 400 30px/normal 'Bangers';
     margin-left: 50px;
     margin-right: 50px;
-    display: block; /* Faz o botão ocupar a largura total */
-    margin-top: auto; /* Empurra o botão para baixo quando há espaço extra */
+    display: block;
+    margin-top: auto;
 }
 
-.card-button:hover {
-    border-color: var(--tertiary);
-    color: var(--tertiary);
-    transition: 0.3s;
-}
+@media (hover: hover) {
+    .card {
+        transform: rotate(-0.8deg);
+    }
 
-.badge {
-    position: absolute;
-    top: -30px;
-    right: -30px; /* Ajuste para sobrepor a borda */
-    color: var(--base);
-    font-weight: bold;
-    font: 400 20px/normal 'Bangers';
-    text-shadow: 1px 3px 0px var(--detail);
-    -webkit-text-stroke: 0.5px var(--detail);
-    padding: 35px 8px; /* Padding aumentado para forma mais oval */
-    border-radius: 50%; /* Faz o badge circular/oval */
-    border: 2px solid #000;
-    transform: rotate(15deg); /* Rotação do badge */
-}
+    .card:hover {
+        transform: translateY(-20px);
+    }
 
-.badge.yellow {
-    background-color: var(--tertiary); /* Amarelo dourado */
-}
-
-.badge.red {
-    background-color: var(--secondary-dark);
-    padding: 25px 20px;
-}
-
-.badge.blue {
-    background-color: var(--primary-dark);
-    text-align: center;
-    padding: 25px 15px;
+    .card-button:hover {
+        border-color: var(--tertiary);
+        color: var(--tertiary);
+        transition: 0.3s;
+    }
 }
 
 @media(max-width: 450px) {
-    .title h1 {
-    font-size: 58px;
+    .rarity-hero__content h1 {
+        font-size: 58px;
     }
 
-    #mystical {
-        font-size: 22px;
-    }
-
-    #legendary {
+    .rarity-hero__decorative-text.mystical,
+    .rarity-hero__decorative-text.legendary {
         font-size: 22px;
     }
 }
