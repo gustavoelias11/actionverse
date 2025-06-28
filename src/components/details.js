@@ -1,28 +1,47 @@
-const botaoMais = document.getElementById('botao-mais');
-const botaoMenos = document.getElementById('botao-menos');
-const qtdItens = document.getElementById('qtd-itens');
-const precoElemento = document.getElementById('preco');
-// Atualizar nomes para inglês
-let quantidade = 1;
-const precoUnitario = 79.90;
+const increaseButton = document.getElementById('quantity-increase');
+const decreaseButton = document.getElementById('quantity-decrease');
+const quantityDisplay = document.getElementById('quantity-value');
 
-function atualizarPreco() {
-  const precoTotal = precoUnitario * quantidade;
-  precoElemento.textContent = `R$ ${precoTotal.toFixed(2).replace('.', ',')}`;
+const priceElement = document.querySelector('.product-price');
+const currentPriceSpan = priceElement.querySelector('.current-price');
+const originalPriceSpan = priceElement.querySelector('.original-price');
+
+const unitPrice = parseFloat(priceElement.dataset.unitPrice) || 0;
+const unitDiscountPrice = parseFloat(priceElement.dataset.unitDiscountPrice) || 0;
+let quantity = 1;
+
+const currencyFormatter = new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+});
+
+function updatePriceDisplay() {
+    const totalPrice = unitPrice * quantity;
+    const totalDiscountPrice = unitDiscountPrice * quantity;
+
+    currentPriceSpan.textContent = currencyFormatter.format(totalPrice);
+    if (unitDiscountPrice > 0) {
+        originalPriceSpan.textContent = currencyFormatter.format(totalDiscountPrice);
+    }
 }
 
-botaoMais.addEventListener('click', () => {
-  quantidade++;
-  qtdItens.textContent = quantidade;
-  atualizarPreco();
+function updateQuantityDisplay() {
+    quantityDisplay.textContent = quantity;
+}
+
+increaseButton.addEventListener('click', () => {
+    quantity++;
+    updateQuantityDisplay();
+    updatePriceDisplay();
 });
 
-botaoMenos.addEventListener('click', () => {
-  if (quantidade > 1) {
-    quantidade--;
-    qtdItens.textContent = quantidade;
-    atualizarPreco();
-  }
+decreaseButton.addEventListener('click', () => {
+    if (quantity > 1) {
+        quantity--;
+        updateQuantityDisplay();
+        updatePriceDisplay();
+    }
 });
 
-atualizarPreco();
+updateQuantityDisplay();
+updatePriceDisplay();
