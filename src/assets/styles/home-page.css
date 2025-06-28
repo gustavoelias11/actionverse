@@ -1,5 +1,4 @@
 main.home-page  {
-    /*background-image: linear-gradient(to bottom, #f1b40e7a, var(--background), var(--background), var(--background));*/
     background: var(--background);
     padding: 50px;
 }
