@@ -1,6 +1,5 @@
 section {
     background: linear-gradient(-45deg, var(--detail), var(--primary-dark), var(--primary-light), var(--primary-dark ), var(--secondary-dark));
-
     padding: 20px;
     min-height: 500px;
     position: relative;
@@ -60,4 +59,207 @@ section {
     position: absolute;
     bottom: 5px;
     right: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    gap: 0.5rem; 
+    padding: 3rem 0;
+}
+
+.grimorio {
+    display: inline-block;
+    background-color: var(--base);
+    border: 2px solid #6a1b9a;
+    border-radius: 12px;
+    padding: 1.25rem 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px 4px rgba(176, 78, 240, 0.6);
+}
+
+.grimorio h1 {
+    color: #981e2b;
+    font: 400 30px/normal 'Bangers';
+    text-shadow: 2px 3px 0px var(--detail);
+}
+
+.grimorio p {
+    color: #6a1b9a;
+    font: 400 18px/normal 'Inter';
+    margin-top: 10px;
+}
+
+.misterios {
+    display: inline-block;
+    background-color: var(--base);
+    border: 2px solid var(--detail);
+    border-radius: 15px;
+    padding: 0.5rem 15rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+.misterios h1 {
+    color: var(--primary-dark);
+    font: 400 20px/normal 'Bangers';
+    text-shadow: 1px 2px 0px var(--detail);
+}
+
+/*SEÇÃO DOS CARDS*/
+.card-container {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--base);
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+    transform: rotate(-0.8deg);
+}
+
+.card.yellow {
+    box-shadow: 0 10px 20px var(--tertiary);
+}
+
+.card.purple {
+    box-shadow: 0 10px 20px #6a1b9a;
+}
+
+.card.blue {
+    box-shadow: 0 10px 20px #2962ff;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card-header {
+    margin: 25px;
+    padding: 10px;
+    text-align: center;
+    font: 400 22px/normal 'Bangers';
+    color: var(--base);
+    text-shadow: 2px 4px 0px var(--detail);
+    letter-spacing: 2px;
+    
+}
+
+.card-header.red {
+    background-color: var(--tertiary);
+}
+
+.card-header.purple {
+    background-color: #6a1b9a;
+}
+
+.card-header.blue {
+    background-color: #2962ff;
+}
+
+.card-image {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image img {
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.171);
+    height: 284px;
+}
+
+.card-content {
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.card-price {
+    font-family: 'Bangers';
+    color: var(--secondary-dark);
+    font: 400 22px/normal 'Bangers';
+    text-shadow: 1px 2px 0px var(--detail);
+    margin-bottom: 15px;
+}
+
+.card-price p {
+    font: 400 42px/normal 'Bangers';
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    background-color: var(--tertiary); /* Amarelo */
+    color: var(--primary-light);
+    text-align: center;
+    padding: 12px;
+    border: 2px solid #000;
+    cursor: pointer;
+    text-decoration: none;
+    font: 400 30px/normal 'Bangers';
+    margin-left: 50px;
+    margin-right: 50px;
+    display: block; /* Faz o botão ocupar a largura total */
+    margin-top: auto; /* Empurra o botão para baixo quando há espaço extra */
+}
+
+.card-button:hover {
+    background-color: var(--primary-dark);
+    color: var(--tertiary);
+    transition: 0.3s;
+}
+
+.badge {
+    position: absolute;
+    top: -30px;
+    right: -30px; /* Ajuste para sobrepor a borda */
+    color: var(--base);
+    font-weight: bold;
+    font: 400 20px/normal 'Bangers';
+    text-shadow: 1px 3px 0px var(--detail);
+    -webkit-text-stroke: 0.5px var(--detail);
+    padding: 35px 8px; /* Padding aumentado para forma mais oval */
+    border-radius: 50%; /* Faz o badge circular/oval */
+    border: 2px solid #000;
+    transform: rotate(15deg); /* Rotação do badge */
+}
+
+.badge.yellow {
+    background-color: var(--tertiary); /* Amarelo dourado */
+}
+
+.badge.red {
+    background-color: var(--secondary-dark);
+    padding: 25px 20px;
+}
+
+.badge.blue {
+    background-color: var(--primary-dark);
+    text-align: center;
+    padding: 25px 15px;
 }
