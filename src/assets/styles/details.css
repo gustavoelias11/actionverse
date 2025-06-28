@@ -12,7 +12,6 @@
     color: var(--base);
     font: 400 42px/normal 'Bangers';
     text-shadow: 1px 2px 0px var(--detail);
-    margin: 0;
 }
 
 .header-title h3 {
