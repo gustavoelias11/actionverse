@@ -245,33 +245,35 @@
 
 @keyframes slide-in-right {
     from {
-        opacity: 0;
-        transform: translateX(100%);
+      opacity: 0;
+      transform: translateX(-100vw);
     }
     to {
-        opacity: 1;
-        transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
     }
-}
+  }
 
-.animate-slide-in-right {
+  .animate-slide-in-right {
     animation: slide-in-right 1.5s ease-out forwards;
-}
+    will-change: transform, opacity;
+  }
 
-@keyframes slide-in-left {
+  @keyframes slide-in-left {
     from {
-        opacity: 0;
-        transform: translateX(-100%);
+      opacity: 0;
+      transform: translateX(100vw);
     }
     to {
-        opacity: 1;
-        transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
     }
-}
+  }
 
-.animate-slide-in-left {
+  .animate-slide-in-left {
     animation: slide-in-left 1.5s ease-out forwards;
-}
+    will-change: transform, opacity;
+  }
 
 @media (hover: hover) {
     .page-header__bang-effect:hover {
