@@ -242,7 +242,6 @@
     transition: transform 0.3s ease;
 }
 
-/* Animações */
 @keyframes slide-in-right {
     from {
         opacity: 0;
@@ -273,7 +272,6 @@
     animation: slide-in-left 1.5s ease-out forwards;
 }
 
-/* Efeitos de Hover (Apenas para dispositivos com mouse) */
 @media (hover: hover) {
     .page-header__bang-effect:hover {
         transform: scale(1.1);
@@ -310,7 +308,6 @@
     }
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .product-details__image-wrapper {
         display: flex;

@@ -68,7 +68,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 12px; /* 🔧 Reduz o espaçamento entre os cards */
+  gap: 12px;
 }
 
 .title-box {
@@ -269,12 +269,10 @@ body {
   border-radius: 4px;
 }
 
-/* Hover: muda a cor */
 .quantity-btn:hover {
   background-color: var(--primary-light);
 }
 
-/* Active: efeito de clique (afunda um pouco) */
 .quantity-btn:active {
   transform: scale(0.95);
   background-color: var(--primary-color);
