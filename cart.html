@@ -3,94 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ActionVerse</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../components/navbar.css">
-    <link rel="stylesheet" href="../css/cart.css">
-    <link rel="stylesheet" href="../components/footer.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/favicon-transparente.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/assets/styles/style.css">
+    <link rel="stylesheet" href="./src/assets/styles/cart.css">
+    <link rel="shortcut icon" href="./public/img/favicon-transparente.ico" type="image/x-icon">
 </head>
 <body>
   <!--NAVBAR-->
-    <header>
-      <nav>
-        <a class="logo" href="#">Action<span>Verse</span></a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-        <div class="nav-icon">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-solid fa-user"></i>
-        </div>
-      </nav>
-
-        <section>
-          <span class="wow">Wow!</span>
-          <span class="boom">BOOM!</span>
-
-          <div class="content">
-            <h1 id="principal" class="p1">O UNIVERSO DOS</h1>
-            <h1 class="p2"><span id="principal" class="p2">MEMES BRASILEIROS</span></h1>
-            <p class="s-principal">Colecione e compartilhe os melhores personagens mimísticos</p>
-        </div>
-      </section>
-    </header>
+    <header-bar>
+        <nav-bar></nav-bar>
+    </header-bar>
     <!--NAVBAR-->
     
     <!--CONTEÚDO-->
     <main>
-      <h1>teste</h1>
+      <section class="subcabecalho">
+         <div>
+           <h2>Sala de controle do <span class="destaque">herói</span></h2>
+           <h3>Seus memes selecionados para a missão!</h3>
+         </div>
+    
+         <div class="Zap">
+          <p>ZAP!</p>
+         </div>
+      </section>
+
+  <section class="controle-heroi">
+    <div class="cart-container">
+      <div class="title-box">
+        <h1>PRONTO PARA A BATALHA FINAL COM SEUS MEMES?</h1>
+      </div>
+
+      <!-- CARD 1 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="./public/img/kratosnaro.jpeg" alt="Meme 1">
+        </div>
+        <div class="product-details">
+          <p class="product-title"> KRATOSNARO</p>
+          <p class="product-subtitle">EDIÇÃO RARA - 2023</p>
+          <p class="product-price">R$ 79,90</p>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn">-</button>
+            <span class="quantity-display">1</span>
+            <button class="quantity-btn">+</button>
+          </div>
+          <button class="delete-btn">🗑️</button>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="./public/img/lularina.jpeg" alt="Meme 2">
+        </div>
+        <div class="product-details">
+          <p class="product-title">LULARINE</p>
+          <p class="product-subtitle">EDIÇÃO LIMITADA - 2024</p>
+          <p class="product-price">R$ 64,90</p>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn">-</button>
+            <span class="quantity-display">1</span>
+            <button class="quantity-btn">+</button>
+          </div>
+          <button class="delete-btn">🗑️</button>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="./public/img/super_botijao.jpeg" alt="Meme 3">
+        </div>
+        <div class="product-details">
+          <p class="product-title">SUPER BOTIJÃO</p>
+          <p class="product-subtitle">EDIÇÃO COLECIONADOR</p>
+          <p class="product-price">R$ 120,00</p>
+        </div>
+        <div class="product-actions">
+          <div class="quantity-control">
+            <button class="quantity-btn">-</button>
+            <span class="quantity-display">1</span>
+            <button class="quantity-btn">+</button>
+          </div>
+          <button class="delete-btn">🗑️</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESUMO DA MISSÃO -->
+    <div class="resumo-missao">
+      <h1>RESUMO DA MISSÃO</h1>
+      <ul>
+        <li>Subtotal <span>R$ 309,60</span></li>
+        <li>Frete <span>R$ 12,90</span></li>
+        <li>Desconto <span>-R$ 20,00</span></li>
+        <hr class="linha-suave">
+        <li class="total">TOTAL <span>R$ 302,50</span></li>
+      </ul>
+      <div class="codigo-desconto">
+        <label for="codigo">CÓDIGO HERÓICO</label>
+        <input type="text" id="codigo" placeholder="Insira seu código" />
+        <button>OK</button>
+      </div>
+      <div>
+        <button class="completar-missao">
+          <img src="./public/img/completar_missao.png" alt="botão para completar as missões">
+        </button>
+      </div>
+      <div class="continuar-com-memes">
+        <button><p class="sublinhado">Continuar escolhendo memes</p></button>
+      </div>
+    </div>
+  </section>
+
     </main>
     <!--CONTEÚDO-->
 
     <!--FOOTER-->
-    <footer>
-      <div id="content">
-        <div id="footer-contacts">
-          <h1>ACTION<span>VERSE</span></h1>
-          <p>Somos uma empresa focada em preservar e celebrar a cultura dos memes brasileiros através de edições exclusivas</p>
+    <footer-bar></footer-bar>
+    <script type="module" src="./src/components/header-bar/HeaderBar.js"></script>
+    <script type="module" src="./src/components/nav-bar/NavBar.js"></script>
+    <script type="module" src="./src/components/footer-bar/FooterBar.js"></script>
 
-          <div id="social-media">
-            <a href="#" class="footer-link"><i class="fab fa-instagram" id="icon"></i></a>
-            <a href="#" class="footer-link"><i class="fab fa-x-twitter" id="icon"></i></a>
-            <a href="#" class="footer-link"><i class="fab fa-facebook-f" id="icon"></i></a>
-          </div>
-        </div>
+    <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const frete = 12.90;
+    const desconto = 20.00;
 
-        <ul class="footer-list">
-          <h3>CATEGORIAS</h3> 
-          <li>Memes Clássicos</li>
-          <li>Virais Recentes</li>
-          <li>Edições Limitadas</li>
-          <li>Coleções Temáticas</li>
-          <li>Novos Lançamentos</li>
-        </ul>
+    function formatarPreco(valor) {
+      return `R$ ${valor.toFixed(2).replace('.', ',')}`;
+    }
 
-        <ul class="footer-list">
-          <h3>SOBRE</h3>  
-          <li>Como Funciona </li>
-          <li>FAQ</li>
-          <li>Termos de Uso</li>
-          <li>Política de Privacidade</li>
-          <li>Contato</li>
-        </ul>
-      </div>
+    function getPrecoNumerico(precoTexto) {
+      return parseFloat(precoTexto.replace('R$', '').replace(',', '.'));
+    }
 
-      <div id="copyright">
-        &copy 
-        2025 ACTIONVERSE - TODOS OS DIREITOS E MEMES RESERVADOS
-      </div>
-    </footer>
-    <!--FOOTER-->
-    <script src="js/mobile-navbar.js"></script>
+    function atualizarTotais() {
+      let subtotal = 0;
+      const cards = document.querySelectorAll('.product-card');
+
+      cards.forEach(card => {
+        const precoTexto = card.querySelector('.product-price')?.textContent;
+        const quantidadeTexto = card.querySelector('.quantity-display')?.textContent;
+        if (!precoTexto || !quantidadeTexto) return;
+
+        const preco = getPrecoNumerico(precoTexto);
+        const quantidade = parseInt(quantidadeTexto);
+        subtotal += preco * quantidade;
+      });
+
+      const total = subtotal + frete - desconto;
+
+      document.querySelector('.resumo-missao li:nth-child(1) span').textContent = formatarPreco(subtotal);
+      document.querySelector('.resumo-missao li:nth-child(2) span').textContent = formatarPreco(frete);
+      document.querySelector('.resumo-missao li:nth-child(3) span').textContent = `-${formatarPreco(desconto)}`;
+      document.querySelector('.resumo-missao .total span').textContent = formatarPreco(total);
+    }
+
+    const cards = document.querySelectorAll('.product-card');
+    cards.forEach(card => {
+      const menosBtn = card.querySelector('.quantity-btn:first-of-type');
+      const maisBtn = card.querySelector('.quantity-btn:last-of-type');
+      const display = card.querySelector('.quantity-display');
+
+      if (!menosBtn || !maisBtn || !display) return;
+
+      maisBtn.addEventListener('click', () => {
+        display.textContent = parseInt(display.textContent) + 1;
+        atualizarTotais();
+      });
+
+      menosBtn.addEventListener('click', () => {
+        const atual = parseInt(display.textContent);
+        if (atual > 1) {
+          display.textContent = atual - 1;
+          atualizarTotais();
+        }
+      });
+    });
+
+    atualizarTotais();
+  });
+</script>
+</body>
+</html>
+
+
 </body>
 </html>

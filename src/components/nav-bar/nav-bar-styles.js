@@ -63,14 +63,20 @@ const styles = `
         font-size: 28px;
         list-style: none;
         display: flex;
+        align-items: center;
     }
     
-    .nav-icon i {
+    .nav-icon > * {
         margin-left: 32px;
         cursor: pointer;
     }
 
-    .nav-icon i:hover {
+    .nav-icon a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .nav-icon > *:hover {
         color: var(--tertiary);
         transition: 0.7s;
     }
@@ -178,14 +184,13 @@ const styles = `
             transform: translateX(0);
         }
         
-        .nav-icon i {
+        .nav-icon > * {
             opacity: 0;
-            color: var(--base);
             font-size: 25px;
             margin-left: 0;
         }
 
-        .nav-list.active li, .nav-icon.active i {
+        .nav-list.active li, .nav-icon.active > * {
             animation: navLinkFade 0.5s ease forwards;
         }
         
@@ -193,8 +198,8 @@ const styles = `
         .nav-list.active li:nth-child(2) { animation-delay: 0.3s; }
         .nav-list.active li:nth-child(3) { animation-delay: 0.4s; }
         .nav-list.active li:nth-child(4) { animation-delay: 0.5s; }
-        .nav-icon.active i:nth-child(1) { animation-delay: 0.6s; }
-        .nav-icon.active i:nth-child(2) { animation-delay: 0.7s; }
+        .nav-icon.active > a { animation-delay: 0.6s; }
+        .nav-icon.active > i { animation-delay: 0.7s; }
 
         .mobile-menu.active .line1 {
             transform: rotate(-45deg) translate(-8px, 8px);

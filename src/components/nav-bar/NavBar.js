@@ -23,7 +23,7 @@ class NavBar extends HTMLElement {
     initializeMobileMenu() {
         const mobileMenuEl = this.shadowRoot.querySelector(".mobile-menu");
         const navListEl = this.shadowRoot.querySelector(".nav-list");
-        const navLinksNodeList = this.shadowRoot.querySelectorAll(".nav-list li, .nav-icon > i");
+        const navLinksNodeList = this.shadowRoot.querySelectorAll(".nav-list li, .nav-icon > *");
         const navIconsContainerEl = this.shadowRoot.querySelector(".nav-icon");
         
         if (mobileMenuEl && navListEl) {
