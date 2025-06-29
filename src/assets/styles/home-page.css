@@ -27,6 +27,8 @@
     background-color: var(--base);
     border: 2px solid var(--detail);
     display: flex;
+    flex: 1 1 350px;
+    max-width: 450px;
     flex-direction: column;
     position: relative;
     margin-top: 50px;

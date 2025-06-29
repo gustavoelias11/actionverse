@@ -212,14 +212,15 @@
 
 .related-products__gallery {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 40px;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
 .related-product-card {
     width: 380px;
-    height: 450px;
+    height: 500px;
     border: 1px solid var(--detail);
     box-shadow: 1px 2px 10px var(--shadow-color-strong);
     position: relative;

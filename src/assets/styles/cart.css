@@ -229,12 +229,13 @@ body {
   margin-bottom: 10px;
   cursor: pointer;
   border: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.completar-missao img {
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.completar-missao:hover {
+.completar-missao img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .continuar-com-memes {
