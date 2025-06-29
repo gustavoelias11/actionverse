@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../assets/styles/cart.css">
-    <link rel="stylesheet" href="../assets/styles/style.css">
-    <link rel="shortcut icon" href="../img/favicon-transparente.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/assets/styles/style.css">
+    <link rel="stylesheet" href="./src/assets/styles/cart.css">
+    <link rel="shortcut icon" href="./public/img/favicon-transparente.ico" type="image/x-icon">
 </head>
 <body>
   <!--NAVBAR-->
-    <header-bar></header-bar>
+    <header-bar>
+        <nav-bar></nav-bar>
+    </header-bar>
     <!--NAVBAR-->
     
     <!--CONTEÚDO-->
@@ -36,7 +38,7 @@
       <!-- CARD 1 -->
       <div class="product-card">
         <div class="product-image">
-          <img src="/public/img/kratosnaro.jpeg" alt="Meme 1">
+          <img src="./public/img/kratosnaro.jpeg" alt="Meme 1">
         </div>
         <div class="product-details">
           <p class="product-title"> KRATOSNARO</p>
@@ -56,7 +58,7 @@
       <!-- CARD 2 -->
       <div class="product-card">
         <div class="product-image">
-          <img src="/public/img/lularina.jpeg" alt="Meme 2">
+          <img src="./public/img/lularina.jpeg" alt="Meme 2">
         </div>
         <div class="product-details">
           <p class="product-title">LULARINE</p>
@@ -76,7 +78,7 @@
       <!-- CARD 3 -->
       <div class="product-card">
         <div class="product-image">
-          <img src="/public/img/super_botijao.jpeg" alt="Meme 3">
+          <img src="./public/img/super_botijao.jpeg" alt="Meme 3">
         </div>
         <div class="product-details">
           <p class="product-title">SUPER BOTIJÃO</p>
@@ -111,7 +113,7 @@
       </div>
       <div>
         <button class="completar-missao">
-          <img src="../../public/img/completar_missao.png" alt="botão para completar as missões">
+          <img src="./public/img/completar_missao.png" alt="botão para completar as missões">
         </button>
       </div>
       <div class="continuar-com-memes">
@@ -125,8 +127,9 @@
 
     <!--FOOTER-->
     <footer-bar></footer-bar>
-    <script type="module" src="../components/header-bar/HeaderBar.js"></script>
-    <script type="module" src="../components/footer-bar/FooterBar.js"></script>
+    <script type="module" src="./src/components/header-bar/HeaderBar.js"></script>
+    <script type="module" src="./src/components/nav-bar/NavBar.js"></script>
+    <script type="module" src="./src/components/footer-bar/FooterBar.js"></script>
 
     <script>
   document.addEventListener('DOMContentLoaded', () => {

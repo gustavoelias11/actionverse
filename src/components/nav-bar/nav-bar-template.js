@@ -13,7 +13,9 @@ const template = `
             <li><a href="./about.html">Sobre</a></li>
         </ul>
         <div class="nav-icon">
-            <i class="fa-solid fa-cart-shopping" role="button" tabindex="0" aria-label="Carrinho de compras"></i>
+            <a href="./cart.html" aria-label="Carrinho de compras">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
             <i id="login-icon" class="fa-solid fa-user" role="button" tabindex="0" aria-label="Login ou perfil do usuário"></i>
         </div>
     </nav>
