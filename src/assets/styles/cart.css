@@ -1,1 +1,281 @@
+body {
+  background-color: var(--background);
+  font-family: 'Bangers', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+.subcabecalho {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-color-dark);
+  border-top: 2px solid black;
+  padding: 15px 25px;
+}
+
+.subcabecalho h2, .subcabecalho h3 {
+  color: white;
+  text-shadow: 1px 2px 0px black;
+  margin: 0;
+}
+
+.subcabecalho h2 {
+  font-size: 42px;
+}
+
+.subcabecalho h3 {
+  font-size: 28px;
+}
+
+.Zap {
+  background-color: var(--primary-color-dark);
+  text-shadow: 1px 0.5px 0px black;
+  padding-top: 5px;
+  transition: transform 0.3s ease;
+}
+
+.Zap:hover {
+  transform: scale(1.1);
+}
+
+.Zap p {
+  color: var(--tertiary-color);
+  font-size: 42px;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.Zap p:hover {
+  transform: rotate(5deg);
+  font-weight: bold;
+}
+
+.destaque {
+  color: var(--tertiary-color);
+}
+
+.controle-heroi {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 50px;
+  background-color: var(--background);
+  flex-wrap: wrap;
+}
+
+.cart-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* 🔧 Reduz o espaçamento entre os cards */
+}
+
+.title-box {
+  background-color: var(--base-color);
+  border: 3px solid var(--detail-color);
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.title-box h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  background-color: var(--base-color);
+  border: 3px solid var(--detail-color);
+  padding: 15px;
+  gap: 15px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.product-image {
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--detail-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-details {
+  flex-grow: 1;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  color: var(--secondary-color-light);
+  margin: 0;
+}
+
+.product-subtitle {
+  font-size: 0.9rem;
+  margin: 2px 0;
+}
+
+.product-price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.product-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-control {
+  display: flex;
+}
+
+.quantity-btn, .quantity-display {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color-dark);
+  color: var(--base-color);
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+}
+
+.delete-btn {
+  width: 35px;
+  height: 35px;
+  color: var(--base-color);
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.resumo-missao {
+  flex: 0 0 300px;
+  background-color: var(--base-color);
+  border: 2px solid var(--primary-color-dark);
+  padding: 20px;
+}
+
+.resumo-missao h1 {
+  background-color: #7D0302;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 0 20px 0;
+}
+
+.resumo-missao ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.resumo-missao li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.linha-suave {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  margin: 15px 0;
+}
+
+.codigo-desconto {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.codigo-desconto input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.codigo-desconto button {
+  background-color: var(--primary-color-dark);
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.completar-missao {
+  background-color: var(--tertiary-color);
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.completar-missao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.continuar-com-memes {
+  text-align: center;
+}
+
+.continuar-com-memes button {
+  background: none;
+  border: none;
+  color: #023469;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sublinhado {
+  text-decoration: underline;
+}
+
+.quantity-btn {
+  background-color: var(--primary-color-dark);
+  color: var(--base-color);
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s, transform 0.1s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Hover: muda a cor */
+.quantity-btn:hover {
+  background-color: var(--primary-color-light);
+}
+
+/* Active: efeito de clique (afunda um pouco) */
+.quantity-btn:active {
+  transform: scale(0.95);
+  background-color: var(--primary-color);
+}
