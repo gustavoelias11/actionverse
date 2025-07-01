@@ -8,192 +8,121 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./src/assets/styles/style.css">
     <link rel="stylesheet" href="./src/assets/styles/cart.css">
+    <link rel="stylesheet" href="./src/assets/styles/login.css">
 </head>
 <body>
-  <!--NAVBAR-->
     <header-bar>
         <nav-bar></nav-bar>
     </header-bar>
-    <!--NAVBAR-->
     
-    <!--CONTEÚDO-->
     <main>
-      <section class="subcabecalho">
-         <div>
-           <h2>Sala de controle do <span class="destaque">herói</span></h2>
-           <h3>Seus memes selecionados para a missão!</h3>
-         </div>
-    
-         <div class="Zap">
-          <p>ZAP!</p>
-         </div>
-      </section>
+        <aside id="login-pop-up"></aside>
+        <section class="page-header">
+            <div>
+                <h2>Sala de controle do <span class="highlight">herói</span></h2>
+                <h3>Seus memes selecionados para a missão!</h3>
+            </div>
+            <div class="header-effect">
+                <p>ZAP!</p>
+            </div>
+        </section>
 
-  <section class="controle-heroi">
-    <div class="cart-container">
-      <div class="title-box from-bottom">
-        <h1>PRONTO PARA A BATALHA FINAL COM SEUS MEMES?</h1>
-      </div>
+        <section class="cart-layout">
+            <div class="cart-items-list">
+                <div class="cart-items-list__title">
+                    <h1>PRONTO PARA A BATALHA FINAL COM SEUS MEMES?</h1>
+                </div>
 
-      <!-- CARD 1 -->
-      <div class="product-card from-left">
-        <div class="product-image">
-          <img src="./public/img/kratosnaro.jpeg" alt="Meme 1">
-        </div>
-        <div class="product-details">
-          <p class="product-title"> KRATOSNARO</p>
-          <p class="product-subtitle">EDIÇÃO RARA - 2023</p>
-          <p class="product-price">R$ 22220,00</p>
-        </div>
-        <div class="product-actions">
-          <div class="quantity-control">
-            <button class="quantity-btn">-</button>
-            <span class="quantity-display">1</span>
-            <button class="quantity-btn">+</button>
-          </div>
-          <button class="delete-btn">🗑️</button>
-        </div>
-      </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./public/img/kratosnaro.jpeg" alt="Meme Kratosnaro">
+                    </div>
+                    <div class="product-details">
+                        <p class="product-title">KRATOSNARO</p>
+                        <p class="product-subtitle">EDIÇÃO RARA - 2023</p>
+                        <p class="product-price">R$ 22220,00</p>
+                    </div>
+                    <div class="product-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn quantity-btn--decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn quantity-btn--increase">+</button>
+                        </div>
+                        <button class="delete-btn" title="Remover item">🗑️</button>
+                    </div>
+                </div>
 
-      <!-- CARD 2 -->
-      <div class="product-card from-left">
-        <div class="product-image">
-          <img src="./public/img/lularina.jpeg" alt="Meme 2">
-        </div>
-        <div class="product-details">
-          <p class="product-title">LULARINE</p>
-          <p class="product-subtitle">EDIÇÃO LIMITADA - 2024</p>
-          <p class="product-price">R$ 13130,00</p>
-        </div>
-        <div class="product-actions">
-          <div class="quantity-control">
-            <button class="quantity-btn">-</button>
-            <span class="quantity-display">1</span>
-            <button class="quantity-btn">+</button>
-          </div>
-          <button class="delete-btn">🗑️</button>
-        </div>
-      </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./public/img/lularina.jpeg" alt="Meme Lularine">
+                    </div>
+                    <div class="product-details">
+                        <p class="product-title">LULARINE</p>
+                        <p class="product-subtitle">EDIÇÃO LIMITADA - 2024</p>
+                        <p class="product-price">R$ 13130,00</p>
+                    </div>
+                    <div class="product-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn quantity-btn--decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn quantity-btn--increase">+</button>
+                        </div>
+                        <button class="delete-btn" title="Remover item">🗑️</button>
+                    </div>
+                </div>
 
-      <!-- CARD 3 -->
-      <div class="product-card from-left">
-        <div class="product-image">
-          <img src="./public/img/super_botijao.jpeg" alt="Meme 3">
-        </div>
-        <div class="product-details">
-          <p class="product-title">SUPER BOTIJÃO</p>
-          <p class="product-subtitle">EDIÇÃO COLECIONADOR</p>
-          <p class="product-price">R$ 120,00</p>
-        </div>
-        <div class="product-actions">
-          <div class="quantity-control">
-            <button class="quantity-btn">-</button>
-            <span class="quantity-display">1</span>
-            <button class="quantity-btn">+</button>
-          </div>
-          <button class="delete-btn">🗑️</button>
-        </div>
-      </div>
-    </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./public/img/super_botijao.jpeg" alt="Meme Super Botijão">
+                    </div>
+                    <div class="product-details">
+                        <p class="product-title">SUPER BOTIJÃO</p>
+                        <p class="product-subtitle">EDIÇÃO COLECIONADOR</p>
+                        <p class="product-price">R$ 120,00</p>
+                    </div>
+                    <div class="product-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn quantity-btn--decrease">-</button>
+                            <span class="quantity-display">1</span>
+                            <button class="quantity-btn quantity-btn--increase">+</button>
+                        </div>
+                        <button class="delete-btn" title="Remover item">🗑️</button>
+                    </div>
+                </div>
+            </div>
 
-    <!-- RESUMO DA MISSÃO -->
-    <div class="resumo-missao from-bottom">
-      <h1>RESUMO DA MISSÃO</h1>
-      <ul>
-        <li>Subtotal <span></span></li>
-        <li>Frete <span>R$ 12,90</span></li>
-        <li>Desconto <span>-R$ 20,00</span></li>
-        <hr class="linha-suave">
-        <li class="total">TOTAL <span></span></li>
-      </ul>
-      <div class="codigo-desconto">
-        <label for="codigo">CÓDIGO HERÓICO</label>
-        <input type="text" id="codigo" placeholder="Insira seu código" />
-        <button>OK</button>
-      </div>
-      <div>
-        <button class="completar-missao">
-          <img src="./public/img/completar_missao.png" alt="botão para completar as missões">
-        </button>
-      </div>
-      <div class="continuar-com-memes">
-        <button><p class="sublinhado">Continuar escolhendo memes</p></button>
-      </div>
-    </div>
-  </section>
-
+            <aside class="order-summary">
+                <h1>RESUMO DA MISSÃO</h1>
+                <ul>
+                    <li><span>Subtotal</span> <span class="order-summary__subtotal-value"></span></li>
+                    <li><span>Frete</span> <span class="order-summary__shipping-value"></span></li>
+                    <li><span>Desconto</span> <span class="order-summary__discount-value"></span></li>
+                    <hr class="order-summary__divider">
+                    <li class="total"><span>TOTAL</span> <span class="order-summary__total-value"></span></li>
+                </ul>
+                <div class="promo-code">
+                    <label for="codigo" class="visually-hidden">CÓDIGO HERÓICO</label>
+                    <input type="text" id="codigo" placeholder="Insira seu código">
+                    <button>OK</button>
+                </div>
+                <div class="cta-wrapper">
+                    <button class="cta-button">
+                        <img src="./public/img/completar_missao.png" alt="Botão para completar a missão">
+                    </button>
+                </div>
+                <div class="continue-shopping">
+                    <button><span class="underline">Continuar escolhendo memes</span></button>
+                </div>
+            </aside>
+        </section>
     </main>
-    <!--CONTEÚDO-->
 
-    <!--FOOTER-->
     <footer-bar></footer-bar>
+    
     <script type="module" src="./src/components/header-bar/HeaderBar.js"></script>
+    <script type="module" src="./src/assets/js/pop-up.js"></script>
     <script type="module" src="./src/components/nav-bar/NavBar.js"></script>
     <script type="module" src="./src/components/footer-bar/FooterBar.js"></script>
-
-    <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const frete = 12.90;
-    const desconto = 20.00;
-
-    function formatarPreco(valor) {
-      return `R$ ${valor.toFixed(2).replace('.', ',')}`;
-    }
-
-    function getPrecoNumerico(precoTexto) {
-      return parseFloat(precoTexto.replace('R$', '').replace(',', '.'));
-    }
-
-    function atualizarTotais() {
-      let subtotal = 0;
-      const cards = document.querySelectorAll('.product-card');
-
-      cards.forEach(card => {
-        const precoTexto = card.querySelector('.product-price')?.textContent;
-        const quantidadeTexto = card.querySelector('.quantity-display')?.textContent;
-        if (!precoTexto || !quantidadeTexto) return;
-
-        const preco = getPrecoNumerico(precoTexto);
-        const quantidade = parseInt(quantidadeTexto);
-        subtotal += preco * quantidade;
-      });
-
-      const total = subtotal + frete - desconto;
-
-      document.querySelector('.resumo-missao li:nth-child(1) span').textContent = formatarPreco(subtotal);
-      document.querySelector('.resumo-missao li:nth-child(2) span').textContent = formatarPreco(frete);
-      document.querySelector('.resumo-missao li:nth-child(3) span').textContent = `-${formatarPreco(desconto)}`;
-      document.querySelector('.resumo-missao .total span').textContent = formatarPreco(total);
-    }
-
-    const cards = document.querySelectorAll('.product-card');
-    cards.forEach(card => {
-      const menosBtn = card.querySelector('.quantity-btn:first-of-type');
-      const maisBtn = card.querySelector('.quantity-btn:last-of-type');
-      const display = card.querySelector('.quantity-display');
-
-      if (!menosBtn || !maisBtn || !display) return;
-
-      maisBtn.addEventListener('click', () => {
-        display.textContent = parseInt(display.textContent) + 1;
-        atualizarTotais();
-      });
-
-      menosBtn.addEventListener('click', () => {
-        const atual = parseInt(display.textContent);
-        if (atual > 1) {
-          display.textContent = atual - 1;
-          atualizarTotais();
-        }
-      });
-    });
-
-    atualizarTotais();
-  });
-</script>
-</body>
-</html>
-
-
+    <script type="module" src="./src/assets/js/cart.js"></script> 
 </body>
 </html>
