@@ -2,6 +2,11 @@ function setupCart() {
     const shippingValue = 12.90;
     const discountValue = 20.00;
 
+    const summarySubtotalEl = document.querySelector('.order-summary__subtotal-value');
+    const summaryShippingEl = document.querySelector('.order-summary__shipping-value');
+    const summaryDiscountEl = document.querySelector('.order-summary__discount-value');
+    const summaryTotalEl = document.querySelector('.order-summary__total-value');
+
     function formatPrice(value) {
         return `R$ ${value.toFixed(2).replace('.', ',')}`;
     }
@@ -14,6 +19,7 @@ function setupCart() {
     function updateTotals() {
         let subtotal = 0;
         const productCards = document.querySelectorAll('.product-card');
+
         productCards.forEach(card => {
             const priceText = card.querySelector('.product-price')?.textContent;
             const quantityText = card.querySelector('.quantity-display')?.textContent;
@@ -27,10 +33,10 @@ function setupCart() {
 
         const total = subtotal > 0 ? subtotal + shippingValue - discountValue : 0;
         
-        document.querySelector('.order-summary__subtotal-value').textContent = formatPrice(subtotal);
-        document.querySelector('.order-summary__shipping-value').textContent = formatPrice(shippingValue);
-        document.querySelector('.order-summary__discount-value').textContent = `-${formatPrice(discountValue)}`;
-        document.querySelector('.order-summary__total-value').textContent = formatPrice(total);
+        if(summarySubtotalEl) summarySubtotalEl.textContent = formatPrice(subtotal);
+        if(summaryShippingEl) summaryShippingEl.textContent = formatPrice(shippingValue);
+        if(summaryDiscountEl) summaryDiscountEl.textContent = `-${formatPrice(discountValue)}`;
+        if(summaryTotalEl) summaryTotalEl.textContent = formatPrice(total);
     }
 
     const productCards = document.querySelectorAll('.product-card');

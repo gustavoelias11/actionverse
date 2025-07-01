@@ -14,7 +14,8 @@ body {
     padding: 15px 25px;
 }
 
-.page-header h2, .page-header h3 {
+.page-header h2,
+.page-header h3 {
     color: var(--base);
     text-shadow: 1px 2px 0px var(--detail);
     margin: 0;
@@ -42,12 +43,11 @@ body {
     font-size: 42px;
     margin: 0;
     padding: 8px 0;
-    transition: transform 0.2s ease;
 }
 
 .header-effect p:hover {
-    font-weight: bold;
     transform: rotate(5deg);
+    font-weight: bold;
 }
 
 .highlight {
@@ -144,7 +144,8 @@ body {
     display: flex;
 }
 
-.quantity-btn, .quantity-display {
+.quantity-btn,
+.quantity-display {
     width: 28px;
     height: 28px;
     display: flex;
@@ -155,7 +156,6 @@ body {
     font-size: 1rem;
     font-weight: bold;
     border: none;
-    cursor: pointer;
     border-radius: 4px;
 }
 
@@ -163,11 +163,10 @@ body {
     background-color: var(--base);
     color: var(--primary-dark);
     border-radius: 0;
-    cursor: default;
 }
 
 .delete-btn {
-    color: var(--secondary-dark); 
+    color: var(--secondary-dark);
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
@@ -182,7 +181,7 @@ body {
 }
 
 .order-summary h1 {
-    background-color: var(--secondary-dark); 
+    background-color: var(--secondary-dark);
     color: var(--base);
     font-size: 30px;
     text-align: center;
@@ -219,7 +218,7 @@ body {
     flex: 1;
     padding: 5px;
     border: 1px solid #ccc;
-    background-color: var(--base);
+    background: var(--base);
 }
 
 .promo-code button {
@@ -229,18 +228,17 @@ body {
     cursor: pointer;
 }
 
-.cta-wrapper {
-    text-align: center;
-}
-
 .cta-button {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
     cursor: pointer;
-    padding: 0;
-    line-height: 0;
+    border: none;
 }
 
 .cta-button img {
     display: block;
+    width: 100%;
     transition: transform 0.2s ease;
 }
 
@@ -251,7 +249,7 @@ body {
 .continue-shopping button {
     background: none;
     border: none;
-    color: var(--primary-light); 
+    color: var(--primary-light);
     font-size: 16px;
     cursor: pointer;
 }
@@ -262,6 +260,7 @@ body {
 
 .quantity-btn {
     transition: background-color 0.2s, transform 0.1s;
+    cursor: pointer;
 }
 
 .quantity-btn:hover {
@@ -271,6 +270,40 @@ body {
 .quantity-btn:active {
     transform: scale(0.95);
     background-color: var(--primary-dark);
+}
+
+.from-bottom {
+    animation: slideFromBottom 0.8s ease-out forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+.from-left {
+    animation: slideFromLeft 0.8s ease-out forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+@keyframes slideFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @media (max-width: 1024px) {

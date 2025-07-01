@@ -9,7 +9,6 @@ const template = `
         <ul class="nav-list" id="navList">
             <li><a href="./index.html">Início</a></li>
             <li><a href="./rarity.html">Raridade</a></li>
-            <li><a href="#">Contato</a></li>
             <li><a href="./about.html">Sobre</a></li>
         </ul>
         <div class="nav-icon">

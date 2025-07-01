@@ -8,15 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./src/assets/styles/style.css">
     <link rel="stylesheet" href="./src/assets/styles/cart.css">
-    <link rel="stylesheet" href="./src/assets/styles/login.css">
 </head>
 <body>
-    <header-bar>
-        <nav-bar></nav-bar>
-    </header-bar>
+    <header-bar></header-bar>
     
     <main>
-        <aside id="login-pop-up"></aside>
         <section class="page-header">
             <div>
                 <h2>Sala de controle do <span class="highlight">herói</span></h2>
@@ -29,13 +25,13 @@
 
         <section class="cart-layout">
             <div class="cart-items-list">
-                <div class="cart-items-list__title">
+                <div class="cart-items-list__title from-bottom">
                     <h1>PRONTO PARA A BATALHA FINAL COM SEUS MEMES?</h1>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card from-left">
                     <div class="product-image">
-                        <img src="./public/img/kratosnaro.jpeg" alt="Meme Kratosnaro">
+                        <img src="./public/img/kratosnaro.jpeg" alt="Action figure Kratosnaro">
                     </div>
                     <div class="product-details">
                         <p class="product-title">KRATOSNARO</p>
@@ -52,9 +48,9 @@
                     </div>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card from-left">
                     <div class="product-image">
-                        <img src="./public/img/lularina.jpeg" alt="Meme Lularine">
+                        <img src="./public/img/lularina.jpeg" alt="Action figure Lularine">
                     </div>
                     <div class="product-details">
                         <p class="product-title">LULARINE</p>
@@ -71,9 +67,9 @@
                     </div>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card from-left">
                     <div class="product-image">
-                        <img src="./public/img/super_botijao.jpeg" alt="Meme Super Botijão">
+                        <img src="./public/img/super_botijao.jpeg" alt="Action figure Super Botijão">
                     </div>
                     <div class="product-details">
                         <p class="product-title">SUPER BOTIJÃO</p>
@@ -91,7 +87,7 @@
                 </div>
             </div>
 
-            <aside class="order-summary">
+            <aside class="order-summary from-bottom">
                 <h1>RESUMO DA MISSÃO</h1>
                 <ul>
                     <li><span>Subtotal</span> <span class="order-summary__subtotal-value"></span></li>
@@ -120,7 +116,6 @@
     <footer-bar></footer-bar>
     
     <script type="module" src="./src/components/header-bar/HeaderBar.js"></script>
-    <script type="module" src="./src/assets/js/pop-up.js"></script>
     <script type="module" src="./src/components/nav-bar/NavBar.js"></script>
     <script type="module" src="./src/components/footer-bar/FooterBar.js"></script>
     <script type="module" src="./src/assets/js/cart.js"></script> 
