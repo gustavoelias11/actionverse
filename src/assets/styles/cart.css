@@ -278,3 +278,35 @@ body {
   transform: scale(0.95);
   background-color: var(--primary-color);
 }
+
+@keyframes slideFromBottom {
+      0% {
+          opacity: 0;
+          transform: translateY(50px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+.from-bottom {
+        animation: slideFromBottom 0.8s ease-out forwards;
+        animation-delay: 0.6s;
+        opacity: 0;
+    }
+  
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.from-left {
+  animation: slideFromLeft 0.8s ease-out forwards;
+  animation-delay: 0.4s; 
+  opacity: 0;
+}

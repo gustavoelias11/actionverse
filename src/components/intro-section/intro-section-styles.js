@@ -71,6 +71,71 @@ const styles = `
             margin-top: 5px; 
         }
     }
+
+    /* Animações */
+    @keyframes slideFromTop {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideFromBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInOnly {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .from-top {
+        animation: slideFromTop 0.8s ease-out forwards;
+        animation-delay: 0.2s;
+        opacity: 0;
+    }
+
+    .from-bottom {
+        animation: slideFromBottom 0.8s ease-out forwards;
+        animation-delay: 0.6s;
+        opacity: 0;
+    }
+
+    .delay-1 {
+        animation: fadeInOnly 0.5s ease-out forwards;
+        animation-delay: 0.7s;
+        opacity: 0;
+    }
+
+    .delay-2 {
+        animation: fadeInOnly 0.5s ease-out forwards;
+        animation-delay: 0.9s;
+        opacity: 0;
+    }
 `;
 
 export default styles;

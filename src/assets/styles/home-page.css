@@ -15,6 +15,7 @@
     height: 4px;
 }
 
+
 .card-container {
     display: flex;
     gap: 50px;
@@ -294,4 +295,15 @@
     .badge.blue {
         padding: 20px 10px;
     }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
