@@ -278,3 +278,95 @@ body {
   transform: scale(0.95);
   background-color: var(--primary-color);
 }
+/* Responsividade: telas menores (até 1024px) */
+@media (max-width: 1024px) {
+  .controle-heroi {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .resumo-missao {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+/* Responsividade: tablets e celulares grandes */
+@media (max-width: 768px) {
+  .subcabecalho {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Zap {
+    padding-top: 10px;
+  }
+
+  .product-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-actions {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .product-image {
+    margin-bottom: 10px;
+  }
+
+  .codigo-desconto {
+    flex-direction: column;
+  }
+
+  .codigo-desconto input,
+  .codigo-desconto button {
+    width: 100%;
+  }
+
+  .completar-missao img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsividade: celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  .subcabecalho h2 {
+    font-size: 32px;
+  }
+
+  .subcabecalho h3 {
+    font-size: 22px;
+  }
+
+  .Zap p {
+    font-size: 32px;
+  }
+
+  .title-box h1 {
+    font-size: 1.2rem;
+  }
+
+  .product-title {
+    font-size: 1rem;
+  }
+
+  .product-subtitle,
+  .product-price {
+    font-size: 0.9rem;
+  }
+
+  .quantity-btn,
+  .quantity-display {
+    width: 24px;
+    height: 24px;
+    font-size: 0.85rem;
+  }
+
+  .resumo-missao h1 {
+    font-size: 24px;
+  }
+}
